@@ -154,7 +154,6 @@ hr.small {
   }
 }
 .intro-header {
-  background-color: #99e164;
   background-position: center center;
   background-attachment: scroll;
   margin-bottom: 50px;
@@ -199,6 +198,7 @@ hr.small {
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
     font-size: 65px;
+    text-shadow: 0 0 2px #000;
   }
 }
 .intro-header .post-heading h1 {
@@ -225,6 +225,7 @@ hr.small {
 @media only screen and (min-width: 768px) {
   .intro-header .post-heading h1 {
     font-size: 55px;
+    text-shadow: 0 0 2px #000;
   }
   .intro-header .post-heading .subheading {
     font-size: 30px;
