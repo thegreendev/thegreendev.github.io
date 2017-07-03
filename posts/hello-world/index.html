@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="default">
 
 <!-- Head tag -->
 <head>
@@ -10,8 +10,7 @@
 
     <!--Description-->
     
-        <meta name="description" content="Chào cả thế giới!Mình là dev con nhà người ta.
-Fanpage của mình đây nè https://www.facebook.com/devnhanguoita, vô like dùm cái đi nha">
+        <meta name="description" content="Giúp dev nhà mình trở thành dev con nhà người ta">
     
 
     <!--Author-->
@@ -26,6 +25,8 @@ Fanpage của mình đây nè https://www.facebook.com/devnhanguoita, vô like d
 
     <!--Open Graph Description-->
     
+        <meta property="og:description" content="Giúp dev nhà mình trở thành dev con nhà người ta" />
+    
 
     <!--Open Graph Site Name-->
     <meta property="og:site_name" content="&lt; Dev Nhà Người Ta /&gt;"/>
@@ -36,6 +37,8 @@ Fanpage của mình đây nè https://www.facebook.com/devnhanguoita, vô like d
     
 
     <!--Page Cover-->
+    
+        <meta property="og:image" content="https://devnhanguoita.com/img/home-bg.png"/>
     
 
         <meta name="twitter:card" content="summary" />
@@ -83,7 +86,7 @@ Fanpage của mình đây nè https://www.facebook.com/devnhanguoita, vô like d
 
     <!-- favicon -->
     
-	
+
 </head>
 
 
@@ -196,6 +199,21 @@ Fanpage của mình đây nè https://www.facebook.com/devnhanguoita, vô like d
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     
 
+
+    <hr />
+    <h3>Comments:</h3>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=334617520303501";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div class="fb-comments" data-href="https://devnhanguoita.com/posts/hello-world/index.html" data-num-posts="5" data-width="100%" data-colorscheme="light"></div>
 
                 </div>
             
