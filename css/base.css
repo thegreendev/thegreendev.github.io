@@ -74,6 +74,7 @@ hr.small {
   left: 0;
   width: 100%;
   z-index: 3;
+  text-shadow: 0 0 2px #000;
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
