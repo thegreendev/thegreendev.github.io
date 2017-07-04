@@ -232,6 +232,19 @@ hr.small {
     font-size: 30px;
   }
 }
+.intro-header .subscribe {
+  font-size: 20px;
+  text-transform: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+  top: 65px;
+  font-weight: 500;
+}
+.intro-header .subscribe:hover {
+  background-color: #eed;
+}
 .post-preview > a {
   color: #404040;
 }
@@ -311,6 +324,15 @@ hr.small {
 .post-categories a:active {
   text-decoration: none;
   border-bottom: none;
+}
+.post-subscribe {
+  border: 1px solid #000;
+  text-align: center;
+  margin-top: 15px;
+}
+.post-subscribe .subscribe {
+  text-transform: none;
+  font-size: 20px;
 }
 .archive-before-pagination {
   height: 30px;
