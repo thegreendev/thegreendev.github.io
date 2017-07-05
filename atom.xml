@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>&lt; Dev Nhà Người Ta /&gt;</title>
+  <subtitle>Chia sẻ chuyện các developers con nhà người ta</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://devnhanguoita.com/"/>
+  <updated>2017-07-05T16:05:14.000Z</updated>
+  <id>https://devnhanguoita.com/</id>
+  
+  <author>
+    <name>Dev Nhà Người Ta</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Code sạch nhà người ta: Đặt tên cho con</title>
+    <link href="https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Dat-ten-cho-con/"/>
+    <id>https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Dat-ten-cho-con/</id>
+    <published>2017-07-05T13:35:24.000Z</published>
+    <updated>2017-07-05T16:05:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="To-be-done"><a href="#To-be-done" class="headerlink" title="To be done"></a>To be done</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;To-be-done&quot;&gt;&lt;a href=&quot;#To-be-done&quot; class=&quot;headerlink&quot; title=&quot;To be done&quot;&gt;&lt;/a&gt;To be done&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="clean-code" scheme="https://devnhanguoita.com/tags/clean-code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Bật đèn] - Khi chị Dậu làm code review</title>
+    <link href="https://devnhanguoita.com/posts/Bat-den-Khi-chi-Dau-lam-code-review/"/>
+    <id>https://devnhanguoita.com/posts/Bat-den-Khi-chi-Dau-lam-code-review/</id>
+    <published>2017-07-03T04:20:09.000Z</published>
+    <updated>2017-07-03T12:54:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Vi-sao-lai-la-Bat-Den"><a href="#Vi-sao-lai-la-Bat-Den" class="headerlink" title="Vì sao lại là Bật Đèn?"></a>Vì sao lại là Bật Đèn?</h2><p>Ai từng đọc qua <strong>Tắt Đèn</strong> hẳn đã biết tác phẩm được kết thúc bằng tình huống:</p>
+<blockquote>
+<p>Buông tay, chị vội choàng dậy, mở cửa chạy té ra sân. Trời tối như mực và như cái tiền đồ của chị.</p>
+</blockquote>
+<p>Có lẽ chính Ngô Tất Tố cũng không ngờ rằng sau khi té ra sân, rời khỏi cái ngôi làng với bao tủi nhục như thầy dạy Văn đã phân tích, chị Dậu đã đến với thành phố. Ngày và đêm ở cái xứ ấy, trời đều sáng như đèn và tất nhiên, như cái tiền đồ của chị; giờ đây, sau bao cố gắng, chị Dậu đã trở thành một nữ developer chân chính.</p>
+<p>Chị đã được nhận vào làm việc trong một công ty phần mềm xịn nhất nhì thành phố, và ở công ty đó, mỗi một pull request (PR) đều cần phải được review và approve trước khi release.</p>
+<p>Có thể nói Chị Dậu review và được review code mỗi ngày, tất cả đồng nghiệp đều yêu mến và lúc nào cũng muốn được review code do chị Dậu viết, vậy bằng cách nào Chị đã làm điều đó?</p>
+<h3 id="Chi-Dau-khong-y-lai-vao-nguoi-review"><a href="#Chi-Dau-khong-y-lai-vao-nguoi-review" class="headerlink" title="Chị Dậu không ỷ lại vào người review"></a>Chị Dậu không ỷ lại vào người review</h3><p>Trải qua biết bao khổ cực ở làng, Chị Dậu luôn tâm niệm rằng người khác cũng có chồng có con và công việc của họ cũng cần phải được hoàn thành. Chị luôn hiểu rõ rằng đồng nghiệp đang giúp chứ không chịu trách nhiệm cho công việc của Chị, <strong>Chị Dậu không bao giờ ỷ lại vào sự review của họ</strong>.</p>
+<p>Với bất kì PR nào của mình, chị Dậu cố gắng tự review qua một hoặc hai lần, xem lại những dòng code do mình viết viết và tự đặt những câu hỏi Chị nghĩ rằng người khác sẽ hỏi. Vì vậy những PR của chị Dậu luôn được review nhanh chóng và hiệu suất làm việc của Chị rất cao.</p>
+<h3 id="Giu-cho-PR-cang-it-thay-doi-cang-tot"><a href="#Giu-cho-PR-cang-it-thay-doi-cang-tot" class="headerlink" title="Giữ cho PR càng ít thay đổi càng tốt"></a>Giữ cho PR càng ít thay đổi càng tốt</h3><p>Ngày mới vào nghề, Chị Dậu được nhờ review một pull request như vậy.</p>
+<p><img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/iqm7rzt000_bad-pr.png" alt="PR"></p>
+<p>Lúc ấy chị sợ lắm, đầu chị choáng váng, thân thể chị mê man, tứ chi chị kiệt sức, chị hoảng loạn mất phương hướng vì gần như không biết bắt đầu review từ đâu và làm thế nào để giúp được người lập trình viên ấy. Từ đó chị luôn thấm thía rằng phải <strong>Cố gắng giữ sự thay đổi càng ít càng tốt trong một pull request</strong>.</p>
+<blockquote>
+<p>Cơ mà lỡ như Pull Request đó nó phải to như thế thì sao?</p>
+</blockquote>
+<p>Là một dev chân chính, chị Dậu luôn nhắc nhở bản thân là câu hỏi nào cũng có thể được giải đáp bằng một mệnh đề <strong>if else</strong>.</p>
+<p><em>Nếu Pull request có thể chia nhỏ ra được:</em> Chị sẽ tiến hành chia nhỏ nó ra, link chúng lại với nhau và tìm cách giải thích sự tương quan của chúng.</p>
+<p><em>Còn nếu Pull request không thể chia nhỏ ra được:</em> Nếu như Chị Dậu cảm thấy rằng một PR to là không thể tránh được, Chị sẽ cố gắng mời Starbucks, mời Phúc Long, mời Sườn Cây nướng (đại khái là những món mà người viết đang thèm) và book một session với người review để cùng nhau lướt qua PR đó.</p>
+<h3 id="Chi-luon-giai-thich-ro-rang-nhung-gi-dang-lam"><a href="#Chi-luon-giai-thich-ro-rang-nhung-gi-dang-lam" class="headerlink" title="Chị luôn giải thích rõ ràng những gì đang làm"></a>Chị luôn giải thích rõ ràng những gì đang làm</h3><p>Từ trong tận sâu thẳm lòng mình, Chị Dậu nhận thức rằng thời gian là vàng là bạc là kim cương (rate của chị là hơn $50/.h), nên chị rất trân trọng thời gian của người khác và tránh lãng phí nó. Vì vậy, Chị Dậu luôn luôn <strong> viết message giải thích tại sao những commits đó của PR là cần thiết</strong> mà không để đồng nghiệp phải tự thân vận động để thắc mắc.</p>
+<p>Chị cũng hay tham khảo <a href="https://github.com/erlang/otp/wiki/Writing-good-commit-messages" target="_blank" rel="external">ở trang này</a> để nắm rõ thế nào là một commit message tốt.</p>
+<p>Một lần chị Dậu gặp một PR với tiêu đề <em>“Cho phép tất cả người dùng đăng nhập mà không cần password”</em>, chị chỉ biết ngẩng đầu lên than với ông trời: <em>“Giàng ơi, tôi biết đọc code, tôi hiểu nó đang làm gì, nhưng Giàng hãy chỉ lối cho tôi biết tại sao họ lại làm vậy hỡi Giàng?”</em></p>
+<p>Ôi, sao mà cái cuộc đời chị nó khổ thế không biết!!!</p>
+<h3 id="Giu-cay-commit-gon-gang-ngan-nap-nhu-tu-quan-ao-cua-chi"><a href="#Giu-cay-commit-gon-gang-ngan-nap-nhu-tu-quan-ao-cua-chi" class="headerlink" title="Giữ cây commit gọn gàng ngăn nắp như tủ quần áo của chị"></a>Giữ cây commit gọn gàng ngăn nắp như tủ quần áo của chị</h3><p>Những ngày tháng nghèo khó ở làng luôn khiến chị có thói quen giữ tủ quần áo ngăn nắp (cơ mà chẳng phải chị chỉ có đúng một bộ quần áo mặc trên người hay sao? … mà thôi lan man rồi), thói quen đó cũng được chị giữ khi chuyển sang làm lập trình viên.</p>
+<p>Khi những thay đổi Chị Dậu viết cho Pull Request là khá lớn (tất nhiên trước khi làm điều này Chị luôn xem lại phần <strong>Giữ cho PR càng ít thay đổi càng tốt</strong>), chị sẽ cố gắng group nó trong những commit nhỏ và có ý nghĩa.</p>
+<p>Chị cũng biết rằng Github cho phép xem <em>Changes by commits</em> nên việc chia ra những commit nhỏ gọn sẽ giúp ích rất nhiều cho người review hiểu những gì Chị đang làm và cho ra review tốt hơn.</p>
+<h3 id="Chi-Dau-luon-cam-on-nguoi-review-giup-minh"><a href="#Chi-Dau-luon-cam-on-nguoi-review-giup-minh" class="headerlink" title="Chị Dậu luôn cảm ơn người review giúp mình."></a>Chị Dậu luôn cảm ơn người review giúp mình.</h3><p>Chị biết rằng thì ở một mức độ nào đó, người review đang giúp Chị viết code tốt hơn và giảm bớt rủi ro lỗi hơn. Vì vậy <strong>Chị luôn luôn cám ơn đồng nghiệp sau khi review xong</strong>. Dù trong suốt quá trình review có lúc Chị hài lòng, có lúc không, có lúc chỉ muốn lộn luôn cái bàn, tuy nhiên một lời cám ơn người đã bỏ thời gian giúp mình sẽ làm cho họ vui hơn và cảm thấy công sức của họ được trân trọng.</p>
+<p>Chẳng rõ có phải vì thế mà code của chị luôn được đánh giá cao, sếp và đồng nghiệp thì yêu quý chị, lương chị thì tăng vùn vụt. :shurg:</p>
+<h2 id="Ket-luan"><a href="#Ket-luan" class="headerlink" title="Kết luận"></a>Kết luận</h2><p>Là một người cực kì ghét viết kết luận nên <strong>Mình sẽ để đây và ai muốn nói gì thì nói</strong>.</p>
+<p>P/S: Khi viết gần xong thì mình tìm ra <a href="http://swreflections.blogspot.com/2014/08/dont-waste-time-on-code-reviews.html" target="_blank" rel="external">bài này</a> (biết vậy khỏi viết), các bạn quan tâm có thể đọc qua nhé.</p>
+<h3 id="Viet-boi-Cam-Huynh"><a href="#Viet-boi-Cam-Huynh" class="headerlink" title="Viết bởi: Cẩm Huỳnh"></a>Viết bởi: <a href="https://hqc.io/posts/chi-dau-code-review" target="_blank" rel="external">Cẩm Huỳnh</a></h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Vi-sao-lai-la-Bat-Den&quot;&gt;&lt;a href=&quot;#Vi-sao-lai-la-Bat-Den&quot; class=&quot;headerlink&quot; title=&quot;Vì sao lại là Bật Đèn?&quot;&gt;&lt;/a&gt;Vì sao lại là Bật Đèn?
+    
+    </summary>
+    
+      <category term="Chuyện của Dev" scheme="https://devnhanguoita.com/categories/Chuyen-cua-Dev/"/>
+    
+    
+      <category term="code-review" scheme="https://devnhanguoita.com/tags/code-review/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Dev nhà mình và định luật Murphy</title>
+    <link href="https://devnhanguoita.com/posts/Dev-nha-minh-va-dinh-luat-Murphy/"/>
+    <id>https://devnhanguoita.com/posts/Dev-nha-minh-va-dinh-luat-Murphy/</id>
+    <published>2017-07-02T10:37:47.000Z</published>
+    <updated>2017-07-03T16:20:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Nếu có một điều xấu <code>có thể</code> xảy ra, nó <code>sẽ</code> xảy ra, và vào thời điểm tệ nhất có thể!</p>
+<blockquote>
+<p>Anything that can go wrong, will go wrong!</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="Dinh-luat-Murphy"><a href="#Dinh-luat-Murphy" class="headerlink" title="Định luật Murphy"></a>Định luật Murphy</h2><p>Có thể hiểu đơn giản như thế này: “Nếu có hai hay nhiều cách để làm một điều gì đó, và một trong những cách đó có thể dẫn đến thảm hoạ, thì người ta thường chọn cách đó!”</p>
+<blockquote>
+<p>If there’s more than one way to do a job and one of those ways will end in disaster, then somebody will do it that way.</p>
+</blockquote>
+<p>Đó là nội dung cơ bản của định luật Murphy. Định luật này được phát hiện và đặt tên theo Edward A. Murphy, một kĩ sư làm việc ở Không lực Mỹ vào năm 1949. Xem thêm ở <a href="http://www.murphys-laws.com/murphy/murphy-true.html" target="_blank" rel="external">đây</a> nhé.</p>
+<p>Định luật Murphy còn được gọi là “định luật bánh bơ”. Thử tưởng tượng nếu bạn lỡ tay làm rơi miếng bánh sandwich thơm ngon với một mặt được trét bơ, thì oops, đa số lần mặt có bơ đều bị rớt xuống đất trước. 🤣</p>
+<h2 id="Cuoc-song-nay-lam-nhieu-khe"><a href="#Cuoc-song-nay-lam-nhieu-khe" class="headerlink" title="Cuộc sống này lắm nhiêu khê!"></a>Cuộc sống này lắm nhiêu khê!</h2><p>Một số tình huống “số nhọ” trong cuộc sống tuân theo định luật Murphy</p>
+<ul>
+<li>Hết 6 ngày trong tuần bạn đều mang theo dù mặc dù trời tạnh ráo. Buổi sáng cuối tuần tươi đẹp, trời đang xanh trong bỗng đổ mưa to, còn bạn thì ở ngoài đường, diện bộ đồ đẹp nhất và… quên mang dù!<br><img src="/img/murphy-ex-1.jpg" alt="murphy_example"></li>
+<li>Bạn thường quên chìa khóa cửa vào ngày mà mọi người khác không có ở đó.</li>
+<li>Máy chiếu thường hỏng vào ngày diễn ra buổi thuyết trình.</li>
+<li>Bạn xếp hàng tính tiền trong siêu thị, thấy hàng bên cạnh tính nhanh hơn liền bỏ sang hàng đó. Ngờ đâu bạn vừa sang, máy tính tiền của hàng này bỗng bị hỏng và bạn tiếp tục… chờ.</li>
+<li>…</li>
+</ul>
+<h2 id="Lam-dev-kho-lam-ai-oi"><a href="#Lam-dev-kho-lam-ai-oi" class="headerlink" title="Làm dev khổ lắm ai ơi!"></a>Làm dev khổ lắm ai ơi!</h2><p>Vậy đối với một Developer thì sao?</p>
+<ul>
+<li>Đến ngày release, fix xong một bug nhỏ rồi mới phát hiện vừa gây ra thêm vài chục bug major khác 😂<br><img src="/img/murphy-dev-ex-1.gif" alt="murphy_bug"></li>
+<li>Khách hàng ít khi đổi requirement, mà mỗi khi đổi thì thường đổi lúc deadline đã đến sát đít.</li>
+<li>Những bug bự chỉ được phát hiện ra trên … Production!</li>
+<li>Code hoạt động trơn tru trên tất cả các trình duyệt, ngoại trừ IE (hồi xưa làm ở công ty cũ hay gặp như cơm bữa, giờ thì đã giết được nó rồi, ahaha 😎)<br><img src="/img/murphy-dev-ex-2.jpg" alt="kill IE please"></li>
+</ul>
+<p>Các dev nhà người ta khác có nỗi khổ nào thì để lại dưới comment nhé 😀</p>
+<h2 id="Tum-lai"><a href="#Tum-lai" class="headerlink" title="Túm lại"></a>Túm lại</h2><blockquote>
+<p>Hãy đón đầu những bất ngờ khó chịu!</p>
+</blockquote>
+<p>Định luật Murphy không phải mang ý nghĩa tiêu cực, mà nó là một nguyên tắc có giá trị và rất hữu ích.<br>Nó giúp ta dự đoán các tình huống xấu có thể xảy ra, từ đó chuẩn bị tâm lý để đối mặt với tình huống xấu nhất có thể. Mặt khác, ta cần tìm ra các biện pháp để khắc phục, giảm bớt hoặc ứng phó với các tình huống đã được tiên liệu.</p>
+<p>Cảm giác mất kiểm soát là yếu tố gây ra sự mất căng thẳng.<br>Take it easy!</p>
+<hr>
+<h3 id="Viet-boi-Hien-Vuong"><a href="#Viet-boi-Hien-Vuong" class="headerlink" title="Viết bởi: Hien Vuong"></a>Viết bởi: <a href="https://hienvd.com/2017/04/16/Developer-va-dinh-luat-Murphy/" target="_blank" rel="external">Hien Vuong</a></h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Nếu có một điều xấu &lt;code&gt;có thể&lt;/code&gt; xảy ra, nó &lt;code&gt;sẽ&lt;/code&gt; xảy ra, và vào thời điểm tệ nhất có thể!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Anything that can go wrong, will go wrong!&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Chuyện của Dev" scheme="https://devnhanguoita.com/categories/Chuyen-cua-Dev/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World!</title>
+    <link href="https://devnhanguoita.com/posts/hello-world/"/>
+    <id>https://devnhanguoita.com/posts/hello-world/</id>
+    <published>2017-06-30T17:00:00.000Z</published>
+    <updated>2017-07-02T03:25:59.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Chào cả thế giới!<br>Mình là dev con nhà người ta.</p>
+<p>Fanpage của mình đây nè <a href="https://www.facebook.com/devnhanguoita" target="_blank" rel="external">https://www.facebook.com/devnhanguoita</a>, vô like dùm cái đi nha</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Chào cả thế giới!&lt;br&gt;Mình là dev con nhà người ta.&lt;/p&gt;
+&lt;p&gt;Fanpage của mình đây nè &lt;a href=&quot;https://www.facebook.com/devnhanguoita&quot; target
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
