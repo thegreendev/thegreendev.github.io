@@ -36,7 +36,9 @@
 
     <!--Page Cover-->
     
-        <meta property="og:image" content="https://devnhanguoita.com/img/home-bg.png"/>
+      
+          <meta property="og:image" content="https://devnhanguoita.com/img/clean-code-p1-sharing-cover.png" />
+      
     
 
         <meta name="twitter:card" content="summary" />
@@ -187,6 +189,11 @@
                 </div>
                 <div class="col-lg-4 col-md-5 post-categories">
                     
+                        
+
+<a href="/categories/Code-sach-nha-nguoi-ta/">Code sạch nhà người ta</a>
+
+                    
                 </div>
             
 
@@ -194,7 +201,30 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <h2 id="To-be-done"><a href="#To-be-done" class="headerlink" title="To be done"></a>To be done</h2>
+                <p>Đây là bài đầu tiên trong series <a href="/categories/Code-sach-nha-nguoi-ta/">“Code sạch nhà người ta”</a> (hi vọng còn có những bài tiếp theo nữa 😬). Series này chủ yếu trình bày lại các vấn đề trong quyển sách <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882" target="_blank" rel="external">“Clean Code”</a> nổi tiếng của Uncle Bob theo một cách ngắn gọn và dễ hiểu hơn (hi vọng vậy, again).</p>
+<hr>
+<p>Sao lại là “đặt tên cho con”? Bài này sẽ nói về việc đặt tên trong code, cơ mà mình thiết nghĩ việc đặt tên cho biến nó cũng quan trọng như đặt tên cho con vậy đó, chỉ khác là, sẽ phải đặt nhiều tên hơn :D</p>
+<h2 id="Van-de-muon-thuo"><a href="#Van-de-muon-thuo" class="headerlink" title="Vấn đề muôn thuở"></a>Vấn đề muôn thuở</h2><p>Có ai đó đã từng nói:</p>
+<blockquote>
+<p>There are only two hard things in computer science: cache invalidation, naming things, and off-by-one errors.</p>
+</blockquote>
+<p>Thật ra câu trên là một joke. Đại ý ở đây là ‘đặt tên cho thứ gì đó’ là một việc rất khó. Có bao giờ bạn phải ngồi suy nghĩ rất lâu chỉ để đặt một cái tên hay, đúng cho một biến hay hàm mình dùng hay chưa?</p>
+<p>Những Developers Nhà Người Ta không bao giờ đặt tên cho con một cách tào lao. Chỉ cần nhớ và áp dụng một số nguyên tắc sau đây mà họ dùng nhé:</p>
+<h3 id="Dat-ten-co-nghia-va-de-phat-am"><a href="#Dat-ten-co-nghia-va-de-phat-am" class="headerlink" title="Đặt tên có nghĩa và dễ phát âm"></a>Đặt tên có nghĩa và dễ phát âm</h3><p>Hãy xem đoạn code js sau lấy ngày giờ hiện tại gán vào biến <code>yyymmdstr</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> yyyymmdstr = moment().format(<span class="string">'YYYY/MM/DD'</span>);</div></pre></td></tr></table></figure>
+<p>Khoan, <code>yyymmdstr</code> là cái tên quỷ quái gì vậy? “year-month-day-string” chăng?</p>
+<p>Chắc không ai đặt tên như vậy đâu, đa số sẽ đặt một cái tên có ý nghĩa như vầy:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">enconst currentDate = moment().format(<span class="string">'YYYY/MM/DD'</span>);</div></pre></td></tr></table></figure>
+<h3 id="Dat-ten-sao-cho-tim-kiem-duoc"><a href="#Dat-ten-sao-cho-tim-kiem-duoc" class="headerlink" title="Đặt tên sao cho tìm kiếm được"></a>Đặt tên sao cho tìm kiếm được</h3><p>Đã bao giờ bạn gặp một trường hợp như anh Tèo này chưa:<br>1 tháng trước, Tèo được giao làm một task xyz, Tèo làm rất nhanh, code chạy có vẻ đúng, Tèo hí ha hí hửng ngồi chơi Dota (vì chưa tới deadline mà). Rồi thì sản phẩm cũng được release. Tới hôm nay, đùng một cái có bug xảy ra ở phần Tèo làm đó, Tèo phải hotfix ngay trên production. Nhưng, oops, Tèo không tìm thấy cái đoạn code hôm trước mình viết ở đâu, vì search không ra kết quả.<br>Nguyên nhân là do Tèo đã không đặt một tên biến tốt, để có thể tìm thấy được.</p>
+<p>Đây là đoạn code trước đó của Tèo:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 86400000 là cái quái gì thế?</span></div><div class="line">setTimeout(blastOff, <span class="number">86400000</span>);</div></pre></td></tr></table></figure></p>
+<p>Sau một hồi vật vã, hotfix đã chuyển thành coolfix, Tèo em mới tìm thấy chỗ code đó, và anh ta quyết định viết lại nó như vầy:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Khai báo như một biến global.</span></div><div class="line"><span class="keyword">const</span> MILLISECONDS_IN_A_DAY = <span class="number">86400000</span>;</div><div class="line">setTimeout(blastOff, MILLISECONDS_IN_A_DAY);</div></pre></td></tr></table></figure>
+<p>Bởi vậy, đặt tên sao để có thể tìm kiếm được rất quan trọng. Nếu không thằng Dev sau nó sẽ không kiếm đoạn code đó nữa, mà kiếm địa chỉ nhà bạn đấy 😈</p>
+<h3 id="Dung-hai-nao-nhau"><a href="#Dung-hai-nao-nhau" class="headerlink" title="Đừng hại não nhau!"></a>Đừng hại não nhau!</h3><p>Cuộc sống vốn dĩ đã phức tạp lắm rồi, nên tốt nhất đừng gây thêm khó khăn cho người khác bằng cách đặt những tên biến kì cục, hại đời nhau nữa.</p>
+<h2 id="Ket-luan"><a href="#Ket-luan" class="headerlink" title="Kết luận"></a>Kết luận</h2><p>Đặt sao cũng được, đặt đúng giùm tui tui cảm ơn</p>
+<hr>
+<p>Code trong các ví dụ được lấy ở đây: <a href="https://github.com/hienvd/clean-code-javascript" target="_blank" rel="external">Clean Code Javascript</a></p>
+
 
                 
                     <!-- Go to www.addthis.com/dashboard to customize your tools -->
