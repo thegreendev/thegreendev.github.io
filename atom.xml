@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devnhanguoita.com/"/>
-  <updated>2017-07-06T16:18:05.000Z</updated>
+  <updated>2017-07-06T16:22:33.000Z</updated>
   <id>https://devnhanguoita.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Dat-ten-cho-con/"/>
     <id>https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Dat-ten-cho-con/</id>
     <published>2017-07-05T13:35:24.000Z</published>
-    <updated>2017-07-06T16:18:05.000Z</updated>
+    <updated>2017-07-06T16:22:33.000Z</updated>
     
     <content type="html"><![CDATA[<p>Đây là bài đầu tiên trong series <a href="/categories/Code-sach-nha-nguoi-ta/">“Code sạch nhà người ta”</a> (hi vọng còn có những bài tiếp theo nữa 😬). Series này chủ yếu trình bày lại các vấn đề trong quyển sách <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882" target="_blank" rel="external">“Clean Code”</a> nổi tiếng của Uncle Bob theo một cách ngắn gọn và dễ hiểu hơn (hi vọng vậy, again).</p>
 <hr>
@@ -49,7 +49,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;Đây là bài đầu tiên trong series &lt;a href=&quot;/categories/Code-sach-nha-nguoi-ta/&quot;&gt;“Code sạch nhà người ta”&lt;/a&gt; (hi vọng còn có những bài tiế
+      Sao lại là &quot;đặt tên cho con&quot;? Bài này sẽ nói về việc đặt tên trong code, cơ mà mình thiết nghĩ việc đặt tên cho biến nó cũng quan trọng như đặt tên cho con vậy đó, chỉ khác là, sẽ phải đặt nhiều tên hơn..
     
     </summary>
     
