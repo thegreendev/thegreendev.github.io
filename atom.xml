@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devnhanguoita.com/"/>
-  <updated>2017-07-06T16:22:33.000Z</updated>
+  <updated>2017-07-10T17:27:34.000Z</updated>
   <id>https://devnhanguoita.com/</id>
   
   <author>
@@ -14,6 +14,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Khi chuyện của dev không còn là của riêng dev</title>
+    <link href="https://devnhanguoita.com/posts/Khi-chuyen-cua-dev-khong-con-la-cua-rieng-dev/"/>
+    <id>https://devnhanguoita.com/posts/Khi-chuyen-cua-dev-khong-con-la-cua-rieng-dev/</id>
+    <published>2017-07-10T13:04:01.000Z</published>
+    <updated>2017-07-10T17:27:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Gần đây có một trang web cho phép người dùng anonymous đăng tải các review về các công ty công nghệ một cách thoải mái. Hiện tại trang này đang trong tình trạng bảo trì rồi, nên mình không đưa link ở đây (tuy nhiên chắc các dev nhà ta cũng biết là trang nào rồi 😅).</p>
+<p>Mọi chuyện cũng chẳng có gì nếu như không có những thông tin, theo các nguồn tin mình biết được, cũng như thông qua theo dõi các reviews trên trang đó những ngày qua, rằng có những reviews không biết thật giả, làm ảnh hưởng đến uy tín, danh dự của các tổ chức, cá nhân (cụ thể là HR)</p>
+<p>Chắc tác giả cũng không nghĩ đến chủ đề này lại hot như vậy. Mình đoán tình hình cũng đi xa hơn mục đích ban đầu của tác giả rồi.</p>
+<p>Nhân tiện blog này có mục <a href="/categories/Chuyen-cua-Dev/">“Chuyện của Dev”</a> vô tình trùng với từ khoá đang hot này, nên mình cũng xin đưa ra vài ý kiến cá nhân về việc ảnh hưởng của các review xấu đối với bạn và cộng đồng như thế nào.</p>
+<h3 id="Ton-hai-den-hinh-anh-cua-ban"><a href="#Ton-hai-den-hinh-anh-cua-ban" class="headerlink" title="Tổn hại đến hình ảnh của bạn"></a>Tổn hại đến hình ảnh của bạn</h3><p>Giả sử, xem trường hợp này nhé: Bạn apply một job “ngon”, CV rất tốt và hoàn toàn phù hợp với vị trí đó. Bạn HR ngồi xem CV của bạn, và thấy “ồ cái tên này quen quen, hình như hôm bữa thấy nó nói xấu công ty A nè, vô công ty rồi chắc nó cũng nói xấu công ty thôi. Thôi bai bai chú em, em rất tốt nhưng anh rất tiếc..”</p>
+<p>Bạn nghĩ trường hợp này không thể xảy ra ư? mình review anonymous rồi mà, làm sao người ta biết được? Thật ra trường hợp này mình cũng chả biết 😃. Tuy nhiên, trường hợp có người mạo danh bạn thì rất dễ xảy ra. Bạn có gây thù chuốc oán với ai, người ta mượn tên mình để đi nói xấu người khác. Mình đã thấy một trường hợp như vậy trên site đó rồi, tiếc là không chụp hình lại :)</p>
+<h3 id="Anh-huong-den-uy-tin-nguoi-khac"><a href="#Anh-huong-den-uy-tin-nguoi-khac" class="headerlink" title="Ảnh hưởng đến uy tín người khác"></a>Ảnh hưởng đến uy tín người khác</h3><p>Cái này mình cũng chả tin cho đến khi đọc được rất nhiều comments xấu, tiêu cực mang tính châm chọc, hướng tới một số đối tượng ở các công ty (mà chủ yếu là nữ, HR và các quản lí). Các thông tin mang tính nói xấu, thậm chí là xúc phạm đến đời sống cá nhân của người khác.</p>
+<p>Hãy google thông tin gần đây có 2 nữ sinh suýt tự tử vì bị tung tin đồn thất thiệt trên facebook, để thấy sức mạnh của truyền thông làm một việc không có thật ảnh hưởng đến người khác như thế nào. Hi vọng các bạn sẽ cân nhắc hơn ghi vừa gõ bàn phím phán xét người khác vừa cưởi hả hê nhé.</p>
+<h3 id="Hay-la-mot-Dev-tu-te"><a href="#Hay-la-mot-Dev-tu-te" class="headerlink" title="Hãy là một Dev tử tế"></a>Hãy là một Dev tử tế</h3><p>Nếu bạn bất mãn với công ty mình đang làm chỗ nào, không thích hay muốn công ty cải thiện điều gì, hoặc giả muốn tăng lương gấp đôi, gấp ba, hãy mạnh dạn nói rõ với công ty để giữa hai bên cùng nhau giải quyết.</p>
+<p>Nếu bạn muốn review công ty để những dev khác biết, hãy lên các trang chính thống, mình biết ở Việt Nam có trang <a href="https://itviec.com" target="_blank" rel="external">ITviec</a> cho phép bạn đăng những review về các công ty công nghệ, các bạn có thể lên đó để review.</p>
+<p>Hãy làm một dev tử tế!</p>
+<h3 id="Tom-lai"><a href="#Tom-lai" class="headerlink" title="Tóm lại"></a>Tóm lại</h3><p>Như tiêu đề bài viết, trong thời buổi công nghệ này, chuyện của bạn đã không còn là của riêng bạn nữa rồi, nhất là trong điều kiện truyền thông mạnh mẽ và dễ dàng như hiện nay. Vì vậy, bút sa gà xối mỡ gì đấy, hãy cẩn thận với lời ăn tiếng nói của mình.</p>
+<p>Welcome mọi ý kiến của các bạn 👇</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Gần đây có một trang web cho phép người dùng anonymous đăng tải các review về các công ty công nghệ một cách thoải mái. Hiện tại trang nà
+    
+    </summary>
+    
+      <category term="Chuyện của Dev" scheme="https://devnhanguoita.com/categories/Chuyen-cua-Dev/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Code sạch nhà người ta: Đặt tên cho con</title>
