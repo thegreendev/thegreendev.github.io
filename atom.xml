@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devnhanguoita.com/"/>
-  <updated>2017-07-10T17:27:34.000Z</updated>
+  <updated>2017-07-23T16:57:33.000Z</updated>
   <id>https://devnhanguoita.com/</id>
   
   <author>
@@ -14,6 +14,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Code sạch nhà người ta: Viết hàm sạch hơn</title>
+    <link href="https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Viet-ham-sach-hon/"/>
+    <id>https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Viet-ham-sach-hon/</id>
+    <published>2017-07-23T07:04:08.000Z</published>
+    <updated>2017-07-23T16:57:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Bài viết này nằm trong series <a href="/categories/Code-sach-nha-nguoi-ta/">“Code sạch nhà người ta”</a> - là tập hợp những kinh nghiệm rút ra được từ quyển Clean Code nổi tiếng của Uncle Bob.</p>
+<p>Trong bài này mình sẽ tóm tắt lại, trình bày một số thứ mà các Dev nhà người ta đã làm để viết, tổ chức các Hàm trong chương trình của họ tốt hơn, đẹp hơn và sạch hơn.</p>
+<p>Ok, đi vào vấn đề luôn nhé, … sẽ có một số điều cần nhớ sau đây:</p>
+<h3 id="Nho"><a href="#Nho" class="headerlink" title="# Nhỏ"></a># Nhỏ</h3><p>Nguyên tắc thứ nhất của hàm là nó nên nhỏ thôi. Nguyên tắc thứ hai là nó nên nhỏ hơn nữa 😃.<br>Một hàm nên có số lượng dòng code dưới 20 và dưới 150 kí tự trên mỗi dòng.<br>Nếu bạn có một hàm quá dài, hãy cố gắng làm nhỏ nó lại bằng cách tách ra các hàm con khác.</p>
+<h3 id="Do-One-Thing-Lam-mot-viec-thoi"><a href="#Do-One-Thing-Lam-mot-viec-thoi" class="headerlink" title="# Do One Thing: Làm một việc thôi"></a># Do One Thing: Làm một việc thôi</h3><p>Một hàm chỉ nên làm một việc, và chỉ làm tốt việc đó thôi. Rõ ràng rồi, đừng viết một hàm kiểu lẩu thập cẩm, một hàm chỉ nên giải quyết một vấn đề thôi.</p>
+<p>Xem xét ví dụ sau:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">emailClients</span>(<span class="params">clients</span>) </span>&#123;</div><div class="line">  clients.forEach(<span class="function">(<span class="params">client</span>) =&gt;</span> &#123;</div><div class="line">    <span class="keyword">const</span> clientRecord = database.lookup(client);</div><div class="line">    <span class="keyword">if</span> (clientRecord.isActive()) &#123;</div><div class="line">      email(client);</div><div class="line">    &#125;</div><div class="line">  &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>Hàm emailClients trên đang làm nhiều hơn 1 việc, nó phải tìm record của client đó, kiểm tra active hay không sau đó mới gửi email nếu record đó active. Chúng ta có thể tách ra như sau:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">emailClients</span>(<span class="params">clients</span>) </span>&#123;</div><div class="line">  clients</div><div class="line">    .filter(isClientActive)</div><div class="line">    .forEach(email);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">isClientActive</span>(<span class="params">client</span>) </span>&#123;</div><div class="line">  <span class="keyword">const</span> clientRecord = database.lookup(client);</div><div class="line">  <span class="keyword">return</span> clientRecord.isActive();</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="Doi-so-cua-ham"><a href="#Doi-so-cua-ham" class="headerlink" title="# Đối số của hàm"></a># Đối số của hàm</h3><p>Số lượng đối số lý tưởng cho một hàm là 0. Một hàm với 1 hoặc 2 đối số thì cũng có thể chấp nhận được, tuy nhiên lý tưởng nhất vẫn là một hàm không cần đối số.<br>Hàm với nhiều đối số sẽ làm cho code của bạn phức tạp hơn và khó để test được hơn, vì vậy hãy cố gắng gọi hàm với ít đối số nhất có thể.</p>
+<p>Khi cần truyền nhiều hơn 2 hoặc 3 đối số, hãy cân nhắc sử dụng các cấu trúc khác để thay thế.</p>
+<p>Ví dụ:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function">Circle <span class="title">makeCircle</span><span class="params">(Point center, <span class="keyword">double</span> radius)</span></span>;</div></pre></td></tr></table></figure></p>
+<p>thì tốt hơn là<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function">Circle <span class="title">makeCircle</span><span class="params">(<span class="keyword">double</span> x, <span class="keyword">double</span> y, <span class="keyword">double</span> radius)</span></span>;</div></pre></td></tr></table></figure></p>
+<h3 id="Tranh-anh-huong-phu"><a href="#Tranh-anh-huong-phu" class="headerlink" title="# Tránh ảnh hưởng phụ"></a># Tránh ảnh hưởng phụ</h3><p>Hàm chỉ làm gì đó hoặc trả lời thứ gì đó, nhưng không phải là cả hai nhé. Nếu một hàm làm nhiều hơn việc nhận giá trị đầu vào và trả về một hoặc nhiều giá trị, thì nghĩa là nó đang tạo ra những ảnh hưởng phụ (side effects). Những ảnh hưởng này có thể là ghi file, thay đổi biến toàn cục, ..</p>
+<p>Ví dụ:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> name = <span class="string">'Dev Nhà Mình'</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">splitIntoFirstAndLastName</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  name = name.split(<span class="string">' '</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line">splitIntoFirstAndLastName();</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(name); <span class="comment">// ['Dev', 'Nhà', 'Mình'];</span></div></pre></td></tr></table></figure></p>
+<p>Trong gọi hàm trên, biến toàn cục <code>name</code> đã bị thay đổi.<br>Ta sẽ refactor đoạn code đó như sau:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">splitIntoFirstAndLastName</span>(<span class="params">name</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> name.split(<span class="string">' '</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">const</span> name = <span class="string">'Dev Nhà Mình'</span>;</div><div class="line"><span class="keyword">const</span> newName = splitIntoFirstAndLastName(name);</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(name); <span class="comment">// 'Dev Nhà Mình';</span></div><div class="line"><span class="built_in">console</span>.log(newName); <span class="comment">// ['Dev', 'Nhà', 'Mình'];</span></div></pre></td></tr></table></figure>
+<h3 id="Ten-ham-co-nghia"><a href="#Ten-ham-co-nghia" class="headerlink" title="# Tên hàm có nghĩa"></a># Tên hàm có nghĩa</h3><p>Đặt những tên có nghĩa. Xem thêm bài viết <a href="/posts/Code-sach-nha-nguoi-ta-Dat-ten-cho-con/">Đặt tên cho biến</a><br>Tên hàm nên là các Động từ hoặc cụm động từ, ví dụ như <code>handleXYZ</code>, <code>getXYZ</code> hay <code>calculateABC</code></p>
+<h3 id="DRY-kho-thoang"><a href="#DRY-kho-thoang" class="headerlink" title="# DRY: khô thoáng"></a># DRY: khô thoáng</h3><p>Điều cuối cùng, hãy giữ cho codebase của bạn khô thoáng mỗi ngày với.. DRY. DRY là viết tắt của cụm từ <code>Don&#39;t Repeat Yourself</code> - Đừng lặp lại những gì giống nhau.<br>Có một câu nói của bởi ai đó như thế này:</p>
+<blockquote>
+<p>Code bị duplicate có thể là nguyên nhân của mọi sự rắc rối trong phần mềm.</p>
+</blockquote>
+<p>Nếu muốn viết nhiều đoạn code khác nhau ở nhiều chỗ khác nhau thực hiện một công việc giống nhau, hãy viết một hàm chung sau đó gọi ở những chỗ chúng ta cần dùng thay vì copy paste ra nhiều chỗ khác nhau.</p>
+<p>Hãy tưởng tượng bạn có 18 hàm tính số tiền khi mua hàng ở 18 nơi có thể trên một website thương mại. Bạn có nhu cầu sửa công thức tính tiền, bạn phải sửa cả 18 chỗ có hàm đó 😕, và sẽ ra sao nếu bạn làm thiếu? 😱..<br>Bởi vậy, ráng giữ khô thoáng nhé</p>
+<p>Happy coding!</p>
+]]></content>
+    
+    <summary type="html">
+    
+      Dev con nhà người ta tổ chức các hàm, phương thức của mình như thế nào để code luôn sạch sẽ, khô thoáng? Khám phá ngay một số tip sau đây.
+    
+    </summary>
+    
+      <category term="Code sạch nhà người ta" scheme="https://devnhanguoita.com/categories/Code-sach-nha-nguoi-ta/"/>
+    
+    
+      <category term="clean-code" scheme="https://devnhanguoita.com/tags/clean-code/"/>
+    
+  </entry>
   
   <entry>
     <title>Khi chuyện của dev không còn là của riêng dev</title>

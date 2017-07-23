@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="default">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="Dev con nhà người ta tổ chức các hàm, phương thức của mình như thế nào để code luôn sạch sẽ, khô thoáng? Khám phá ngay một số tip sau đây.">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Dev Nhà Người Ta">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Code sạch nhà người ta: Viết hàm sạch hơn"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Dev con nhà người ta tổ chức các hàm, phương thức của mình như thế nào để code luôn sạch sẽ, khô thoáng? Khám phá ngay một số tip sau đây." />
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="&lt; Dev Nhà Người Ta /&gt;"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+      
+          <meta property="og:image" content="https://devnhanguoita.com/img/clean-code-p2-sharing-cover.png" />
+      
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Code sạch nhà người ta: Viết hàm sạch hơn - &lt; Dev Nhà Người Ta /&gt;</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+    <script>
+      if (location.hostname != 'localhost') {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-101934390-1', 'auto');
+        ga('send', 'pageview');
+      }
+    </script>
+
+
+
+    <!-- favicon -->
+    
+
+</head>
+
+<body>
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Dev nhà người ta</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/home-bg.png')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Code sạch nhà người ta: Viết hàm sạch hơn</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                            Posted by Dev Nhà Người Ta on
+                        
+                        
+                            2017-07-23
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/clean-code/">#clean-code</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                        
+
+<a href="/categories/Code-sach-nha-nguoi-ta/">Code sạch nhà người ta</a>
+
+                    
+                </div>
+            
+
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>Bài viết này nằm trong series <a href="/categories/Code-sach-nha-nguoi-ta/">“Code sạch nhà người ta”</a> - là tập hợp những kinh nghiệm rút ra được từ quyển Clean Code nổi tiếng của Uncle Bob.</p>
+<p>Trong bài này mình sẽ tóm tắt lại, trình bày một số thứ mà các Dev nhà người ta đã làm để viết, tổ chức các Hàm trong chương trình của họ tốt hơn, đẹp hơn và sạch hơn.</p>
+<p>Ok, đi vào vấn đề luôn nhé, … sẽ có một số điều cần nhớ sau đây:</p>
+<h3 id="Nho"><a href="#Nho" class="headerlink" title="# Nhỏ"></a># Nhỏ</h3><p>Nguyên tắc thứ nhất của hàm là nó nên nhỏ thôi. Nguyên tắc thứ hai là nó nên nhỏ hơn nữa 😃.<br>Một hàm nên có số lượng dòng code dưới 20 và dưới 150 kí tự trên mỗi dòng.<br>Nếu bạn có một hàm quá dài, hãy cố gắng làm nhỏ nó lại bằng cách tách ra các hàm con khác.</p>
+<h3 id="Do-One-Thing-Lam-mot-viec-thoi"><a href="#Do-One-Thing-Lam-mot-viec-thoi" class="headerlink" title="# Do One Thing: Làm một việc thôi"></a># Do One Thing: Làm một việc thôi</h3><p>Một hàm chỉ nên làm một việc, và chỉ làm tốt việc đó thôi. Rõ ràng rồi, đừng viết một hàm kiểu lẩu thập cẩm, một hàm chỉ nên giải quyết một vấn đề thôi.</p>
+<p>Xem xét ví dụ sau:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">emailClients</span>(<span class="params">clients</span>) </span>&#123;</div><div class="line">  clients.forEach(<span class="function">(<span class="params">client</span>) =&gt;</span> &#123;</div><div class="line">    <span class="keyword">const</span> clientRecord = database.lookup(client);</div><div class="line">    <span class="keyword">if</span> (clientRecord.isActive()) &#123;</div><div class="line">      email(client);</div><div class="line">    &#125;</div><div class="line">  &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>Hàm emailClients trên đang làm nhiều hơn 1 việc, nó phải tìm record của client đó, kiểm tra active hay không sau đó mới gửi email nếu record đó active. Chúng ta có thể tách ra như sau:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">emailClients</span>(<span class="params">clients</span>) </span>&#123;</div><div class="line">  clients</div><div class="line">    .filter(isClientActive)</div><div class="line">    .forEach(email);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">isClientActive</span>(<span class="params">client</span>) </span>&#123;</div><div class="line">  <span class="keyword">const</span> clientRecord = database.lookup(client);</div><div class="line">  <span class="keyword">return</span> clientRecord.isActive();</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="Doi-so-cua-ham"><a href="#Doi-so-cua-ham" class="headerlink" title="# Đối số của hàm"></a># Đối số của hàm</h3><p>Số lượng đối số lý tưởng cho một hàm là 0. Một hàm với 1 hoặc 2 đối số thì cũng có thể chấp nhận được, tuy nhiên lý tưởng nhất vẫn là một hàm không cần đối số.<br>Hàm với nhiều đối số sẽ làm cho code của bạn phức tạp hơn và khó để test được hơn, vì vậy hãy cố gắng gọi hàm với ít đối số nhất có thể.</p>
+<p>Khi cần truyền nhiều hơn 2 hoặc 3 đối số, hãy cân nhắc sử dụng các cấu trúc khác để thay thế.</p>
+<p>Ví dụ:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function">Circle <span class="title">makeCircle</span><span class="params">(Point center, <span class="keyword">double</span> radius)</span></span>;</div></pre></td></tr></table></figure></p>
+<p>thì tốt hơn là<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function">Circle <span class="title">makeCircle</span><span class="params">(<span class="keyword">double</span> x, <span class="keyword">double</span> y, <span class="keyword">double</span> radius)</span></span>;</div></pre></td></tr></table></figure></p>
+<h3 id="Tranh-anh-huong-phu"><a href="#Tranh-anh-huong-phu" class="headerlink" title="# Tránh ảnh hưởng phụ"></a># Tránh ảnh hưởng phụ</h3><p>Hàm chỉ làm gì đó hoặc trả lời thứ gì đó, nhưng không phải là cả hai nhé. Nếu một hàm làm nhiều hơn việc nhận giá trị đầu vào và trả về một hoặc nhiều giá trị, thì nghĩa là nó đang tạo ra những ảnh hưởng phụ (side effects). Những ảnh hưởng này có thể là ghi file, thay đổi biến toàn cục, ..</p>
+<p>Ví dụ:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> name = <span class="string">'Dev Nhà Mình'</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">splitIntoFirstAndLastName</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  name = name.split(<span class="string">' '</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line">splitIntoFirstAndLastName();</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(name); <span class="comment">// ['Dev', 'Nhà', 'Mình'];</span></div></pre></td></tr></table></figure></p>
+<p>Trong gọi hàm trên, biến toàn cục <code>name</code> đã bị thay đổi.<br>Ta sẽ refactor đoạn code đó như sau:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">splitIntoFirstAndLastName</span>(<span class="params">name</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> name.split(<span class="string">' '</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">const</span> name = <span class="string">'Dev Nhà Mình'</span>;</div><div class="line"><span class="keyword">const</span> newName = splitIntoFirstAndLastName(name);</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(name); <span class="comment">// 'Dev Nhà Mình';</span></div><div class="line"><span class="built_in">console</span>.log(newName); <span class="comment">// ['Dev', 'Nhà', 'Mình'];</span></div></pre></td></tr></table></figure>
+<h3 id="Ten-ham-co-nghia"><a href="#Ten-ham-co-nghia" class="headerlink" title="# Tên hàm có nghĩa"></a># Tên hàm có nghĩa</h3><p>Đặt những tên có nghĩa. Xem thêm bài viết <a href="/posts/Code-sach-nha-nguoi-ta-Dat-ten-cho-con/">Đặt tên cho biến</a><br>Tên hàm nên là các Động từ hoặc cụm động từ, ví dụ như <code>handleXYZ</code>, <code>getXYZ</code> hay <code>calculateABC</code></p>
+<h3 id="DRY-kho-thoang"><a href="#DRY-kho-thoang" class="headerlink" title="# DRY: khô thoáng"></a># DRY: khô thoáng</h3><p>Điều cuối cùng, hãy giữ cho codebase của bạn khô thoáng mỗi ngày với.. DRY. DRY là viết tắt của cụm từ <code>Don&#39;t Repeat Yourself</code> - Đừng lặp lại những gì giống nhau.<br>Có một câu nói của bởi ai đó như thế này:</p>
+<blockquote>
+<p>Code bị duplicate có thể là nguyên nhân của mọi sự rắc rối trong phần mềm.</p>
+</blockquote>
+<p>Nếu muốn viết nhiều đoạn code khác nhau ở nhiều chỗ khác nhau thực hiện một công việc giống nhau, hãy viết một hàm chung sau đó gọi ở những chỗ chúng ta cần dùng thay vì copy paste ra nhiều chỗ khác nhau.</p>
+<p>Hãy tưởng tượng bạn có 18 hàm tính số tiền khi mua hàng ở 18 nơi có thể trên một website thương mại. Bạn có nhu cầu sửa công thức tính tiền, bạn phải sửa cả 18 chỗ có hàm đó 😕, và sẽ ra sao nếu bạn làm thiếu? 😱..<br>Bởi vậy, ráng giữ khô thoáng nhé</p>
+<p>Happy coding!</p>
+
+
+                
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57a5ea715ccd8023"></script>
+
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <div class="addthis_sharing_toolbox"></div>
+                
+            </div>
+
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-subscribe">
+              <a class="btn subscribe" href='http://eepurl.com/cUXEDf'>Theo dõi blog này</a>
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+    <hr />
+    <h3>Comments:</h3>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=334617520303501";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div class="fb-comments" data-href="https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Viet-ham-sach-hon/index.html" data-num-posts="5" data-width="100%" data-colorscheme="light"></div>
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                        <li>
+                            <a href="https://twitter.com/devnhanguoita" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.facebook.com/devnhanguoita" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2017 Dev Nhà Người Ta<br></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+</body>
+</html>
