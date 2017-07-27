@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devnhanguoita.com/"/>
-  <updated>2017-07-23T16:57:33.000Z</updated>
+  <updated>2017-07-27T15:31:11.000Z</updated>
   <id>https://devnhanguoita.com/</id>
   
   <author>
@@ -16,11 +16,45 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Code sạch nhà người ta: Viết hàm sạch hơn</title>
+    <title>Học CSS thông qua game</title>
+    <link href="https://devnhanguoita.com/posts/Hoc-CSS-thong-qua-game/"/>
+    <id>https://devnhanguoita.com/posts/Hoc-CSS-thong-qua-game/</id>
+    <published>2017-07-27T14:44:11.000Z</published>
+    <updated>2017-07-27T15:31:11.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Lười viết mở bài quá, thôi vào thân bài luôn nha. Dưới đây là danh sách một số nguồn mình tổng hợp được để học CSS một cách thú vị hơn:</p>
+<h2 id="1-Grid-Garden"><a href="#1-Grid-Garden" class="headerlink" title="1. Grid Garden"></a>1. Grid Garden</h2><p>Link: <a href="http://cssgridgarden.com/" target="_blank" rel="external">http://cssgridgarden.com/</a><br>Trang web này giới thiệu cho các bạn về Grid Layout. Hoàn thành 28 level của game, bạn sẽ học được nhiều thứ về Grid layout đấy.</p>
+<p><img src="/img/css-grid-garden.png" alt="Grid Garden"></p>
+<h2 id="2-Flexbox-Froggy"><a href="#2-Flexbox-Froggy" class="headerlink" title="2. Flexbox Froggy"></a>2. Flexbox Froggy</h2><p>Link: <a href="http://flexboxfroggy.com/" target="_blank" rel="external">http://flexboxfroggy.com/</a><br>Tương tự và của cùng tác giả của Grid Garden, Flexbox Froggy là một “tựa game” để bạn học về flexbox.<br>Xuyên suốt 24 level của game, bạn sẽ học được nhiều thuộc tính của flexbox như: <code>justify-content</code>, <code>flex-flow</code>, <code>align-items</code>, ..</p>
+<p><img src="/img/css-flexbox.png" alt="Flexbox Froggy"></p>
+<h2 id="3-CSS-Dinner"><a href="#3-CSS-Dinner" class="headerlink" title="3. CSS Dinner"></a>3. CSS Dinner</h2><p>Link: <a href="http://flukeout.github.io/" target="_blank" rel="external">http://flukeout.github.io/</a><br>Game này hơi khó nhằn hơn nhé, bạn sẽ được học về <code>selector</code> trong CSS như class, id, child,… với các level có độ khó tăng dần.</p>
+<p><img src="/img/css-dinner.png" alt="CSS Dinner"></p>
+<h2 id="4-Flexbox-Defense"><a href="#4-Flexbox-Defense" class="headerlink" title="4. Flexbox Defense"></a>4. Flexbox Defense</h2><p>Link: <a href="http://www.flexboxdefense.com/" target="_blank" rel="external">http://www.flexboxdefense.com/</a><br>Thêm một game nữa về <code>flexbox</code></p>
+<p><img src="/img/css-flexbox-defense.png" alt="Flexbox Defense"></p>
+<p>Chúc các bạn chơi vui vẻ :p</p>
+]]></content>
+    
+    <summary type="html">
+    
+      Học CSS hấp dẫn, thú vị hơn thông qua games. Tại sao không? Hãy thử các game sau xem bạn sẽ học được gì nhé.
+    
+    </summary>
+    
+      <category term="Tài liệu" scheme="https://devnhanguoita.com/categories/Tai-lieu/"/>
+    
+    
+      <category term="css" scheme="https://devnhanguoita.com/tags/css/"/>
+    
+      <category term="game" scheme="https://devnhanguoita.com/tags/game/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Code sạch nhà người ta: Viết hàm sạch</title>
     <link href="https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Viet-ham-sach-hon/"/>
     <id>https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Viet-ham-sach-hon/</id>
     <published>2017-07-23T07:04:08.000Z</published>
-    <updated>2017-07-23T16:57:33.000Z</updated>
+    <updated>2017-07-27T14:42:36.000Z</updated>
     
     <content type="html"><![CDATA[<p>Bài viết này nằm trong series <a href="/categories/Code-sach-nha-nguoi-ta/">“Code sạch nhà người ta”</a> - là tập hợp những kinh nghiệm rút ra được từ quyển Clean Code nổi tiếng của Uncle Bob.</p>
 <p>Trong bài này mình sẽ tóm tắt lại, trình bày một số thứ mà các Dev nhà người ta đã làm để viết, tổ chức các Hàm trong chương trình của họ tốt hơn, đẹp hơn và sạch hơn.</p>
