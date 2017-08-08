@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devnhanguoita.com/"/>
-  <updated>2017-07-27T15:31:11.000Z</updated>
+  <updated>2017-08-08T17:02:25.000Z</updated>
   <id>https://devnhanguoita.com/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Xử lí chuỗi cơ bản trong Python</title>
+    <link href="https://devnhanguoita.com/posts/Xu-li-chuoi-co-ban-trong-Python/"/>
+    <id>https://devnhanguoita.com/posts/Xu-li-chuoi-co-ban-trong-Python/</id>
+    <published>2017-08-08T15:37:57.000Z</published>
+    <updated>2017-08-08T17:02:25.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Những ghi chép của một Dev đang tập tành học Python về các hàm xử lí chuỗi.</p>
+<p>Giả sử mình có chuỗi sau nhé:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sample = <span class="string">"Dev nha nguoi ta"</span></div></pre></td></tr></table></figure></p>
+<h3 id="1-Viet-thuong-lowercase"><a href="#1-Viet-thuong-lowercase" class="headerlink" title="1. Viết thường - lowercase"></a>1. Viết thường - lowercase</h3><p>Dùng hàm <code>lower()</code> để chuyển một chuỗi bất kì thành chuỗi viết thường<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample.lower()</div><div class="line"><span class="string">'dev nha nguoi ta'</span></div></pre></td></tr></table></figure></p>
+<h3 id="2-Viet-hoa-UPPERCASE"><a href="#2-Viet-hoa-UPPERCASE" class="headerlink" title="2. Viết hoa - UPPERCASE"></a>2. Viết hoa - UPPERCASE</h3><p>Ngược lại, cũng có hàm <code>upper()</code> để viết hoa chuỗi đó<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample.upper()</div><div class="line"><span class="string">'DEV NHA NGUOI TA'</span></div></pre></td></tr></table></figure></p>
+<h3 id="3-Viet-hoa-ki-tu-dau-tien-Capitalize"><a href="#3-Viet-hoa-ki-tu-dau-tien-Capitalize" class="headerlink" title="3. Viết hoa kí tự đầu tiên - Capitalize"></a>3. Viết hoa kí tự đầu tiên - Capitalize</h3><p><code>capitalize()</code> để viết hoa kí tự đầu tiên</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">"hello world"</span>.capitalize()</div><div class="line"><span class="string">'Hello world'</span></div></pre></td></tr></table></figure>
+<h3 id="4-Chuoi-con"><a href="#4-Chuoi-con" class="headerlink" title="4. Chuỗi con"></a>4. Chuỗi con</h3><p>Lấy chuỗi con ở các vị trí của chuỗi, theo một trong những cách sau:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample[<span class="number">4</span>:<span class="number">13</span>]</div><div class="line"><span class="string">'nha nguoi'</span></div><div class="line"></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample[<span class="number">4</span>:]</div><div class="line"><span class="string">'nha nguoi ta'</span></div><div class="line"></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample[:<span class="number">7</span>]</div><div class="line"><span class="string">'Dev nha'</span></div></pre></td></tr></table></figure></p>
+<h3 id="5-Tim-chuoi-con"><a href="#5-Tim-chuoi-con" class="headerlink" title="5. Tìm chuỗi con"></a>5. Tìm chuỗi con</h3><p>Sử dụng hàm <code>find()</code> để tìm xem một chuỗi con có thuộc một chuỗi hay không. Hàm này trả về kết quả là vị trí bắt đầu của chuỗi con đó, và trả về -1 nếu không tìm thấy.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample.find(<span class="string">'nguoi'</span>)</div><div class="line"><span class="number">8</span></div></pre></td></tr></table></figure></p>
+<p>Hàm <code>rfind()</code> tìm như <code>find()</code> nhưng theo chiều từ bên phải qua<br>Hãy so sánh:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample.rfind(<span class="string">'a'</span>)</div><div class="line"><span class="number">15</span></div><div class="line"></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample.find(<span class="string">'a'</span>)</div><div class="line"><span class="number">6</span></div></pre></td></tr></table></figure></p>
+<h3 id="6-Thay-the"><a href="#6-Thay-the" class="headerlink" title="6. Thay thế"></a>6. Thay thế</h3><p>Đơn giản với hàm <code>replace()</code><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample.replace(<span class="string">"nguoi ta"</span>, <span class="string">"minh"</span>)</div><div class="line">  <span class="string">'Dev nha minh'</span></div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      Ghi chép về những phương thức xử lí chuỗi cơ bản trong Python như tìm chuỗi con, thay thế, lowercase..
+    
+    </summary>
+    
+      <category term="Tài liệu" scheme="https://devnhanguoita.com/categories/Tai-lieu/"/>
+    
+    
+      <category term="python" scheme="https://devnhanguoita.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>Học CSS thông qua game</title>
