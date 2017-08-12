@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devnhanguoita.com/"/>
-  <updated>2017-08-08T17:02:25.000Z</updated>
+  <updated>2017-08-12T07:58:26.000Z</updated>
   <id>https://devnhanguoita.com/</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Validate string trong python</title>
+    <link href="https://devnhanguoita.com/posts/Validate-string-trong-python/"/>
+    <id>https://devnhanguoita.com/posts/Validate-string-trong-python/</id>
+    <published>2017-08-12T04:21:16.000Z</published>
+    <updated>2017-08-12T07:58:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Đôi lúc bạn muốn kiểm tra xem một chuỗi có phải là toàn là số hay không, hoặc một chuỗi toàn chữ viết hoa hay không. Hãy tham khảo một số hàm xây dựng sẵn trong python giúp validate chuỗi sau đây:</p>
+<h3 id="1-isalnum"><a href="#1-isalnum" class="headerlink" title="1. isalnum()"></a>1. isalnum()</h3><p>Hàm này kiểm tra các kí tự trong chuỗi có phải là chữ hoặc số hay không (alphanumeric) (a-z, A-Z và 0-9)</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt; <span class="keyword">print</span> <span class="string">'abc123'</span>.isalnum()</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'xyz123#'</span>.isalnum()</div><div class="line"><span class="keyword">False</span></div></pre></td></tr></table></figure>
+<h3 id="2-isalpha"><a href="#2-isalpha" class="headerlink" title="2. isalpha()"></a>2. isalpha()</h3><p>Kiểm tra các kí tự trong chuỗi có phải là chữ hay không (a-z và A-Z)<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'abcD'</span>.isalpha()</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'abcd1'</span>.isalpha()</div><div class="line"><span class="keyword">False</span></div></pre></td></tr></table></figure></p>
+<h3 id="3-isdigit"><a href="#3-isdigit" class="headerlink" title="3. isdigit()"></a>3. isdigit()</h3><p>Kiếm tra các kí tự trong chuỗi chỉ là số hay không (0-9)<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'1234'</span>.isdigit()</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'123@abc'</span>.isdigit()</div><div class="line"><span class="keyword">False</span></div></pre></td></tr></table></figure></p>
+<h3 id="4-islower"><a href="#4-islower" class="headerlink" title="4. islower()"></a>4. islower()</h3><p>Kiểm tra xem có phải tất cả các kí tự trong một chuỗi là viết thường hay không<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'abcd123#'</span>.islower()</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'Abcd123#'</span>.islower()</div><div class="line"><span class="keyword">False</span></div></pre></td></tr></table></figure></p>
+<h3 id="5-isupper"><a href="#5-isupper" class="headerlink" title="5. isupper()"></a>5. isupper()</h3><p>Ngược lại với <code>islower()</code>, phương thức này kiểm tra xem có phải tất cả các kí tự trong một chuỗi là viết hoa hay không.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'ABCD123#'</span>.isupper()</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'Abcd123#'</span>.isupper()</div><div class="line"><span class="keyword">False</span></div></pre></td></tr></table></figure></p>
+<p>Happy coding!</p>
+]]></content>
+    
+    <summary type="html">
+    
+      Kiểm tra nhanh một chuỗi trong python có phải là chuỗi toàn số không hoặc là chuỗi toàn chữ không? Python có sẵn những phương thức này cho bạn...
+    
+    </summary>
+    
+      <category term="Tài liệu" scheme="https://devnhanguoita.com/categories/Tai-lieu/"/>
+    
+    
+      <category term="python" scheme="https://devnhanguoita.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>Xử lí chuỗi cơ bản trong Python</title>
