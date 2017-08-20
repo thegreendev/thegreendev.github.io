@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devnhanguoita.com/"/>
-  <updated>2017-08-12T07:58:26.000Z</updated>
+  <updated>2017-08-20T03:32:22.000Z</updated>
   <id>https://devnhanguoita.com/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Trở thành dev con nhà người ta</title>
+    <link href="https://devnhanguoita.com/posts/Tro-thanh-dev-con-nha-nguoi-ta/"/>
+    <id>https://devnhanguoita.com/posts/Tro-thanh-dev-con-nha-nguoi-ta/</id>
+    <published>2017-08-19T03:22:01.000Z</published>
+    <updated>2017-08-20T03:32:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Một số điều rút ra được từ các ‘dev con nhà người ta’ để trở thành developer tốt hơn..</p>
+<h3 id="Doc-code-cua-nguoi-khac"><a href="#Doc-code-cua-nguoi-khac" class="headerlink" title="Đọc code của người khác"></a>Đọc code của người khác</h3><p>Đọc code của người khác và học hỏi từ họ. Các nơi lưu trữ code mã nguồn mở như Github là một nơi cực kì tốt cho bạn học code từ những developer khác. Bạn sẽ học được rất nhiều thứ đấy, từ cách tổ chức, cấu trúc thư mục đến cách làm việc của một công nghệ ABC nào đó, ..</p>
+<h3 id="Nho-ai-do-doc-code-cua-minh"><a href="#Nho-ai-do-doc-code-cua-minh" class="headerlink" title="Nhờ ai đó đọc code của mình"></a>Nhờ ai đó đọc code của mình</h3><p>Thường xuyên nhờ người khác review code cho mình, cũng như thường xuyên pair programming với đồng nghiệp sẽ giúp bạn khá nhiều đấy.<br>Những người có nhiều kinh nghiệm hơn sẽ giúp bạn thấy các vấn đề mà nếu chỉ làm một mình thì bạn sẽ khó mà nhận ra được. Có thể là cách để refactor đoạn code nào đó đẹp hơn, dễ hiểu hơn, hay đơn giản là đặt tên biến có ý nghĩa hơn.</p>
+<p><img src="/img/10_ways_pair.jpg" alt="Pair Programming"></p>
+<h3 id="Fix-bug-truoc-khi-viet-code-moi"><a href="#Fix-bug-truoc-khi-viet-code-moi" class="headerlink" title="Fix bug trước khi viết code mới"></a>Fix bug trước khi viết code mới</h3><p>Bạn phát hiện ra một bug nhưng nghĩ “thôi, mình fix nó sau vậy, làm những tính năng này trước đã”. Hoặc bạn thấy một test case bị lỗi, nhưng không tìm hiểu tại sao nó lại lỗi, bạn comment test case đó đi.<br>Hãy tạo thói quen fix bug, giải quyết các issue tồn đọng sớm cho mình trước khi bắt tay vào code những tính năng mới, đừng để “technical debt” nhé, trả không nổi đâu :D</p>
+<p><img src="/img/10_ways_bugs_comming.png" alt="Bugs comming"></p>
+<h3 id="Hoc-cong-nghe-moi"><a href="#Hoc-cong-nghe-moi" class="headerlink" title="Học công nghệ mới"></a>Học công nghệ mới</h3><p>Luôn luôn học, cập nhật các công nghệ mới khi nào có thể. Một công nghệ X đang thịnh hành bây giờ nhưng chắc gì 5 - 10 năm sau vẫn còn được ưa chuộng. Hãy thử học cái gì đó mới xem sao, nếu bạn đang làm iOS, sao không thử làm web bằng Ruby on Rails chẳng hạn :)</p>
+<h4 id="con-cap-nhat"><a href="#con-cap-nhat" class="headerlink" title="còn cập nhật"></a>còn cập nhật</h4>]]></content>
+    
+    <summary type="html">
+    
+      Một số điều rút ra được từ các dev con nhà người ta về việc làm thế nào để trở thành developer tốt hơn..
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Validate string trong python</title>
