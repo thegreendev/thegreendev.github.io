@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devnhanguoita.com/"/>
-  <updated>2017-09-13T14:46:46.000Z</updated>
+  <updated>2017-09-20T14:16:05.000Z</updated>
   <id>https://devnhanguoita.com/</id>
   
   <author>
@@ -14,6 +14,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Chỉnh userAgent trong Chrome</title>
+    <link href="https://devnhanguoita.com/posts/Chinh-userAgent-trong-Chrome/"/>
+    <id>https://devnhanguoita.com/posts/Chinh-userAgent-trong-Chrome/</id>
+    <published>2017-09-20T13:43:15.000Z</published>
+    <updated>2017-09-20T14:16:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="userAgent"><a href="#userAgent" class="headerlink" title="userAgent"></a>userAgent</h3><p>Thỉnh thoảng bạn muốn giả lập để kiểm tra trang web của mình có traffic đến từ những browser khác nhau như thế nào. Chrome và các trình duyệt khác đều cung cấp một nơi để bạn thay đổi các user agent này, vì vậy bạn có thể đổi user agent mà không cần phải cài thêm extension nào cả.</p>
+<p>Dưới đây là cách thay đổi trên Chrome nhé.</p>
+<h3 id="Thay-doi-userAgent"><a href="#Thay-doi-userAgent" class="headerlink" title="Thay đổi userAgent"></a>Thay đổi userAgent</h3><ol>
+<li><p>Mở Devtool lên</p>
+<p><code>More Tools &gt; Developer Tools</code>, hoặc phím tắt <code>Ctrl+Shift+I</code>(windows, linux), <code>Cmd+Option+I</code>(mac)</p>
+<p><img src="/img/chinh-useragent-1.png" alt=""></p>
+</li>
+<li><p>Chọn menu Network Conditions</p>
+<p><img src="/img/chinh-useragent-2.png" alt=""></p>
+</li>
+<li><p>Trong tab Network Condition, bỏ chọn ‘Select Automatically’ đi và chọn một userAgent nào đó trong danh sách hoặc tự điền vào nhé</p>
+<p><img src="/img/chinh-useragent-3.png" alt=""></p>
+</li>
+</ol>
+<p><em>Lưu ý những thay đổi này chỉ là tạm thời và áp dụng được khi Devtool vẫn còn bật và trên tab đó thôi nhé</em></p>
+]]></content>
+    
+    <summary type="html">
+    
+      Thay đổi user agent để test trang web của bạn một cách nhanh chóng trên Chrome Devtool không cần cài thêm extension
+    
+    </summary>
+    
+    
+      <category term="chrome" scheme="https://devnhanguoita.com/tags/chrome/"/>
+    
+  </entry>
   
   <entry>
     <title>Programmer Day</title>
