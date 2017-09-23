@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://devnhanguoita.com/"/>
-  <updated>2017-09-20T14:16:05.000Z</updated>
+  <updated>2017-09-23T11:44:15.000Z</updated>
   <id>https://devnhanguoita.com/</id>
   
   <author>
@@ -14,6 +14,82 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Những nguyên lí cơ bản của chủ nghĩa code sạch</title>
+    <link href="https://devnhanguoita.com/posts/Nhung-nguyen-li-co-ban-cua-chu-nghia-clean-code/"/>
+    <id>https://devnhanguoita.com/posts/Nhung-nguyen-li-co-ban-cua-chu-nghia-clean-code/</id>
+    <published>2017-09-23T03:17:05.000Z</published>
+    <updated>2017-09-23T11:44:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/img/clean-code-principle-1.jpeg" alt="clean-code"></p>
+<h2 id="Code-sach-la"><a href="#Code-sach-la" class="headerlink" title="Code sạch là"></a>Code sạch là</h2><p>Code không bốc mùi (smell code 💩). Nhìn lại hình ở trên tí nhé ☝️, chất lượng của code được đo bằng đơn vị số lần wtf mỗi phút. Bạn viết code sao mà những người review, dev khác không phải thốt lên wtf như vậy là sạch 😀</p>
+<h2 id="Tai-sao-phai-code-sach"><a href="#Tai-sao-phai-code-sach" class="headerlink" title="Tại sao phải code sạch?"></a>Tại sao phải code sạch?</h2><p>Ờ, đó là trách nhiệm của bạn mà 😎.<br>Codebase cũng giống như database của một website vậy, tỉ lệ đọc:ghi thường là 10:1. Mọi người ai cũng phải đọc được code rồi mới viết code phải không nào? Vì vậy, hãy viết code sao cho người khác (hoặc chính bạn trong tương lai) có thể đọc hiểu được.</p>
+<p>Mục đích của code sạch:</p>
+<ul>
+<li>Thay đổi code nhanh hơn</li>
+<li>Đọc hiểu code dễ hơn</li>
+</ul>
+<p>Bạn không muốn mất 2h để đọc hiểu một module đáng lẽ chỉ cần đọc trong vài phút chứ?</p>
+<h2 id="Nhung-nguyen-li-co-ban-cua-chu-nghia-code-sach"><a href="#Nhung-nguyen-li-co-ban-cua-chu-nghia-code-sach" class="headerlink" title="Những nguyên lí cơ bản của chủ nghĩa code sạch"></a>Những nguyên lí cơ bản của chủ nghĩa code sạch</h2><h3 id="1-Dat-ten"><a href="#1-Dat-ten" class="headerlink" title="1. Đặt tên"></a>1. Đặt tên</h3><p>Mọi thứ đều có tên. Chúng ta đặt tên cho mọi thứ. Tên để nhận dạng một đối tượng.<br>Okie, vậy tôi nên đặt tên trong code của tôi như thế nào? Có vài điều nên chú ý sau:</p>
+<ul>
+<li>Tên phải mô tả được đối tượng (biến đó lưu cái gì, hàm đó làm gì, class đó là gì,..)</li>
+<li>Tên có thể tìm kiếm được.</li>
+<li>Tránh sử dụng từ viết tắt, từ dễ gây nhầm lẫn.</li>
+</ul>
+<p>Xem thêm bài về việc đặt tên <a href="/posts/Code-sach-nha-nguoi-ta-Dat-ten-cho-con/">ở đây</a> nhé.</p>
+<h3 id="2-Comment"><a href="#2-Comment" class="headerlink" title="2. Comment"></a>2. Comment</h3><blockquote>
+<p>Code never lies. Comments sometimes do.</p>
+</blockquote>
+<p>Vâng, code thì không bao giờ nói dối bạn, còn comment thì có đấy. Bạn đã bao giờ gặp trường hợp code một đường, comment cho đoạn code đó một nẻo chưa?</p>
+<p>Bạn không cần phải có comment. Yeap, tên là tài liệu đầy đủ và tốt nhất rồi :), không cần thêm comment, chú thích làm gì nếu bạn không thật sự cần.</p>
+<p>Trong trường hợp vẫn cần comment, hãy:</p>
+<ul>
+<li>Cố gắng giải thích bằng code của mình, đừng comment 😀</li>
+<li>Viết comment ngắn gọn, đừng dư thừa.</li>
+<li>Đừng comment code không dùng, hãy xoá nó luôn đi.</li>
+</ul>
+<h3 id="3-Format"><a href="#3-Format" class="headerlink" title="3. Format"></a>3. Format</h3><p>Ông bà ta nói “tốt gỗ hơn tốt nước sơn”, cơ mà không phải lúc nào cũng lo chọn gỗ tốt mà không quan tâm đến nước sơn. Ai chả thích cái đẹp cơ chứ 😛. Code cũng vậy, dù bạn có viết tốt như thế nào, mà trình bày code xấu tệ thì.. cũng chưa sạch được.</p>
+<p>Gần đây mình có đọc bài viết về tại sao DHH - cha đẻ của Rails từ chối 80% ứng viên (bài viết <a href="https://medium.com/@christophelimpalair/why-the-founder-of-rails-automatically-rejects-80-of-software-engineer-applicants-4e2a4d255f58" target="_blank" rel="external">tại đây</a>). Có một ý trong đó nói về “Your code looks terrible!”. Nếu là người tuyển dụng, mình cũng sẽ không tuyển những người trình bày code xấu như hình dưới đây :)</p>
+<p><img src="/img/clean-code-principle-format.png" alt="terrible format"></p>
+<p>Để trình bày tốt hơn, có một số lưu ý như:</p>
+<ul>
+<li>Sử dụng một loại indentation thống nhất, tab cũng được, space cũng được, miễn sao thống nhất với nhau.</li>
+<li>Để ý đến số kí tự mỗi dòng, số dòng của mỗi class.</li>
+</ul>
+<p>Về cấu trúc của source code:</p>
+<ul>
+<li>Phân biệt các phần theo chiều dọc.</li>
+<li>Các hàm phụ thuộc hoặc tương tự nên được đặt gần nhau.</li>
+<li>Đặt các hàm của bạn theo thứ tự trên xuống.</li>
+</ul>
+<h3 id="4-Test-test-test-va-test"><a href="#4-Test-test-test-va-test" class="headerlink" title="4. Test, test, test và test"></a>4. Test, test, test và test</h3><p>Test để đảm bảo code của bạn chạy đúng như mong đợi.</p>
+<p>Áp dụng luật FIRST cho test:</p>
+<ul>
+<li>Fast: test phải chạy nhanh</li>
+<li>Independent: test phải không phụ thuộc lẫn nhau</li>
+<li>Repeatable: chạy được ở những môi trường khác nhau</li>
+<li>Self-Validating: test phải có một output, là pass hay failed.</li>
+<li>Timely: test code phải được viết trước khi viết production code.</li>
+</ul>
+<h3 id="5-Kho-thoang"><a href="#5-Kho-thoang" class="headerlink" title="5. Khô thoáng"></a>5. Khô thoáng</h3><p>Code của bạn phải luôn luôn khô thoáng, à nhầm, DRY nhé.<br>DRY là viết tắt của từ <code>Dont&#39;t Repeat Yourself</code>, tức là đừng lặp lại chính mình.</p>
+<p>Đừng viết lại những đoạn code giống nhau ở những chỗ khác nhau. Điều này sẽ làm cho việc maintain khó khăn hơn, bạn sẽ bị thiếu khi sửa code ở chỗ này nhưng lại quên ở chỗ khác, và tất nhiên đây là một nguyên nhân gây ra bug 🐛.</p>
+<p>Mỗi khi thấy mình phải viết những đoạn code giống nhau ở những nơi khác nhau, đó là lúc bạn nên tìm cách refactor để luôn DRY nhé.</p>
+<hr>
+]]></content>
+    
+    <summary type="html">
+    
+      to be updated
+    
+    </summary>
+    
+      <category term="Code sạch nhà người ta" scheme="https://devnhanguoita.com/categories/Code-sach-nha-nguoi-ta/"/>
+    
+    
+      <category term="clean-code" scheme="https://devnhanguoita.com/tags/clean-code/"/>
+    
+  </entry>
   
   <entry>
     <title>Chỉnh userAgent trong Chrome</title>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="default">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="to be updated">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Dev Nhà Người Ta">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Những nguyên lí cơ bản của chủ nghĩa code sạch"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="to be updated" />
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="&lt; Dev Nhà Người Ta /&gt;"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+      
+          <meta property="og:image" content="https://devnhanguoita.com/img/clean-code-principle-1.jpeg" />
+      
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Những nguyên lí cơ bản của chủ nghĩa code sạch - &lt; Dev Nhà Người Ta /&gt;</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+    <script>
+      if (location.hostname != 'localhost') {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-101934390-1', 'auto');
+        ga('send', 'pageview');
+      }
+    </script>
+
+
+
+    <!-- favicon -->
+    
+
+</head>
+
+<body>
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Dev nhà người ta</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/home-bg.png')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Những nguyên lí cơ bản của chủ nghĩa code sạch</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                            Posted by Dev Nhà Người Ta on
+                        
+                        
+                            2017-09-23
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/clean-code/">#clean-code</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                        
+
+<a href="/categories/Code-sach-nha-nguoi-ta/">Code sạch nhà người ta</a>
+
+                    
+                </div>
+            
+
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p><img src="/img/clean-code-principle-1.jpeg" alt="clean-code"></p>
+<h2 id="Code-sach-la"><a href="#Code-sach-la" class="headerlink" title="Code sạch là"></a>Code sạch là</h2><p>Code không bốc mùi (smell code 💩). Nhìn lại hình ở trên tí nhé ☝️, chất lượng của code được đo bằng đơn vị số lần wtf mỗi phút. Bạn viết code sao mà những người review, dev khác không phải thốt lên wtf như vậy là sạch 😀</p>
+<h2 id="Tai-sao-phai-code-sach"><a href="#Tai-sao-phai-code-sach" class="headerlink" title="Tại sao phải code sạch?"></a>Tại sao phải code sạch?</h2><p>Ờ, đó là trách nhiệm của bạn mà 😎.<br>Codebase cũng giống như database của một website vậy, tỉ lệ đọc:ghi thường là 10:1. Mọi người ai cũng phải đọc được code rồi mới viết code phải không nào? Vì vậy, hãy viết code sao cho người khác (hoặc chính bạn trong tương lai) có thể đọc hiểu được.</p>
+<p>Mục đích của code sạch:</p>
+<ul>
+<li>Thay đổi code nhanh hơn</li>
+<li>Đọc hiểu code dễ hơn</li>
+</ul>
+<p>Bạn không muốn mất 2h để đọc hiểu một module đáng lẽ chỉ cần đọc trong vài phút chứ?</p>
+<h2 id="Nhung-nguyen-li-co-ban-cua-chu-nghia-code-sach"><a href="#Nhung-nguyen-li-co-ban-cua-chu-nghia-code-sach" class="headerlink" title="Những nguyên lí cơ bản của chủ nghĩa code sạch"></a>Những nguyên lí cơ bản của chủ nghĩa code sạch</h2><h3 id="1-Dat-ten"><a href="#1-Dat-ten" class="headerlink" title="1. Đặt tên"></a>1. Đặt tên</h3><p>Mọi thứ đều có tên. Chúng ta đặt tên cho mọi thứ. Tên để nhận dạng một đối tượng.<br>Okie, vậy tôi nên đặt tên trong code của tôi như thế nào? Có vài điều nên chú ý sau:</p>
+<ul>
+<li>Tên phải mô tả được đối tượng (biến đó lưu cái gì, hàm đó làm gì, class đó là gì,..)</li>
+<li>Tên có thể tìm kiếm được.</li>
+<li>Tránh sử dụng từ viết tắt, từ dễ gây nhầm lẫn.</li>
+</ul>
+<p>Xem thêm bài về việc đặt tên <a href="/posts/Code-sach-nha-nguoi-ta-Dat-ten-cho-con/">ở đây</a> nhé.</p>
+<h3 id="2-Comment"><a href="#2-Comment" class="headerlink" title="2. Comment"></a>2. Comment</h3><blockquote>
+<p>Code never lies. Comments sometimes do.</p>
+</blockquote>
+<p>Vâng, code thì không bao giờ nói dối bạn, còn comment thì có đấy. Bạn đã bao giờ gặp trường hợp code một đường, comment cho đoạn code đó một nẻo chưa?</p>
+<p>Bạn không cần phải có comment. Yeap, tên là tài liệu đầy đủ và tốt nhất rồi :), không cần thêm comment, chú thích làm gì nếu bạn không thật sự cần.</p>
+<p>Trong trường hợp vẫn cần comment, hãy:</p>
+<ul>
+<li>Cố gắng giải thích bằng code của mình, đừng comment 😀</li>
+<li>Viết comment ngắn gọn, đừng dư thừa.</li>
+<li>Đừng comment code không dùng, hãy xoá nó luôn đi.</li>
+</ul>
+<h3 id="3-Format"><a href="#3-Format" class="headerlink" title="3. Format"></a>3. Format</h3><p>Ông bà ta nói “tốt gỗ hơn tốt nước sơn”, cơ mà không phải lúc nào cũng lo chọn gỗ tốt mà không quan tâm đến nước sơn. Ai chả thích cái đẹp cơ chứ 😛. Code cũng vậy, dù bạn có viết tốt như thế nào, mà trình bày code xấu tệ thì.. cũng chưa sạch được.</p>
+<p>Gần đây mình có đọc bài viết về tại sao DHH - cha đẻ của Rails từ chối 80% ứng viên (bài viết <a href="https://medium.com/@christophelimpalair/why-the-founder-of-rails-automatically-rejects-80-of-software-engineer-applicants-4e2a4d255f58" target="_blank" rel="external">tại đây</a>). Có một ý trong đó nói về “Your code looks terrible!”. Nếu là người tuyển dụng, mình cũng sẽ không tuyển những người trình bày code xấu như hình dưới đây :)</p>
+<p><img src="/img/clean-code-principle-format.png" alt="terrible format"></p>
+<p>Để trình bày tốt hơn, có một số lưu ý như:</p>
+<ul>
+<li>Sử dụng một loại indentation thống nhất, tab cũng được, space cũng được, miễn sao thống nhất với nhau.</li>
+<li>Để ý đến số kí tự mỗi dòng, số dòng của mỗi class.</li>
+</ul>
+<p>Về cấu trúc của source code:</p>
+<ul>
+<li>Phân biệt các phần theo chiều dọc.</li>
+<li>Các hàm phụ thuộc hoặc tương tự nên được đặt gần nhau.</li>
+<li>Đặt các hàm của bạn theo thứ tự trên xuống.</li>
+</ul>
+<h3 id="4-Test-test-test-va-test"><a href="#4-Test-test-test-va-test" class="headerlink" title="4. Test, test, test và test"></a>4. Test, test, test và test</h3><p>Test để đảm bảo code của bạn chạy đúng như mong đợi.</p>
+<p>Áp dụng luật FIRST cho test:</p>
+<ul>
+<li>Fast: test phải chạy nhanh</li>
+<li>Independent: test phải không phụ thuộc lẫn nhau</li>
+<li>Repeatable: chạy được ở những môi trường khác nhau</li>
+<li>Self-Validating: test phải có một output, là pass hay failed.</li>
+<li>Timely: test code phải được viết trước khi viết production code.</li>
+</ul>
+<h3 id="5-Kho-thoang"><a href="#5-Kho-thoang" class="headerlink" title="5. Khô thoáng"></a>5. Khô thoáng</h3><p>Code của bạn phải luôn luôn khô thoáng, à nhầm, DRY nhé.<br>DRY là viết tắt của từ <code>Dont&#39;t Repeat Yourself</code>, tức là đừng lặp lại chính mình.</p>
+<p>Đừng viết lại những đoạn code giống nhau ở những chỗ khác nhau. Điều này sẽ làm cho việc maintain khó khăn hơn, bạn sẽ bị thiếu khi sửa code ở chỗ này nhưng lại quên ở chỗ khác, và tất nhiên đây là một nguyên nhân gây ra bug 🐛.</p>
+<p>Mỗi khi thấy mình phải viết những đoạn code giống nhau ở những nơi khác nhau, đó là lúc bạn nên tìm cách refactor để luôn DRY nhé.</p>
+<hr>
+
+
+                
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57a5ea715ccd8023"></script>
+
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <div class="addthis_sharing_toolbox"></div>
+                
+            </div>
+
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-subscribe">
+              <a class="btn subscribe" href='http://eepurl.com/cUXEDf'>Theo dõi blog này</a>
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+    <hr />
+    <h3>Comments:</h3>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=334617520303501";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div class="fb-comments" data-href="https://devnhanguoita.com/posts/Nhung-nguyen-li-co-ban-cua-chu-nghia-clean-code/index.html" data-num-posts="5" data-width="100%" data-colorscheme="light"></div>
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                        <li>
+                            <a href="https://twitter.com/devnhanguoita" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.facebook.com/devnhanguoita" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2017 Dev Nhà Người Ta<br></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+</body>
+</html>
