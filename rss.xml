@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>&lt; Dev Nhà Người Ta /&gt;</title>
-  <subtitle>Chia sẻ chuyện các developers con nhà người ta</subtitle>
-  <link href="/atom.xml" rel="self"/>
-  
-  <link href="https://devnhanguoita.com/"/>
-  <updated>2017-09-23T11:49:52.000Z</updated>
-  <id>https://devnhanguoita.com/</id>
-  
-  <author>
-    <name>Dev Nhà Người Ta</name>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>&lt; Dev Nhà Người Ta /&gt;</title>
+    <link>https://devnhanguoita.com/</link>
+    <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Những nguyên lí cơ bản của chủ nghĩa code sạch</title>
-    <link href="https://devnhanguoita.com/posts/Nhung-nguyen-li-co-ban-cua-chu-nghia-clean-code/"/>
-    <id>https://devnhanguoita.com/posts/Nhung-nguyen-li-co-ban-cua-chu-nghia-clean-code/</id>
-    <published>2017-09-23T03:17:05.000Z</published>
-    <updated>2017-09-23T11:49:52.000Z</updated>
+    <description>Giúp dev nhà mình trở thành dev con nhà người ta</description>
+    <pubDate>Sat, 23 Sep 2017 11:49:52 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
     
-    <content type="html"><![CDATA[<p><img src="/img/clean-code-principle-1.jpeg" alt="clean-code"></p>
+    <item>
+      <title>Những nguyên lí cơ bản của chủ nghĩa code sạch</title>
+      <link>https://devnhanguoita.com/posts/Nhung-nguyen-li-co-ban-cua-chu-nghia-clean-code/</link>
+      <guid>https://devnhanguoita.com/posts/Nhung-nguyen-li-co-ban-cua-chu-nghia-clean-code/</guid>
+      <pubDate>Sat, 23 Sep 2017 03:17:05 GMT</pubDate>
+      <description>
+      
+        Bạn có biết đơn vị để đo code của bạn có sạch hay không là số lần WTF trên mỗi phút khi có người review code?
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p><img src="/img/clean-code-principle-1.jpeg" alt="clean-code"></p>
 <h2 id="Code-sach-la"><a href="#Code-sach-la" class="headerlink" title="Code sạch là"></a>Code sạch là</h2><p>Code không bốc mùi (smell code 💩). Nhìn lại hình ở trên tí nhé ☝️, chất lượng của code được đo bằng đơn vị số lần wtf mỗi phút. Bạn viết code sao mà những người review, dev khác không phải thốt lên wtf như vậy là sạch 😀</p>
 <h2 id="Tai-sao-phai-code-sach"><a href="#Tai-sao-phai-code-sach" class="headerlink" title="Tại sao phải code sạch?"></a>Tại sao phải code sạch?</h2><p>Ờ, đó là trách nhiệm của bạn mà 😎.<br>Codebase cũng giống như database của một website vậy, tỉ lệ đọc:ghi thường là 10:1. Mọi người ai cũng phải đọc được code rồi mới viết code phải không nào? Vì vậy, hãy viết code sao cho người khác (hoặc chính bạn trong tương lai) có thể đọc hiểu được.</p>
 <p>Mục đích của code sạch:</p>
@@ -76,29 +76,23 @@
 <p>Đừng viết lại những đoạn code giống nhau ở những chỗ khác nhau. Điều này sẽ làm cho việc maintain khó khăn hơn, bạn sẽ bị thiếu khi sửa code ở chỗ này nhưng lại quên ở chỗ khác, và tất nhiên đây là một nguyên nhân gây ra bug 🐛.</p>
 <p>Mỗi khi thấy mình phải viết những đoạn code giống nhau ở những nơi khác nhau, đó là lúc bạn nên tìm cách refactor để luôn DRY nhé.</p>
 <hr>
-]]></content>
+]]></content:encoded>
+      
+      <comments>https://devnhanguoita.com/posts/Nhung-nguyen-li-co-ban-cua-chu-nghia-clean-code/#disqus_thread</comments>
+    </item>
     
-    <summary type="html">
-    
-      Bạn có biết đơn vị để đo code của bạn có sạch hay không là số lần WTF trên mỗi phút khi có người review code?
-    
-    </summary>
-    
-      <category term="Code sạch nhà người ta" scheme="https://devnhanguoita.com/categories/Code-sach-nha-nguoi-ta/"/>
-    
-    
-      <category term="clean-code" scheme="https://devnhanguoita.com/tags/clean-code/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Chỉnh userAgent trong Chrome</title>
-    <link href="https://devnhanguoita.com/posts/Chinh-userAgent-trong-Chrome/"/>
-    <id>https://devnhanguoita.com/posts/Chinh-userAgent-trong-Chrome/</id>
-    <published>2017-09-20T13:43:15.000Z</published>
-    <updated>2017-09-20T14:16:05.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="userAgent"><a href="#userAgent" class="headerlink" title="userAgent"></a>userAgent</h3><p>Thỉnh thoảng bạn muốn giả lập để kiểm tra trang web của mình có traffic đến từ những browser khác nhau như thế nào. Chrome và các trình duyệt khác đều cung cấp một nơi để bạn thay đổi các user agent này, vì vậy bạn có thể đổi user agent mà không cần phải cài thêm extension nào cả.</p>
+    <item>
+      <title>Chỉnh userAgent trong Chrome</title>
+      <link>https://devnhanguoita.com/posts/Chinh-userAgent-trong-Chrome/</link>
+      <guid>https://devnhanguoita.com/posts/Chinh-userAgent-trong-Chrome/</guid>
+      <pubDate>Wed, 20 Sep 2017 13:43:15 GMT</pubDate>
+      <description>
+      
+        Thay đổi user agent để test trang web của bạn một cách nhanh chóng trên Chrome Devtool không cần cài thêm extension
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h3 id="userAgent"><a href="#userAgent" class="headerlink" title="userAgent"></a>userAgent</h3><p>Thỉnh thoảng bạn muốn giả lập để kiểm tra trang web của mình có traffic đến từ những browser khác nhau như thế nào. Chrome và các trình duyệt khác đều cung cấp một nơi để bạn thay đổi các user agent này, vì vậy bạn có thể đổi user agent mà không cần phải cài thêm extension nào cả.</p>
 <p>Dưới đây là cách thay đổi trên Chrome nhé.</p>
 <h3 id="Thay-doi-userAgent"><a href="#Thay-doi-userAgent" class="headerlink" title="Thay đổi userAgent"></a>Thay đổi userAgent</h3><ol>
 <li><p>Mở Devtool lên</p>
@@ -113,76 +107,68 @@
 </li>
 </ol>
 <p><em>Lưu ý những thay đổi này chỉ là tạm thời và áp dụng được khi Devtool vẫn còn bật và trên tab đó thôi nhé</em></p>
-]]></content>
+]]></content:encoded>
+      
+      <comments>https://devnhanguoita.com/posts/Chinh-userAgent-trong-Chrome/#disqus_thread</comments>
+    </item>
     
-    <summary type="html">
-    
-      Thay đổi user agent để test trang web của bạn một cách nhanh chóng trên Chrome Devtool không cần cài thêm extension
-    
-    </summary>
-    
-    
-      <category term="chrome" scheme="https://devnhanguoita.com/tags/chrome/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Programmer Day</title>
-    <link href="https://devnhanguoita.com/posts/Programmer-Day/"/>
-    <id>https://devnhanguoita.com/posts/Programmer-Day/</id>
-    <published>2017-09-13T10:01:09.000Z</published>
-    <updated>2017-09-13T14:46:46.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="Hom-nay-la-Programmer-Day"><a href="#Hom-nay-la-Programmer-Day" class="headerlink" title="Hôm nay là Programmer Day."></a>Hôm nay là Programmer Day.</h3><p>Ngày dành cho những người làm công việc lập trình như chúng ta! Ngày để vinh danh những đóng góp tích cực giúp thay đổi cuộc sống mỗi ngày của các lập trình viên :)</p>
+    <item>
+      <title>Programmer Day</title>
+      <link>https://devnhanguoita.com/posts/Programmer-Day/</link>
+      <guid>https://devnhanguoita.com/posts/Programmer-Day/</guid>
+      <pubDate>Wed, 13 Sep 2017 10:01:09 GMT</pubDate>
+      <description>
+      
+        Ngày dành riêng cho lập trình viên, để tôn vinh những cống hiến của họ. Đó là ngày nào vậy?
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h3 id="Hom-nay-la-Programmer-Day"><a href="#Hom-nay-la-Programmer-Day" class="headerlink" title="Hôm nay là Programmer Day."></a>Hôm nay là Programmer Day.</h3><p>Ngày dành cho những người làm công việc lập trình như chúng ta! Ngày để vinh danh những đóng góp tích cực giúp thay đổi cuộc sống mỗi ngày của các lập trình viên :)</p>
 <p>Ngày này bắt nguồn ở Nga, và cũng đã được công nhận chính thức ở nhiều nước khác trên thế giới.</p>
 <p>Ngày lập trình viên là ngày thứ <code>256</code> của năm, và năm nay nó rơi vào ngày 13 tháng 9.</p>
 <h3 id="Tai-sao-la-ngay-thu-256"><a href="#Tai-sao-la-ngay-thu-256" class="headerlink" title="Tại sao là ngày thứ 256?"></a>Tại sao là ngày thứ 256?</h3><p>256 là giá trị số tối đa mà 1 byte (8 bits) thể hiện được trong hệ nhị phân. Hơn nữa 256 cũng là giá trị số lớn nhất của mũ 2 mà nhỏ hơn 365.<br>Một con số rất quen thuộc với các lập trình viên.</p>
 <p>Hãy cùng nhau thay đổi tương lai của mọi người !<br>Happy Programmer Day!</p>
 <p>Xem thêm ở đây: <a href="https://en.m.wikipedia.org/wiki/Day_of_the_Programmer" target="_blank" rel="external">https://en.m.wikipedia.org/wiki/Day_of_the_Programmer</a></p>
-]]></content>
+]]></content:encoded>
+      
+      <comments>https://devnhanguoita.com/posts/Programmer-Day/#disqus_thread</comments>
+    </item>
     
-    <summary type="html">
-    
-      Ngày dành riêng cho lập trình viên, để tôn vinh những cống hiến của họ. Đó là ngày nào vậy?
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Trở thành dev con nhà người ta</title>
-    <link href="https://devnhanguoita.com/posts/Tro-thanh-dev-con-nha-nguoi-ta/"/>
-    <id>https://devnhanguoita.com/posts/Tro-thanh-dev-con-nha-nguoi-ta/</id>
-    <published>2017-08-19T03:22:01.000Z</published>
-    <updated>2017-08-20T03:32:22.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Một số điều rút ra được từ các ‘dev con nhà người ta’ để trở thành developer tốt hơn..</p>
+    <item>
+      <title>Trở thành dev con nhà người ta</title>
+      <link>https://devnhanguoita.com/posts/Tro-thanh-dev-con-nha-nguoi-ta/</link>
+      <guid>https://devnhanguoita.com/posts/Tro-thanh-dev-con-nha-nguoi-ta/</guid>
+      <pubDate>Sat, 19 Aug 2017 03:22:01 GMT</pubDate>
+      <description>
+      
+        Một số điều rút ra được từ các dev con nhà người ta về việc làm thế nào để trở thành developer tốt hơn..
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Một số điều rút ra được từ các ‘dev con nhà người ta’ để trở thành developer tốt hơn..</p>
 <h3 id="Doc-code-cua-nguoi-khac"><a href="#Doc-code-cua-nguoi-khac" class="headerlink" title="Đọc code của người khác"></a>Đọc code của người khác</h3><p>Đọc code của người khác và học hỏi từ họ. Các nơi lưu trữ code mã nguồn mở như Github là một nơi cực kì tốt cho bạn học code từ những developer khác. Bạn sẽ học được rất nhiều thứ đấy, từ cách tổ chức, cấu trúc thư mục đến cách làm việc của một công nghệ ABC nào đó, ..</p>
 <h3 id="Nho-ai-do-doc-code-cua-minh"><a href="#Nho-ai-do-doc-code-cua-minh" class="headerlink" title="Nhờ ai đó đọc code của mình"></a>Nhờ ai đó đọc code của mình</h3><p>Thường xuyên nhờ người khác review code cho mình, cũng như thường xuyên pair programming với đồng nghiệp sẽ giúp bạn khá nhiều đấy.<br>Những người có nhiều kinh nghiệm hơn sẽ giúp bạn thấy các vấn đề mà nếu chỉ làm một mình thì bạn sẽ khó mà nhận ra được. Có thể là cách để refactor đoạn code nào đó đẹp hơn, dễ hiểu hơn, hay đơn giản là đặt tên biến có ý nghĩa hơn.</p>
 <p><img src="/img/10_ways_pair.jpg" alt="Pair Programming"></p>
 <h3 id="Fix-bug-truoc-khi-viet-code-moi"><a href="#Fix-bug-truoc-khi-viet-code-moi" class="headerlink" title="Fix bug trước khi viết code mới"></a>Fix bug trước khi viết code mới</h3><p>Bạn phát hiện ra một bug nhưng nghĩ “thôi, mình fix nó sau vậy, làm những tính năng này trước đã”. Hoặc bạn thấy một test case bị lỗi, nhưng không tìm hiểu tại sao nó lại lỗi, bạn comment test case đó đi.<br>Hãy tạo thói quen fix bug, giải quyết các issue tồn đọng sớm cho mình trước khi bắt tay vào code những tính năng mới, đừng để “technical debt” nhé, trả không nổi đâu :D</p>
 <p><img src="/img/10_ways_bugs_comming.png" alt="Bugs comming"></p>
 <h3 id="Hoc-cong-nghe-moi"><a href="#Hoc-cong-nghe-moi" class="headerlink" title="Học công nghệ mới"></a>Học công nghệ mới</h3><p>Luôn luôn học, cập nhật các công nghệ mới khi nào có thể. Một công nghệ X đang thịnh hành bây giờ nhưng chắc gì 5 - 10 năm sau vẫn còn được ưa chuộng. Hãy thử học cái gì đó mới xem sao, nếu bạn đang làm iOS, sao không thử làm web bằng Ruby on Rails chẳng hạn :)</p>
-<h4 id="con-cap-nhat"><a href="#con-cap-nhat" class="headerlink" title="còn cập nhật"></a>còn cập nhật</h4>]]></content>
+<h4 id="con-cap-nhat"><a href="#con-cap-nhat" class="headerlink" title="còn cập nhật"></a>còn cập nhật</h4>]]></content:encoded>
+      
+      <comments>https://devnhanguoita.com/posts/Tro-thanh-dev-con-nha-nguoi-ta/#disqus_thread</comments>
+    </item>
     
-    <summary type="html">
-    
-      Một số điều rút ra được từ các dev con nhà người ta về việc làm thế nào để trở thành developer tốt hơn..
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Validate string trong python</title>
-    <link href="https://devnhanguoita.com/posts/Validate-string-trong-python/"/>
-    <id>https://devnhanguoita.com/posts/Validate-string-trong-python/</id>
-    <published>2017-08-12T04:21:16.000Z</published>
-    <updated>2017-08-12T07:58:26.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Đôi lúc bạn muốn kiểm tra xem một chuỗi có phải là toàn là số hay không, hoặc một chuỗi toàn chữ viết hoa hay không. Hãy tham khảo một số hàm xây dựng sẵn trong python giúp validate chuỗi sau đây:</p>
+    <item>
+      <title>Validate string trong python</title>
+      <link>https://devnhanguoita.com/posts/Validate-string-trong-python/</link>
+      <guid>https://devnhanguoita.com/posts/Validate-string-trong-python/</guid>
+      <pubDate>Sat, 12 Aug 2017 04:21:16 GMT</pubDate>
+      <description>
+      
+        Kiểm tra nhanh một chuỗi trong python có phải là chuỗi toàn số không hoặc là chuỗi toàn chữ không? Python có sẵn những phương thức này cho bạn...
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Đôi lúc bạn muốn kiểm tra xem một chuỗi có phải là toàn là số hay không, hoặc một chuỗi toàn chữ viết hoa hay không. Hãy tham khảo một số hàm xây dựng sẵn trong python giúp validate chuỗi sau đây:</p>
 <h3 id="1-isalnum"><a href="#1-isalnum" class="headerlink" title="1. isalnum()"></a>1. isalnum()</h3><p>Hàm này kiểm tra các kí tự trong chuỗi có phải là chữ hoặc số hay không (alphanumeric) (a-z, A-Z và 0-9)</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt; <span class="keyword">print</span> <span class="string">'abc123'</span>.isalnum()</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'xyz123#'</span>.isalnum()</div><div class="line"><span class="keyword">False</span></div></pre></td></tr></table></figure>
 <h3 id="2-isalpha"><a href="#2-isalpha" class="headerlink" title="2. isalpha()"></a>2. isalpha()</h3><p>Kiểm tra các kí tự trong chuỗi có phải là chữ hay không (a-z và A-Z)<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'abcD'</span>.isalpha()</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'abcd1'</span>.isalpha()</div><div class="line"><span class="keyword">False</span></div></pre></td></tr></table></figure></p>
@@ -190,29 +176,23 @@
 <h3 id="4-islower"><a href="#4-islower" class="headerlink" title="4. islower()"></a>4. islower()</h3><p>Kiểm tra xem có phải tất cả các kí tự trong một chuỗi là viết thường hay không<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'abcd123#'</span>.islower()</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'Abcd123#'</span>.islower()</div><div class="line"><span class="keyword">False</span></div></pre></td></tr></table></figure></p>
 <h3 id="5-isupper"><a href="#5-isupper" class="headerlink" title="5. isupper()"></a>5. isupper()</h3><p>Ngược lại với <code>islower()</code>, phương thức này kiểm tra xem có phải tất cả các kí tự trong một chuỗi là viết hoa hay không.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'ABCD123#'</span>.isupper()</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'Abcd123#'</span>.isupper()</div><div class="line"><span class="keyword">False</span></div></pre></td></tr></table></figure></p>
 <p>Happy coding!</p>
-]]></content>
+]]></content:encoded>
+      
+      <comments>https://devnhanguoita.com/posts/Validate-string-trong-python/#disqus_thread</comments>
+    </item>
     
-    <summary type="html">
-    
-      Kiểm tra nhanh một chuỗi trong python có phải là chuỗi toàn số không hoặc là chuỗi toàn chữ không? Python có sẵn những phương thức này cho bạn...
-    
-    </summary>
-    
-      <category term="Tài liệu" scheme="https://devnhanguoita.com/categories/Tai-lieu/"/>
-    
-    
-      <category term="python" scheme="https://devnhanguoita.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Xử lí chuỗi cơ bản trong Python</title>
-    <link href="https://devnhanguoita.com/posts/Xu-li-chuoi-co-ban-trong-Python/"/>
-    <id>https://devnhanguoita.com/posts/Xu-li-chuoi-co-ban-trong-Python/</id>
-    <published>2017-08-08T15:37:57.000Z</published>
-    <updated>2017-08-08T17:02:25.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Những ghi chép của một Dev đang tập tành học Python về các hàm xử lí chuỗi.</p>
+    <item>
+      <title>Xử lí chuỗi cơ bản trong Python</title>
+      <link>https://devnhanguoita.com/posts/Xu-li-chuoi-co-ban-trong-Python/</link>
+      <guid>https://devnhanguoita.com/posts/Xu-li-chuoi-co-ban-trong-Python/</guid>
+      <pubDate>Tue, 08 Aug 2017 15:37:57 GMT</pubDate>
+      <description>
+      
+        Ghi chép về những phương thức xử lí chuỗi cơ bản trong Python như tìm chuỗi con, thay thế, lowercase..
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Những ghi chép của một Dev đang tập tành học Python về các hàm xử lí chuỗi.</p>
 <p>Giả sử mình có chuỗi sau nhé:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sample = <span class="string">"Dev nha nguoi ta"</span></div></pre></td></tr></table></figure></p>
 <h3 id="1-Viet-thuong-lowercase"><a href="#1-Viet-thuong-lowercase" class="headerlink" title="1. Viết thường - lowercase"></a>1. Viết thường - lowercase</h3><p>Dùng hàm <code>lower()</code> để chuyển một chuỗi bất kì thành chuỗi viết thường<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample.lower()</div><div class="line"><span class="string">'dev nha nguoi ta'</span></div></pre></td></tr></table></figure></p>
 <h3 id="2-Viet-hoa-UPPERCASE"><a href="#2-Viet-hoa-UPPERCASE" class="headerlink" title="2. Viết hoa - UPPERCASE"></a>2. Viết hoa - UPPERCASE</h3><p>Ngược lại, cũng có hàm <code>upper()</code> để viết hoa chuỗi đó<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample.upper()</div><div class="line"><span class="string">'DEV NHA NGUOI TA'</span></div></pre></td></tr></table></figure></p>
@@ -222,29 +202,23 @@
 <h3 id="5-Tim-chuoi-con"><a href="#5-Tim-chuoi-con" class="headerlink" title="5. Tìm chuỗi con"></a>5. Tìm chuỗi con</h3><p>Sử dụng hàm <code>find()</code> để tìm xem một chuỗi con có thuộc một chuỗi hay không. Hàm này trả về kết quả là vị trí bắt đầu của chuỗi con đó, và trả về -1 nếu không tìm thấy.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample.find(<span class="string">'nguoi'</span>)</div><div class="line"><span class="number">8</span></div></pre></td></tr></table></figure></p>
 <p>Hàm <code>rfind()</code> tìm như <code>find()</code> nhưng theo chiều từ bên phải qua<br>Hãy so sánh:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample.rfind(<span class="string">'a'</span>)</div><div class="line"><span class="number">15</span></div><div class="line"></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample.find(<span class="string">'a'</span>)</div><div class="line"><span class="number">6</span></div></pre></td></tr></table></figure></p>
 <h3 id="6-Thay-the"><a href="#6-Thay-the" class="headerlink" title="6. Thay thế"></a>6. Thay thế</h3><p>Đơn giản với hàm <code>replace()</code><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample.replace(<span class="string">"nguoi ta"</span>, <span class="string">"minh"</span>)</div><div class="line">  <span class="string">'Dev nha minh'</span></div></pre></td></tr></table></figure></p>
-]]></content>
+]]></content:encoded>
+      
+      <comments>https://devnhanguoita.com/posts/Xu-li-chuoi-co-ban-trong-Python/#disqus_thread</comments>
+    </item>
     
-    <summary type="html">
-    
-      Ghi chép về những phương thức xử lí chuỗi cơ bản trong Python như tìm chuỗi con, thay thế, lowercase..
-    
-    </summary>
-    
-      <category term="Tài liệu" scheme="https://devnhanguoita.com/categories/Tai-lieu/"/>
-    
-    
-      <category term="python" scheme="https://devnhanguoita.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Học CSS thông qua game</title>
-    <link href="https://devnhanguoita.com/posts/Hoc-CSS-thong-qua-game/"/>
-    <id>https://devnhanguoita.com/posts/Hoc-CSS-thong-qua-game/</id>
-    <published>2017-07-27T14:44:11.000Z</published>
-    <updated>2017-07-27T15:31:11.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Lười viết mở bài quá, thôi vào thân bài luôn nha. Dưới đây là danh sách một số nguồn mình tổng hợp được để học CSS một cách thú vị hơn:</p>
+    <item>
+      <title>Học CSS thông qua game</title>
+      <link>https://devnhanguoita.com/posts/Hoc-CSS-thong-qua-game/</link>
+      <guid>https://devnhanguoita.com/posts/Hoc-CSS-thong-qua-game/</guid>
+      <pubDate>Thu, 27 Jul 2017 14:44:11 GMT</pubDate>
+      <description>
+      
+        Học CSS hấp dẫn, thú vị hơn thông qua games. Tại sao không? Hãy thử các game sau xem bạn sẽ học được gì nhé.
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Lười viết mở bài quá, thôi vào thân bài luôn nha. Dưới đây là danh sách một số nguồn mình tổng hợp được để học CSS một cách thú vị hơn:</p>
 <h2 id="1-Grid-Garden"><a href="#1-Grid-Garden" class="headerlink" title="1. Grid Garden"></a>1. Grid Garden</h2><p>Link: <a href="http://cssgridgarden.com/" target="_blank" rel="external">http://cssgridgarden.com/</a><br>Trang web này giới thiệu cho các bạn về Grid Layout. Hoàn thành 28 level của game, bạn sẽ học được nhiều thứ về Grid layout đấy.</p>
 <p><img src="/img/css-grid-garden.png" alt="Grid Garden"></p>
 <h2 id="2-Flexbox-Froggy"><a href="#2-Flexbox-Froggy" class="headerlink" title="2. Flexbox Froggy"></a>2. Flexbox Froggy</h2><p>Link: <a href="http://flexboxfroggy.com/" target="_blank" rel="external">http://flexboxfroggy.com/</a><br>Tương tự và của cùng tác giả của Grid Garden, Flexbox Froggy là một “tựa game” để bạn học về flexbox.<br>Xuyên suốt 24 level của game, bạn sẽ học được nhiều thuộc tính của flexbox như: <code>justify-content</code>, <code>flex-flow</code>, <code>align-items</code>, ..</p>
@@ -254,31 +228,23 @@
 <h2 id="4-Flexbox-Defense"><a href="#4-Flexbox-Defense" class="headerlink" title="4. Flexbox Defense"></a>4. Flexbox Defense</h2><p>Link: <a href="http://www.flexboxdefense.com/" target="_blank" rel="external">http://www.flexboxdefense.com/</a><br>Thêm một game nữa về <code>flexbox</code></p>
 <p><img src="/img/css-flexbox-defense.png" alt="Flexbox Defense"></p>
 <p>Chúc các bạn chơi vui vẻ :p</p>
-]]></content>
+]]></content:encoded>
+      
+      <comments>https://devnhanguoita.com/posts/Hoc-CSS-thong-qua-game/#disqus_thread</comments>
+    </item>
     
-    <summary type="html">
-    
-      Học CSS hấp dẫn, thú vị hơn thông qua games. Tại sao không? Hãy thử các game sau xem bạn sẽ học được gì nhé.
-    
-    </summary>
-    
-      <category term="Tài liệu" scheme="https://devnhanguoita.com/categories/Tai-lieu/"/>
-    
-    
-      <category term="css" scheme="https://devnhanguoita.com/tags/css/"/>
-    
-      <category term="game" scheme="https://devnhanguoita.com/tags/game/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Code sạch nhà người ta: Viết hàm sạch</title>
-    <link href="https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Viet-ham-sach-hon/"/>
-    <id>https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Viet-ham-sach-hon/</id>
-    <published>2017-07-23T07:04:08.000Z</published>
-    <updated>2017-07-27T14:42:36.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Bài viết này nằm trong series <a href="/categories/Code-sach-nha-nguoi-ta/">“Code sạch nhà người ta”</a> - là tập hợp những kinh nghiệm rút ra được từ quyển Clean Code nổi tiếng của Uncle Bob.</p>
+    <item>
+      <title>Code sạch nhà người ta: Viết hàm sạch</title>
+      <link>https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Viet-ham-sach-hon/</link>
+      <guid>https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Viet-ham-sach-hon/</guid>
+      <pubDate>Sun, 23 Jul 2017 07:04:08 GMT</pubDate>
+      <description>
+      
+        Dev con nhà người ta tổ chức các hàm, phương thức của mình như thế nào để code luôn sạch sẽ, khô thoáng? Khám phá ngay một số tip sau đây.
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Bài viết này nằm trong series <a href="/categories/Code-sach-nha-nguoi-ta/">“Code sạch nhà người ta”</a> - là tập hợp những kinh nghiệm rút ra được từ quyển Clean Code nổi tiếng của Uncle Bob.</p>
 <p>Trong bài này mình sẽ tóm tắt lại, trình bày một số thứ mà các Dev nhà người ta đã làm để viết, tổ chức các Hàm trong chương trình của họ tốt hơn, đẹp hơn và sạch hơn.</p>
 <p>Ok, đi vào vấn đề luôn nhé, … sẽ có một số điều cần nhớ sau đây:</p>
 <h3 id="Nho"><a href="#Nho" class="headerlink" title="# Nhỏ"></a># Nhỏ</h3><p>Nguyên tắc thứ nhất của hàm là nó nên nhỏ thôi. Nguyên tắc thứ hai là nó nên nhỏ hơn nữa 😃.<br>Một hàm nên có số lượng dòng code dưới 20 và dưới 150 kí tự trên mỗi dòng.<br>Nếu bạn có một hàm quá dài, hãy cố gắng làm nhỏ nó lại bằng cách tách ra các hàm con khác.</p>
@@ -301,29 +267,23 @@
 <p>Nếu muốn viết nhiều đoạn code khác nhau ở nhiều chỗ khác nhau thực hiện một công việc giống nhau, hãy viết một hàm chung sau đó gọi ở những chỗ chúng ta cần dùng thay vì copy paste ra nhiều chỗ khác nhau.</p>
 <p>Hãy tưởng tượng bạn có 18 hàm tính số tiền khi mua hàng ở 18 nơi có thể trên một website thương mại. Bạn có nhu cầu sửa công thức tính tiền, bạn phải sửa cả 18 chỗ có hàm đó 😕, và sẽ ra sao nếu bạn làm thiếu? 😱..<br>Bởi vậy, ráng giữ khô thoáng nhé</p>
 <p>Happy coding!</p>
-]]></content>
+]]></content:encoded>
+      
+      <comments>https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Viet-ham-sach-hon/#disqus_thread</comments>
+    </item>
     
-    <summary type="html">
-    
-      Dev con nhà người ta tổ chức các hàm, phương thức của mình như thế nào để code luôn sạch sẽ, khô thoáng? Khám phá ngay một số tip sau đây.
-    
-    </summary>
-    
-      <category term="Code sạch nhà người ta" scheme="https://devnhanguoita.com/categories/Code-sach-nha-nguoi-ta/"/>
-    
-    
-      <category term="clean-code" scheme="https://devnhanguoita.com/tags/clean-code/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Khi chuyện của dev không còn là của riêng dev</title>
-    <link href="https://devnhanguoita.com/posts/Khi-chuyen-cua-dev-khong-con-la-cua-rieng-dev/"/>
-    <id>https://devnhanguoita.com/posts/Khi-chuyen-cua-dev-khong-con-la-cua-rieng-dev/</id>
-    <published>2017-07-10T13:04:01.000Z</published>
-    <updated>2017-07-10T17:27:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Gần đây có một trang web cho phép người dùng anonymous đăng tải các review về các công ty công nghệ một cách thoải mái. Hiện tại trang này đang trong tình trạng bảo trì rồi, nên mình không đưa link ở đây (tuy nhiên chắc các dev nhà ta cũng biết là trang nào rồi 😅).</p>
+    <item>
+      <title>Khi chuyện của dev không còn là của riêng dev</title>
+      <link>https://devnhanguoita.com/posts/Khi-chuyen-cua-dev-khong-con-la-cua-rieng-dev/</link>
+      <guid>https://devnhanguoita.com/posts/Khi-chuyen-cua-dev-khong-con-la-cua-rieng-dev/</guid>
+      <pubDate>Mon, 10 Jul 2017 13:04:01 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Gần đây có một trang web cho phép người dùng anonymous đăng tải các review về các công ty công nghệ một cách thoải mái. Hiện tại trang nà
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Gần đây có một trang web cho phép người dùng anonymous đăng tải các review về các công ty công nghệ một cách thoải mái. Hiện tại trang này đang trong tình trạng bảo trì rồi, nên mình không đưa link ở đây (tuy nhiên chắc các dev nhà ta cũng biết là trang nào rồi 😅).</p>
 <p>Mọi chuyện cũng chẳng có gì nếu như không có những thông tin, theo các nguồn tin mình biết được, cũng như thông qua theo dõi các reviews trên trang đó những ngày qua, rằng có những reviews không biết thật giả, làm ảnh hưởng đến uy tín, danh dự của các tổ chức, cá nhân (cụ thể là HR)</p>
 <p>Chắc tác giả cũng không nghĩ đến chủ đề này lại hot như vậy. Mình đoán tình hình cũng đi xa hơn mục đích ban đầu của tác giả rồi.</p>
 <p>Nhân tiện blog này có mục <a href="/categories/Chuyen-cua-Dev/">“Chuyện của Dev”</a> vô tình trùng với từ khoá đang hot này, nên mình cũng xin đưa ra vài ý kiến cá nhân về việc ảnh hưởng của các review xấu đối với bạn và cộng đồng như thế nào.</p>
@@ -336,27 +296,23 @@
 <p>Hãy làm một dev tử tế!</p>
 <h3 id="Tom-lai"><a href="#Tom-lai" class="headerlink" title="Tóm lại"></a>Tóm lại</h3><p>Như tiêu đề bài viết, trong thời buổi công nghệ này, chuyện của bạn đã không còn là của riêng bạn nữa rồi, nhất là trong điều kiện truyền thông mạnh mẽ và dễ dàng như hiện nay. Vì vậy, bút sa gà xối mỡ gì đấy, hãy cẩn thận với lời ăn tiếng nói của mình.</p>
 <p>Welcome mọi ý kiến của các bạn 👇</p>
-]]></content>
+]]></content:encoded>
+      
+      <comments>https://devnhanguoita.com/posts/Khi-chuyen-cua-dev-khong-con-la-cua-rieng-dev/#disqus_thread</comments>
+    </item>
     
-    <summary type="html">
-    
-      &lt;p&gt;Gần đây có một trang web cho phép người dùng anonymous đăng tải các review về các công ty công nghệ một cách thoải mái. Hiện tại trang nà
-    
-    </summary>
-    
-      <category term="Chuyện của Dev" scheme="https://devnhanguoita.com/categories/Chuyen-cua-Dev/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Code sạch nhà người ta: Đặt tên cho con</title>
-    <link href="https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Dat-ten-cho-con/"/>
-    <id>https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Dat-ten-cho-con/</id>
-    <published>2017-07-05T13:35:24.000Z</published>
-    <updated>2017-07-06T16:22:33.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Đây là bài đầu tiên trong series <a href="/categories/Code-sach-nha-nguoi-ta/">“Code sạch nhà người ta”</a> (hi vọng còn có những bài tiếp theo nữa 😬). Series này chủ yếu trình bày lại các vấn đề trong quyển sách <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882" target="_blank" rel="external">“Clean Code”</a> nổi tiếng của Uncle Bob theo một cách ngắn gọn và dễ hiểu hơn (hi vọng vậy, again).</p>
+    <item>
+      <title>Code sạch nhà người ta: Đặt tên cho con</title>
+      <link>https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Dat-ten-cho-con/</link>
+      <guid>https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Dat-ten-cho-con/</guid>
+      <pubDate>Wed, 05 Jul 2017 13:35:24 GMT</pubDate>
+      <description>
+      
+        Sao lại là &quot;đặt tên cho con&quot;? Bài này sẽ nói về việc đặt tên trong code, cơ mà mình thiết nghĩ việc đặt tên cho biến nó cũng quan trọng như đặt tên cho con vậy đó, chỉ khác là, sẽ phải đặt nhiều tên hơn..
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Đây là bài đầu tiên trong series <a href="/categories/Code-sach-nha-nguoi-ta/">“Code sạch nhà người ta”</a> (hi vọng còn có những bài tiếp theo nữa 😬). Series này chủ yếu trình bày lại các vấn đề trong quyển sách <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882" target="_blank" rel="external">“Clean Code”</a> nổi tiếng của Uncle Bob theo một cách ngắn gọn và dễ hiểu hơn (hi vọng vậy, again).</p>
 <hr>
 <p>Sao lại là “đặt tên cho con”? Bài này sẽ nói về việc đặt tên trong code, cơ mà mình thiết nghĩ việc đặt tên cho biến nó cũng quan trọng như đặt tên cho con vậy đó, chỉ khác là, sẽ phải đặt nhiều tên hơn :D</p>
 <h2 id="Van-de-muon-thuo"><a href="#Van-de-muon-thuo" class="headerlink" title="Vấn đề muôn thuở"></a>Vấn đề muôn thuở</h2><p>Có ai đó đã từng nói:</p>
@@ -379,147 +335,10 @@
 <h2 id="Ket-luan"><a href="#Ket-luan" class="headerlink" title="Kết luận"></a>Kết luận</h2><p>Đặt sao cũng được, đặt đúng giùm tui tui cảm ơn</p>
 <hr>
 <p>Code trong các ví dụ được lấy ở đây: <a href="https://github.com/hienvd/clean-code-javascript" target="_blank" rel="external">Clean Code Javascript</a></p>
-]]></content>
+]]></content:encoded>
+      
+      <comments>https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Dat-ten-cho-con/#disqus_thread</comments>
+    </item>
     
-    <summary type="html">
-    
-      Sao lại là &quot;đặt tên cho con&quot;? Bài này sẽ nói về việc đặt tên trong code, cơ mà mình thiết nghĩ việc đặt tên cho biến nó cũng quan trọng như đặt tên cho con vậy đó, chỉ khác là, sẽ phải đặt nhiều tên hơn..
-    
-    </summary>
-    
-      <category term="Code sạch nhà người ta" scheme="https://devnhanguoita.com/categories/Code-sach-nha-nguoi-ta/"/>
-    
-    
-      <category term="clean-code" scheme="https://devnhanguoita.com/tags/clean-code/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>[Bật đèn] - Khi chị Dậu làm code review</title>
-    <link href="https://devnhanguoita.com/posts/Bat-den-Khi-chi-Dau-lam-code-review/"/>
-    <id>https://devnhanguoita.com/posts/Bat-den-Khi-chi-Dau-lam-code-review/</id>
-    <published>2017-07-03T04:20:09.000Z</published>
-    <updated>2017-07-03T12:54:01.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Vi-sao-lai-la-Bat-Den"><a href="#Vi-sao-lai-la-Bat-Den" class="headerlink" title="Vì sao lại là Bật Đèn?"></a>Vì sao lại là Bật Đèn?</h2><p>Ai từng đọc qua <strong>Tắt Đèn</strong> hẳn đã biết tác phẩm được kết thúc bằng tình huống:</p>
-<blockquote>
-<p>Buông tay, chị vội choàng dậy, mở cửa chạy té ra sân. Trời tối như mực và như cái tiền đồ của chị.</p>
-</blockquote>
-<p>Có lẽ chính Ngô Tất Tố cũng không ngờ rằng sau khi té ra sân, rời khỏi cái ngôi làng với bao tủi nhục như thầy dạy Văn đã phân tích, chị Dậu đã đến với thành phố. Ngày và đêm ở cái xứ ấy, trời đều sáng như đèn và tất nhiên, như cái tiền đồ của chị; giờ đây, sau bao cố gắng, chị Dậu đã trở thành một nữ developer chân chính.</p>
-<p>Chị đã được nhận vào làm việc trong một công ty phần mềm xịn nhất nhì thành phố, và ở công ty đó, mỗi một pull request (PR) đều cần phải được review và approve trước khi release.</p>
-<p>Có thể nói Chị Dậu review và được review code mỗi ngày, tất cả đồng nghiệp đều yêu mến và lúc nào cũng muốn được review code do chị Dậu viết, vậy bằng cách nào Chị đã làm điều đó?</p>
-<h3 id="Chi-Dau-khong-y-lai-vao-nguoi-review"><a href="#Chi-Dau-khong-y-lai-vao-nguoi-review" class="headerlink" title="Chị Dậu không ỷ lại vào người review"></a>Chị Dậu không ỷ lại vào người review</h3><p>Trải qua biết bao khổ cực ở làng, Chị Dậu luôn tâm niệm rằng người khác cũng có chồng có con và công việc của họ cũng cần phải được hoàn thành. Chị luôn hiểu rõ rằng đồng nghiệp đang giúp chứ không chịu trách nhiệm cho công việc của Chị, <strong>Chị Dậu không bao giờ ỷ lại vào sự review của họ</strong>.</p>
-<p>Với bất kì PR nào của mình, chị Dậu cố gắng tự review qua một hoặc hai lần, xem lại những dòng code do mình viết viết và tự đặt những câu hỏi Chị nghĩ rằng người khác sẽ hỏi. Vì vậy những PR của chị Dậu luôn được review nhanh chóng và hiệu suất làm việc của Chị rất cao.</p>
-<h3 id="Giu-cho-PR-cang-it-thay-doi-cang-tot"><a href="#Giu-cho-PR-cang-it-thay-doi-cang-tot" class="headerlink" title="Giữ cho PR càng ít thay đổi càng tốt"></a>Giữ cho PR càng ít thay đổi càng tốt</h3><p>Ngày mới vào nghề, Chị Dậu được nhờ review một pull request như vậy.</p>
-<p><img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/iqm7rzt000_bad-pr.png" alt="PR"></p>
-<p>Lúc ấy chị sợ lắm, đầu chị choáng váng, thân thể chị mê man, tứ chi chị kiệt sức, chị hoảng loạn mất phương hướng vì gần như không biết bắt đầu review từ đâu và làm thế nào để giúp được người lập trình viên ấy. Từ đó chị luôn thấm thía rằng phải <strong>Cố gắng giữ sự thay đổi càng ít càng tốt trong một pull request</strong>.</p>
-<blockquote>
-<p>Cơ mà lỡ như Pull Request đó nó phải to như thế thì sao?</p>
-</blockquote>
-<p>Là một dev chân chính, chị Dậu luôn nhắc nhở bản thân là câu hỏi nào cũng có thể được giải đáp bằng một mệnh đề <strong>if else</strong>.</p>
-<p><em>Nếu Pull request có thể chia nhỏ ra được:</em> Chị sẽ tiến hành chia nhỏ nó ra, link chúng lại với nhau và tìm cách giải thích sự tương quan của chúng.</p>
-<p><em>Còn nếu Pull request không thể chia nhỏ ra được:</em> Nếu như Chị Dậu cảm thấy rằng một PR to là không thể tránh được, Chị sẽ cố gắng mời Starbucks, mời Phúc Long, mời Sườn Cây nướng (đại khái là những món mà người viết đang thèm) và book một session với người review để cùng nhau lướt qua PR đó.</p>
-<h3 id="Chi-luon-giai-thich-ro-rang-nhung-gi-dang-lam"><a href="#Chi-luon-giai-thich-ro-rang-nhung-gi-dang-lam" class="headerlink" title="Chị luôn giải thích rõ ràng những gì đang làm"></a>Chị luôn giải thích rõ ràng những gì đang làm</h3><p>Từ trong tận sâu thẳm lòng mình, Chị Dậu nhận thức rằng thời gian là vàng là bạc là kim cương (rate của chị là hơn $50/.h), nên chị rất trân trọng thời gian của người khác và tránh lãng phí nó. Vì vậy, Chị Dậu luôn luôn <strong> viết message giải thích tại sao những commits đó của PR là cần thiết</strong> mà không để đồng nghiệp phải tự thân vận động để thắc mắc.</p>
-<p>Chị cũng hay tham khảo <a href="https://github.com/erlang/otp/wiki/Writing-good-commit-messages" target="_blank" rel="external">ở trang này</a> để nắm rõ thế nào là một commit message tốt.</p>
-<p>Một lần chị Dậu gặp một PR với tiêu đề <em>“Cho phép tất cả người dùng đăng nhập mà không cần password”</em>, chị chỉ biết ngẩng đầu lên than với ông trời: <em>“Giàng ơi, tôi biết đọc code, tôi hiểu nó đang làm gì, nhưng Giàng hãy chỉ lối cho tôi biết tại sao họ lại làm vậy hỡi Giàng?”</em></p>
-<p>Ôi, sao mà cái cuộc đời chị nó khổ thế không biết!!!</p>
-<h3 id="Giu-cay-commit-gon-gang-ngan-nap-nhu-tu-quan-ao-cua-chi"><a href="#Giu-cay-commit-gon-gang-ngan-nap-nhu-tu-quan-ao-cua-chi" class="headerlink" title="Giữ cây commit gọn gàng ngăn nắp như tủ quần áo của chị"></a>Giữ cây commit gọn gàng ngăn nắp như tủ quần áo của chị</h3><p>Những ngày tháng nghèo khó ở làng luôn khiến chị có thói quen giữ tủ quần áo ngăn nắp (cơ mà chẳng phải chị chỉ có đúng một bộ quần áo mặc trên người hay sao? … mà thôi lan man rồi), thói quen đó cũng được chị giữ khi chuyển sang làm lập trình viên.</p>
-<p>Khi những thay đổi Chị Dậu viết cho Pull Request là khá lớn (tất nhiên trước khi làm điều này Chị luôn xem lại phần <strong>Giữ cho PR càng ít thay đổi càng tốt</strong>), chị sẽ cố gắng group nó trong những commit nhỏ và có ý nghĩa.</p>
-<p>Chị cũng biết rằng Github cho phép xem <em>Changes by commits</em> nên việc chia ra những commit nhỏ gọn sẽ giúp ích rất nhiều cho người review hiểu những gì Chị đang làm và cho ra review tốt hơn.</p>
-<h3 id="Chi-Dau-luon-cam-on-nguoi-review-giup-minh"><a href="#Chi-Dau-luon-cam-on-nguoi-review-giup-minh" class="headerlink" title="Chị Dậu luôn cảm ơn người review giúp mình."></a>Chị Dậu luôn cảm ơn người review giúp mình.</h3><p>Chị biết rằng thì ở một mức độ nào đó, người review đang giúp Chị viết code tốt hơn và giảm bớt rủi ro lỗi hơn. Vì vậy <strong>Chị luôn luôn cám ơn đồng nghiệp sau khi review xong</strong>. Dù trong suốt quá trình review có lúc Chị hài lòng, có lúc không, có lúc chỉ muốn lộn luôn cái bàn, tuy nhiên một lời cám ơn người đã bỏ thời gian giúp mình sẽ làm cho họ vui hơn và cảm thấy công sức của họ được trân trọng.</p>
-<p>Chẳng rõ có phải vì thế mà code của chị luôn được đánh giá cao, sếp và đồng nghiệp thì yêu quý chị, lương chị thì tăng vùn vụt. :shurg:</p>
-<h2 id="Ket-luan"><a href="#Ket-luan" class="headerlink" title="Kết luận"></a>Kết luận</h2><p>Là một người cực kì ghét viết kết luận nên <strong>Mình sẽ để đây và ai muốn nói gì thì nói</strong>.</p>
-<p>P/S: Khi viết gần xong thì mình tìm ra <a href="http://swreflections.blogspot.com/2014/08/dont-waste-time-on-code-reviews.html" target="_blank" rel="external">bài này</a> (biết vậy khỏi viết), các bạn quan tâm có thể đọc qua nhé.</p>
-<h3 id="Viet-boi-Cam-Huynh"><a href="#Viet-boi-Cam-Huynh" class="headerlink" title="Viết bởi: Cẩm Huỳnh"></a>Viết bởi: <a href="https://hqc.io/posts/chi-dau-code-review" target="_blank" rel="external">Cẩm Huỳnh</a></h3>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Vi-sao-lai-la-Bat-Den&quot;&gt;&lt;a href=&quot;#Vi-sao-lai-la-Bat-Den&quot; class=&quot;headerlink&quot; title=&quot;Vì sao lại là Bật Đèn?&quot;&gt;&lt;/a&gt;Vì sao lại là Bật Đèn?
-    
-    </summary>
-    
-      <category term="Chuyện của Dev" scheme="https://devnhanguoita.com/categories/Chuyen-cua-Dev/"/>
-    
-    
-      <category term="code-review" scheme="https://devnhanguoita.com/tags/code-review/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Dev nhà mình và định luật Murphy</title>
-    <link href="https://devnhanguoita.com/posts/Dev-nha-minh-va-dinh-luat-Murphy/"/>
-    <id>https://devnhanguoita.com/posts/Dev-nha-minh-va-dinh-luat-Murphy/</id>
-    <published>2017-07-02T10:37:47.000Z</published>
-    <updated>2017-07-03T16:20:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Nếu có một điều xấu <code>có thể</code> xảy ra, nó <code>sẽ</code> xảy ra, và vào thời điểm tệ nhất có thể!</p>
-<blockquote>
-<p>Anything that can go wrong, will go wrong!</p>
-</blockquote>
-<a id="more"></a>
-<h2 id="Dinh-luat-Murphy"><a href="#Dinh-luat-Murphy" class="headerlink" title="Định luật Murphy"></a>Định luật Murphy</h2><p>Có thể hiểu đơn giản như thế này: “Nếu có hai hay nhiều cách để làm một điều gì đó, và một trong những cách đó có thể dẫn đến thảm hoạ, thì người ta thường chọn cách đó!”</p>
-<blockquote>
-<p>If there’s more than one way to do a job and one of those ways will end in disaster, then somebody will do it that way.</p>
-</blockquote>
-<p>Đó là nội dung cơ bản của định luật Murphy. Định luật này được phát hiện và đặt tên theo Edward A. Murphy, một kĩ sư làm việc ở Không lực Mỹ vào năm 1949. Xem thêm ở <a href="http://www.murphys-laws.com/murphy/murphy-true.html" target="_blank" rel="external">đây</a> nhé.</p>
-<p>Định luật Murphy còn được gọi là “định luật bánh bơ”. Thử tưởng tượng nếu bạn lỡ tay làm rơi miếng bánh sandwich thơm ngon với một mặt được trét bơ, thì oops, đa số lần mặt có bơ đều bị rớt xuống đất trước. 🤣</p>
-<h2 id="Cuoc-song-nay-lam-nhieu-khe"><a href="#Cuoc-song-nay-lam-nhieu-khe" class="headerlink" title="Cuộc sống này lắm nhiêu khê!"></a>Cuộc sống này lắm nhiêu khê!</h2><p>Một số tình huống “số nhọ” trong cuộc sống tuân theo định luật Murphy</p>
-<ul>
-<li>Hết 6 ngày trong tuần bạn đều mang theo dù mặc dù trời tạnh ráo. Buổi sáng cuối tuần tươi đẹp, trời đang xanh trong bỗng đổ mưa to, còn bạn thì ở ngoài đường, diện bộ đồ đẹp nhất và… quên mang dù!<br><img src="/img/murphy-ex-1.jpg" alt="murphy_example"></li>
-<li>Bạn thường quên chìa khóa cửa vào ngày mà mọi người khác không có ở đó.</li>
-<li>Máy chiếu thường hỏng vào ngày diễn ra buổi thuyết trình.</li>
-<li>Bạn xếp hàng tính tiền trong siêu thị, thấy hàng bên cạnh tính nhanh hơn liền bỏ sang hàng đó. Ngờ đâu bạn vừa sang, máy tính tiền của hàng này bỗng bị hỏng và bạn tiếp tục… chờ.</li>
-<li>…</li>
-</ul>
-<h2 id="Lam-dev-kho-lam-ai-oi"><a href="#Lam-dev-kho-lam-ai-oi" class="headerlink" title="Làm dev khổ lắm ai ơi!"></a>Làm dev khổ lắm ai ơi!</h2><p>Vậy đối với một Developer thì sao?</p>
-<ul>
-<li>Đến ngày release, fix xong một bug nhỏ rồi mới phát hiện vừa gây ra thêm vài chục bug major khác 😂<br><img src="/img/murphy-dev-ex-1.gif" alt="murphy_bug"></li>
-<li>Khách hàng ít khi đổi requirement, mà mỗi khi đổi thì thường đổi lúc deadline đã đến sát đít.</li>
-<li>Những bug bự chỉ được phát hiện ra trên … Production!</li>
-<li>Code hoạt động trơn tru trên tất cả các trình duyệt, ngoại trừ IE (hồi xưa làm ở công ty cũ hay gặp như cơm bữa, giờ thì đã giết được nó rồi, ahaha 😎)<br><img src="/img/murphy-dev-ex-2.jpg" alt="kill IE please"></li>
-</ul>
-<p>Các dev nhà người ta khác có nỗi khổ nào thì để lại dưới comment nhé 😀</p>
-<h2 id="Tum-lai"><a href="#Tum-lai" class="headerlink" title="Túm lại"></a>Túm lại</h2><blockquote>
-<p>Hãy đón đầu những bất ngờ khó chịu!</p>
-</blockquote>
-<p>Định luật Murphy không phải mang ý nghĩa tiêu cực, mà nó là một nguyên tắc có giá trị và rất hữu ích.<br>Nó giúp ta dự đoán các tình huống xấu có thể xảy ra, từ đó chuẩn bị tâm lý để đối mặt với tình huống xấu nhất có thể. Mặt khác, ta cần tìm ra các biện pháp để khắc phục, giảm bớt hoặc ứng phó với các tình huống đã được tiên liệu.</p>
-<p>Cảm giác mất kiểm soát là yếu tố gây ra sự mất căng thẳng.<br>Take it easy!</p>
-<hr>
-<h3 id="Viet-boi-Hien-Vuong"><a href="#Viet-boi-Hien-Vuong" class="headerlink" title="Viết bởi: Hien Vuong"></a>Viết bởi: <a href="https://hienvd.com/2017/04/16/Developer-va-dinh-luat-Murphy/" target="_blank" rel="external">Hien Vuong</a></h3>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Nếu có một điều xấu &lt;code&gt;có thể&lt;/code&gt; xảy ra, nó &lt;code&gt;sẽ&lt;/code&gt; xảy ra, và vào thời điểm tệ nhất có thể!&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Anything that can go wrong, will go wrong!&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="Chuyện của Dev" scheme="https://devnhanguoita.com/categories/Chuyen-cua-Dev/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World!</title>
-    <link href="https://devnhanguoita.com/posts/hello-world/"/>
-    <id>https://devnhanguoita.com/posts/hello-world/</id>
-    <published>2017-06-30T17:00:00.000Z</published>
-    <updated>2017-07-02T03:25:59.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Chào cả thế giới!<br>Mình là dev con nhà người ta.</p>
-<p>Fanpage của mình đây nè <a href="https://www.facebook.com/devnhanguoita" target="_blank" rel="external">https://www.facebook.com/devnhanguoita</a>, vô like dùm cái đi nha</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Chào cả thế giới!&lt;br&gt;Mình là dev con nhà người ta.&lt;/p&gt;
-&lt;p&gt;Fanpage của mình đây nè &lt;a href=&quot;https://www.facebook.com/devnhanguoita&quot; target
-    
-    </summary>
-    
-    
-  </entry>
-  
-</feed>
+  </channel>
+</rss>
