@@ -8,8 +8,69 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>Giúp dev nhà mình trở thành dev con nhà người ta</description>
-    <pubDate>Sat, 23 Sep 2017 11:49:52 GMT</pubDate>
+    <pubDate>Sat, 14 Oct 2017 05:50:20 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Suy nghĩ như một lập trình viên</title>
+      <link>https://devnhanguoita.com/posts/Suy-nghi-nhu-mot-lap-trinh-vien/</link>
+      <guid>https://devnhanguoita.com/posts/Suy-nghi-nhu-mot-lap-trinh-vien/</guid>
+      <pubDate>Sat, 14 Oct 2017 02:20:07 GMT</pubDate>
+      <description>
+      
+        Tôi không biết javascript, tôi không thể viết cái component này được. Tôi nghĩ là tôi không thể làm nó được đâu, vì tôi không biết cách suy nghĩ như một lập trình viên được
+      
+      </description>
+      
+      <content:encoded><![CDATA[<blockquote>
+<p>Mình không thích dùng từ “lập trình viên” lắm, nhưng lại thích để tiếng Việt trên cái tiêu đề, nên trong bài viết mình sẽ ghi là “programmer” nhé 😎<br>Mình chỉ viết lại theo cách hiểu của mình từ bài này: <a href="https://medium.freecodecamp.org/how-to-think-like-a-programmer-3ae955d414cd" target="_blank" rel="external">How to think like a programmer</a>. Vì vậy, khuyến khích các bạn đọc bài viết gốc để hiểu rõ và nắm bắt được cái tinh thần tác giả muốn nói hơn, chào thân ái! 😎</p>
+</blockquote>
+<p>“Tôi không biết javascript, tôi không thể viết cái component này được, đầu óc tôi trống rỗng mỗi khi tôi bắt đầu viết một đoạn code. Tôi nghĩ là tôi không thể làm nó được đâu, vì tôi không biết cách suy nghĩ như một programmer”</p>
+<p>Đây có vẻ như một vấn đề hay gặp của bất cứ ai khi mới bắt đầu học lập trình nhỉ? Bạn nghĩ là bạn không suy nghĩ như một programmer được?, nhưng không hẳn như vậy đâu, để giải quyết sự sợ hãi này, hãy làm theo 4 bước sau:</p>
+<h3 id="Buoc-1-phan-chia-bai-toan-thanh-nhung-bai-toan-nho-hon"><a href="#Buoc-1-phan-chia-bai-toan-thanh-nhung-bai-toan-nho-hon" class="headerlink" title="Bước 1, phân chia bài toán thành những bài toán nhỏ hơn"></a>Bước 1, phân chia bài toán thành những bài toán nhỏ hơn</h3><p>Mình đến với một bài toán nghe quen quen nha: “Làm sao để nhét 1 con voi vào tủ lạnh?”<br>Đa số sẽ có 3 bước sau:</p>
+<ul>
+<li>Mở cửa tủ lạnh</li>
+<li>Nhét con voi vào</li>
+<li>Đóng cửa lại</li>
+</ul>
+<p>Okie, done, vấn đề được giải quyết.</p>
+<p>Tuy nhiên, câu trả lời trên là một ví dụ tốt nhất cho việc tại sao bạn lại thấy khó khăn khi phải đối mặt với một file javascript trống rỗng. Bạn thiếu <strong>các bước thực hiện</strong>.</p>
+<p>Nếu suy nghĩ một cách logic hơn, bạn sẽ nhận ra một số vấn đề vẫn còn chưa được trả lời như:</p>
+<ul>
+<li>chúng ta đang nói về cái tủ lạnh nào?</li>
+<li>chúng ta nhắc đến loại voi nào?</li>
+<li>nếu con voi quá lớn, không vừa với cái tủ lạnh thì chúng ta sẽ làm như thế nào?</li>
+<li>bạn sẽ tìm thấy con voi ở đâu?</li>
+<li>bạn vận chuyển con voi đến cái tủ lạnh bằng cách nào?</li>
+</ul>
+<p>Khi code cũng vậy, bạn phải trả lời được những câu hỏi nhỏ như vậy mà bạn có thể nghĩ ra. Đó là lí do vì sao bước đầu tiên là <strong>chia nhỏ vấn đề ra</strong>.</p>
+<h3 id="Buoc-2-tim-giai-phap-cho-nhung-bai-toan-nho-hon-do"><a href="#Buoc-2-tim-giai-phap-cho-nhung-bai-toan-nho-hon-do" class="headerlink" title="Bước 2, tìm giải pháp cho những bài toán nhỏ hơn đó"></a>Bước 2, tìm giải pháp cho những bài toán nhỏ hơn đó</h3><p>Tiếp theo là đi <strong>tìm giải pháp cho mỗi vấn đề đã chia nhỏ</strong> ở trên. Bạn phải càng chi tiết càng tốt.</p>
+<ul>
+<li>cái tủ lạnh nào? -&gt; tủ lạnh trong nhà bếp của bạn</li>
+<li>loại voi nào? -&gt; voi châu Phi</li>
+<li>nếu con voi to quá thì làm sao? -&gt; dùng súng thu nhỏ để thu nhỏ con voi lại (doreamon fan 😎)</li>
+<li>tìm thấy con voi ở đâu? -&gt; châu Phi</li>
+<li>bạn sẽ vận chuyển con voi như thế nào? -&gt; bỏ nó vào túi xách sau khi đã thu nhỏ, mang lên máy bay và bay về ✈️</li>
+</ul>
+<p>Một khi bạn đã có tất cả câu trả lời cho những câu hỏi nhỏ, hãy gom nó lại để giải quyết bài toán lớn của chúng ta.</p>
+<h3 id="Buoc-3-tap-hop-cac-giai-phap-do-lai-mot-cach-chat-che"><a href="#Buoc-3-tap-hop-cac-giai-phap-do-lai-mot-cach-chat-che" class="headerlink" title="Bước 3, tập hợp các giải pháp đó lại một cách chặt chẽ"></a>Bước 3, tập hợp các giải pháp đó lại một cách chặt chẽ</h3><p>Okie, đến đây thì bước thứ 3 đơn giản là gộp các giải pháp cho các bài toán nhỏ lại một cách hợp lí, để giải quyết bài toán lớn nhét-con-voi-vào-tủ-lạnh của chúng ta.</p>
+<p>Quy trình sẽ như thế này:</p>
+<ol>
+<li>mượn cây súng thu nhỏ của doremon</li>
+<li>bay đến châu Phi</li>
+<li>đến công viên voi Addo ở Nam Phi</li>
+<li>tìm một con voi</li>
+<li>bắn nó với cây súng thu nhỏ</li>
+<li>bỏ con voi vào túi xách</li>
+<li>bay trở về nhà</li>
+<li>đặt con voi vào tủ lạnh</li>
+</ol>
+<h3 id="Buoc-4-refactor-cai-tien"><a href="#Buoc-4-refactor-cai-tien" class="headerlink" title="Bước 4, refactor, cải tiến"></a>Bước 4, refactor, cải tiến</h3><p>Bạn chịu khó xem hết ví dụ thực tế của tác giả nha 🤣<br>Ví dụ của tác giả về việc tạo một cái nút, khi click vào đó thì sẽ hiển thị thanh menu ở sidebar. Một ví dụ đơn giản, nhưng bạn hãy đọc để xem tác giả đã chia nhỏ, phân tích và giải quyết vấn đề như thế nào.<br>Trong đó bao gồm bước 4, refactor code và cải tiến nó.</p>
+<h3 id="Tum-lai"><a href="#Tum-lai" class="headerlink" title="Túm lại,"></a>Túm lại,</h3><p>Suy nghĩ như một programmer cũng đơn giản thôi. Yếu tố quan trọng là cách bạn chia nhỏ vấn đề thành những vấn đề nhỏ hơn như thế nào. Khi đã có những bài toán nhỏ, bạn sẽ tìm giải pháp cho chúng, và code. Trong lúc đó bạn cũng sẽ gặp các vấn đề khác mà mình chưa nghĩ ra, hãy giải quyết nó luôn.</p>
+]]></content:encoded>
+      
+      <comments>https://devnhanguoita.com/posts/Suy-nghi-nhu-mot-lap-trinh-vien/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Những nguyên lí cơ bản của chủ nghĩa code sạch</title>
@@ -299,45 +360,6 @@
 ]]></content:encoded>
       
       <comments>https://devnhanguoita.com/posts/Khi-chuyen-cua-dev-khong-con-la-cua-rieng-dev/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Code sạch nhà người ta: Đặt tên cho con</title>
-      <link>https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Dat-ten-cho-con/</link>
-      <guid>https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Dat-ten-cho-con/</guid>
-      <pubDate>Wed, 05 Jul 2017 13:35:24 GMT</pubDate>
-      <description>
-      
-        Sao lại là &quot;đặt tên cho con&quot;? Bài này sẽ nói về việc đặt tên trong code, cơ mà mình thiết nghĩ việc đặt tên cho biến nó cũng quan trọng như đặt tên cho con vậy đó, chỉ khác là, sẽ phải đặt nhiều tên hơn..
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>Đây là bài đầu tiên trong series <a href="/categories/Code-sach-nha-nguoi-ta/">“Code sạch nhà người ta”</a> (hi vọng còn có những bài tiếp theo nữa 😬). Series này chủ yếu trình bày lại các vấn đề trong quyển sách <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882" target="_blank" rel="external">“Clean Code”</a> nổi tiếng của Uncle Bob theo một cách ngắn gọn và dễ hiểu hơn (hi vọng vậy, again).</p>
-<hr>
-<p>Sao lại là “đặt tên cho con”? Bài này sẽ nói về việc đặt tên trong code, cơ mà mình thiết nghĩ việc đặt tên cho biến nó cũng quan trọng như đặt tên cho con vậy đó, chỉ khác là, sẽ phải đặt nhiều tên hơn :D</p>
-<h2 id="Van-de-muon-thuo"><a href="#Van-de-muon-thuo" class="headerlink" title="Vấn đề muôn thuở"></a>Vấn đề muôn thuở</h2><p>Có ai đó đã từng nói:</p>
-<blockquote>
-<p>There are only two hard things in computer science: cache invalidation, naming things, and off-by-one errors.</p>
-</blockquote>
-<p>Thật ra câu trên là một joke. Đại ý ở đây là ‘đặt tên cho thứ gì đó’ là một việc rất khó. Có bao giờ bạn phải ngồi suy nghĩ rất lâu chỉ để đặt một cái tên hay, đúng cho một biến hay hàm mình dùng hay chưa?</p>
-<p>Những Developers Nhà Người Ta không bao giờ đặt tên cho con một cách tào lao. Chỉ cần nhớ và áp dụng một số nguyên tắc sau đây mà họ dùng nhé:</p>
-<h3 id="Dat-ten-co-nghia-va-de-phat-am"><a href="#Dat-ten-co-nghia-va-de-phat-am" class="headerlink" title="Đặt tên có nghĩa và dễ phát âm"></a>Đặt tên có nghĩa và dễ phát âm</h3><p>Hãy xem đoạn code js sau lấy ngày giờ hiện tại gán vào biến <code>yyymmdstr</code></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> yyyymmdstr = moment().format(<span class="string">'YYYY/MM/DD'</span>);</div></pre></td></tr></table></figure>
-<p>Khoan, <code>yyymmdstr</code> là cái tên quỷ quái gì vậy? “year-month-day-string” chăng?</p>
-<p>Chắc không ai đặt tên như vậy đâu, đa số sẽ đặt một cái tên có ý nghĩa như vầy:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">enconst currentDate = moment().format(<span class="string">'YYYY/MM/DD'</span>);</div></pre></td></tr></table></figure>
-<h3 id="Dat-ten-sao-cho-tim-kiem-duoc"><a href="#Dat-ten-sao-cho-tim-kiem-duoc" class="headerlink" title="Đặt tên sao cho tìm kiếm được"></a>Đặt tên sao cho tìm kiếm được</h3><p>Đã bao giờ bạn gặp một trường hợp như anh Tèo này chưa:<br>1 tháng trước, Tèo được giao làm một task xyz, Tèo làm rất nhanh, code chạy có vẻ đúng, Tèo hí ha hí hửng ngồi chơi Dota (vì chưa tới deadline mà). Rồi thì sản phẩm cũng được release. Tới hôm nay, đùng một cái có bug xảy ra ở phần Tèo làm đó, Tèo phải hotfix ngay trên production. Nhưng, oops, Tèo không tìm thấy cái đoạn code hôm trước mình viết ở đâu, vì search không ra kết quả.<br>Nguyên nhân là do Tèo đã không đặt một tên biến tốt, để có thể tìm thấy được.</p>
-<p>Đây là đoạn code trước đó của Tèo:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 86400000 là cái quái gì thế?</span></div><div class="line">setTimeout(blastOff, <span class="number">86400000</span>);</div></pre></td></tr></table></figure></p>
-<p>Sau một hồi vật vã, hotfix đã chuyển thành coolfix, Tèo em mới tìm thấy chỗ code đó, và anh ta quyết định viết lại nó như vầy:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Khai báo như một biến global.</span></div><div class="line"><span class="keyword">const</span> MILLISECONDS_IN_A_DAY = <span class="number">86400000</span>;</div><div class="line">setTimeout(blastOff, MILLISECONDS_IN_A_DAY);</div></pre></td></tr></table></figure>
-<p>Bởi vậy, đặt tên sao để có thể tìm kiếm được rất quan trọng. Nếu không thằng Dev sau nó sẽ không kiếm đoạn code đó nữa, mà kiếm địa chỉ nhà bạn đấy 😈</p>
-<h3 id="Dung-hai-nao-nhau"><a href="#Dung-hai-nao-nhau" class="headerlink" title="Đừng hại não nhau!"></a>Đừng hại não nhau!</h3><p>Cuộc sống vốn dĩ đã phức tạp lắm rồi, nên tốt nhất đừng gây thêm khó khăn cho người khác bằng cách đặt những tên biến kì cục, hại đời nhau nữa.</p>
-<h2 id="Ket-luan"><a href="#Ket-luan" class="headerlink" title="Kết luận"></a>Kết luận</h2><p>Đặt sao cũng được, đặt đúng giùm tui tui cảm ơn</p>
-<hr>
-<p>Code trong các ví dụ được lấy ở đây: <a href="https://github.com/hienvd/clean-code-javascript" target="_blank" rel="external">Clean Code Javascript</a></p>
-]]></content:encoded>
-      
-      <comments>https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Dat-ten-cho-con/#disqus_thread</comments>
     </item>
     
   </channel>
