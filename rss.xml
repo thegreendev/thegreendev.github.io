@@ -8,8 +8,46 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>Giúp dev nhà mình trở thành dev con nhà người ta</description>
-    <pubDate>Sat, 14 Oct 2017 05:50:20 GMT</pubDate>
+    <pubDate>Sat, 25 Nov 2017 08:04:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Tôi đã publish chrome extension đầu tiên như thế nào</title>
+      <link>https://devnhanguoita.com/posts/Toi-da-viet-chrome-extension-dau-tien-nhu-the-nao/</link>
+      <guid>https://devnhanguoita.com/posts/Toi-da-viet-chrome-extension-dau-tien-nhu-the-nao/</guid>
+      <pubDate>Sat, 25 Nov 2017 03:35:13 GMT</pubDate>
+      <description>
+      
+        Một số kinh nghiệm khi làm việc với google webstore để upload chrome extension đầu tiên.
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Đặt title cho nó thời thượng kiểu <em>“Tôi đã abcxyz như thế nào”</em> thôi, chứ thật ra bài này chả có gì cao siêu cả.</p>
+<p>Anh bạn bên toidicodedao.com cũng đã có một bài hướng dẫn <a href="https://toidicodedao.com/2017/07/04/em-them-veu-tu-y-tuong-den-san-pham-chi-trong-30-phut/" target="_blank" rel="external">viết chrome extension</a> rồi, nên bài viết này tui chỉ chia sẻ quá trình publish extension đầu tiên của mình lên Chrome Store và những vấn đề nên chú ý khi publish.</p>
+<h3 id="Hoan-canh-ra-doi"><a href="#Hoan-canh-ra-doi" class="headerlink" title="Hoàn cảnh ra đời"></a>Hoàn cảnh ra đời</h3><p>Tui là một người thích đá bóng và bóng đá (bóng, ko phải “bóng”). Bởi thích xem đá bóng nên tui cũng hay đọc tin tức bóng đá.<br>Đến một ngày nọ, tui thấy thời gian bỏ ra vào xem ba cái tin này nó hơi nhiều, để thời gian đó làm mấy việc tào lao khác chắc có ích hơn. Nên tui quyết định làm một cái gì đó để mình chỉ cần đọc lướt qua các tin nổi bật thôi, thế nên cái extension này ra đời.</p>
+<p>Tui gọi nó là <a href="https://chrome.google.com/webstore/detail/football-news-reader/dojfchbejdepapgopodpalakingoallm" target="_blank" rel="external">Football News Reader</a></p>
+<h3 id="Qua-trinh-thanh-lap"><a href="#Qua-trinh-thanh-lap" class="headerlink" title="Quá trình thành lập"></a>Quá trình thành lập</h3><p>Cái giao diện chính của nó nó thế này:<br><img src="/img/chrome-extension-1.png" alt="Giao diện của extension"></p>
+<p>Đại khái thì cái extension này sẽ lấy tin tức mới nhất về bóng đá từ một số trang thể thao lớn có cung cấp API và hiển thị lên cho mình xem tin mới nhanh chóng hơn. Bạn có thể click vào link để xem chi tiết về bài viết đó (đọc để cải thiện tiếng Anh 😀)<br>Hiện tại thì mình hiển thị thông tin từ 4 trang là Four Four Two, The Sport Bible, Fox Sports và ESPN thông qua gọi api tới <a href="http://newsapi.org/" target="_blank" rel="external">NewsAPI</a>.</p>
+<p>Cách để viết một cái extension đơn giản như thế này, bạn có thể xem trong bài viết của toidicodedao mình có đưa link ở trên, hoặc đọc phần Getting Started của Chrome Extension ở đây nè <a href="https://developer.chrome.com/extensions/getstarted" target="_blank" rel="external">https://developer.chrome.com/extensions/getstarted</a>.</p>
+<h3 id="Bai-hoc-kinh-nghiem"><a href="#Bai-hoc-kinh-nghiem" class="headerlink" title="Bài học kinh nghiệm"></a>Bài học kinh nghiệm</h3><p>Quá trình upload lên webstore, chủ yếu làm theo hướng dẫn của Google ở đây: <a href="https://developer.chrome.com/webstore/publish" target="_blank" rel="external">https://developer.chrome.com/webstore/publish</a> là được.</p>
+<p>Có một số chú ý như:</p>
+<ul>
+<li><p>Bạn sẽ tốn <strong>5 USD</strong> cống nạp cho Google để có thể upload tối đa 20 thứ lên Chrome Webstore, đây là phí để verify account của bạn.</p>
+</li>
+<li><p>Việc đánh version của ứng dụng quan trọng hơn bạn nghĩ đấy (version được chỉ định trong file manifest.json của extension), vì khi có thay đổi, dù nhỏ thôi, bạn đều phải nâng version lên. Cho nên, hãy cân nhắc đánh version major, minor, patch thế nào cho hợp lí.</p>
+</li>
+<li><p>Hình ảnh: google cần ít nhất 1 screenshot sản phẩm để hiện lên trên webstore, với resolution hiện tại phải chính xác là 1280x800 hoặc 640x400. Cho nên, bạn chụp ảnh màn hình sản phẩm nhớ canh chỉnh đúng tỉ lệ, chứ không bị reject thì mắc công lắm đấy :D</p>
+</li>
+<li><p>Hình ảnh để promote sản phẩm của bạn (những hình ảnh sẽ xuất hiện trong search results, trong featured extension..): như trên thì những hình này cũng phải theo tỉ lệ cố định, là 440x280 cho hình nhỏ, 920x680 cho hình bự và 1400x560 cho marquee.</p>
+</li>
+<li><p>Những hình ảnh này nó cũng hơi nhọc một tí, ngoài tỉ lệ đúng ra, thì hình của bạn phải tuân thủ những quy định của Chrome <a href="https://developer.chrome.com/webstore/images" target="_blank" rel="external">ở đây</a> như không có quá nhiều chữ, chữ không quá nhỏ, không quá nhiều chi tiết,.. </p>
+</li>
+</ul>
+<h3 id="Goc-quang-cao"><a href="#Goc-quang-cao" class="headerlink" title="Góc quảng cáo"></a>Góc quảng cáo</h3><p>Cuối cùng thì, những ai có sở thích chơi bóng giống mình, cài thử <a href="https://chrome.google.com/webstore/detail/football-news-reader/dojfchbejdepapgopodpalakingoallm" target="_blank" rel="external">Football News Reader</a> và quánh giá sao dùm mình nha (giống grab xin sao quá, hehe =)))<br>Mọi ý kiến đóng góp, chê bai comment lại đây cho mình luôn, hứa sẽ xem 😆</p>
+]]></content:encoded>
+      
+      <comments>https://devnhanguoita.com/posts/Toi-da-viet-chrome-extension-dau-tien-nhu-the-nao/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Suy nghĩ như một lập trình viên</title>
@@ -331,35 +369,6 @@
 ]]></content:encoded>
       
       <comments>https://devnhanguoita.com/posts/Code-sach-nha-nguoi-ta-Viet-ham-sach-hon/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Khi chuyện của dev không còn là của riêng dev</title>
-      <link>https://devnhanguoita.com/posts/Khi-chuyen-cua-dev-khong-con-la-cua-rieng-dev/</link>
-      <guid>https://devnhanguoita.com/posts/Khi-chuyen-cua-dev-khong-con-la-cua-rieng-dev/</guid>
-      <pubDate>Mon, 10 Jul 2017 13:04:01 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;Gần đây có một trang web cho phép người dùng anonymous đăng tải các review về các công ty công nghệ một cách thoải mái. Hiện tại trang nà
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>Gần đây có một trang web cho phép người dùng anonymous đăng tải các review về các công ty công nghệ một cách thoải mái. Hiện tại trang này đang trong tình trạng bảo trì rồi, nên mình không đưa link ở đây (tuy nhiên chắc các dev nhà ta cũng biết là trang nào rồi 😅).</p>
-<p>Mọi chuyện cũng chẳng có gì nếu như không có những thông tin, theo các nguồn tin mình biết được, cũng như thông qua theo dõi các reviews trên trang đó những ngày qua, rằng có những reviews không biết thật giả, làm ảnh hưởng đến uy tín, danh dự của các tổ chức, cá nhân (cụ thể là HR)</p>
-<p>Chắc tác giả cũng không nghĩ đến chủ đề này lại hot như vậy. Mình đoán tình hình cũng đi xa hơn mục đích ban đầu của tác giả rồi.</p>
-<p>Nhân tiện blog này có mục <a href="/categories/Chuyen-cua-Dev/">“Chuyện của Dev”</a> vô tình trùng với từ khoá đang hot này, nên mình cũng xin đưa ra vài ý kiến cá nhân về việc ảnh hưởng của các review xấu đối với bạn và cộng đồng như thế nào.</p>
-<h3 id="Ton-hai-den-hinh-anh-cua-ban"><a href="#Ton-hai-den-hinh-anh-cua-ban" class="headerlink" title="Tổn hại đến hình ảnh của bạn"></a>Tổn hại đến hình ảnh của bạn</h3><p>Giả sử, xem trường hợp này nhé: Bạn apply một job “ngon”, CV rất tốt và hoàn toàn phù hợp với vị trí đó. Bạn HR ngồi xem CV của bạn, và thấy “ồ cái tên này quen quen, hình như hôm bữa thấy nó nói xấu công ty A nè, vô công ty rồi chắc nó cũng nói xấu công ty thôi. Thôi bai bai chú em, em rất tốt nhưng anh rất tiếc..”</p>
-<p>Bạn nghĩ trường hợp này không thể xảy ra ư? mình review anonymous rồi mà, làm sao người ta biết được? Thật ra trường hợp này mình cũng chả biết 😃. Tuy nhiên, trường hợp có người mạo danh bạn thì rất dễ xảy ra. Bạn có gây thù chuốc oán với ai, người ta mượn tên mình để đi nói xấu người khác. Mình đã thấy một trường hợp như vậy trên site đó rồi, tiếc là không chụp hình lại :)</p>
-<h3 id="Anh-huong-den-uy-tin-nguoi-khac"><a href="#Anh-huong-den-uy-tin-nguoi-khac" class="headerlink" title="Ảnh hưởng đến uy tín người khác"></a>Ảnh hưởng đến uy tín người khác</h3><p>Cái này mình cũng chả tin cho đến khi đọc được rất nhiều comments xấu, tiêu cực mang tính châm chọc, hướng tới một số đối tượng ở các công ty (mà chủ yếu là nữ, HR và các quản lí). Các thông tin mang tính nói xấu, thậm chí là xúc phạm đến đời sống cá nhân của người khác.</p>
-<p>Hãy google thông tin gần đây có 2 nữ sinh suýt tự tử vì bị tung tin đồn thất thiệt trên facebook, để thấy sức mạnh của truyền thông làm một việc không có thật ảnh hưởng đến người khác như thế nào. Hi vọng các bạn sẽ cân nhắc hơn ghi vừa gõ bàn phím phán xét người khác vừa cưởi hả hê nhé.</p>
-<h3 id="Hay-la-mot-Dev-tu-te"><a href="#Hay-la-mot-Dev-tu-te" class="headerlink" title="Hãy là một Dev tử tế"></a>Hãy là một Dev tử tế</h3><p>Nếu bạn bất mãn với công ty mình đang làm chỗ nào, không thích hay muốn công ty cải thiện điều gì, hoặc giả muốn tăng lương gấp đôi, gấp ba, hãy mạnh dạn nói rõ với công ty để giữa hai bên cùng nhau giải quyết.</p>
-<p>Nếu bạn muốn review công ty để những dev khác biết, hãy lên các trang chính thống, mình biết ở Việt Nam có trang <a href="https://itviec.com" target="_blank" rel="external">ITviec</a> cho phép bạn đăng những review về các công ty công nghệ, các bạn có thể lên đó để review.</p>
-<p>Hãy làm một dev tử tế!</p>
-<h3 id="Tom-lai"><a href="#Tom-lai" class="headerlink" title="Tóm lại"></a>Tóm lại</h3><p>Như tiêu đề bài viết, trong thời buổi công nghệ này, chuyện của bạn đã không còn là của riêng bạn nữa rồi, nhất là trong điều kiện truyền thông mạnh mẽ và dễ dàng như hiện nay. Vì vậy, bút sa gà xối mỡ gì đấy, hãy cẩn thận với lời ăn tiếng nói của mình.</p>
-<p>Welcome mọi ý kiến của các bạn 👇</p>
-]]></content:encoded>
-      
-      <comments>https://devnhanguoita.com/posts/Khi-chuyen-cua-dev-khong-con-la-cua-rieng-dev/#disqus_thread</comments>
     </item>
     
   </channel>
