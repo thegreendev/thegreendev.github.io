@@ -8,7 +8,7 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>Giúp dev nhà mình trở thành dev con nhà người ta</description>
-    <pubDate>Fri, 09 Mar 2018 14:02:15 GMT</pubDate>
+    <pubDate>Fri, 09 Mar 2018 15:34:23 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,7 +18,29 @@
       <pubDate>Fri, 09 Mar 2018 14:02:15 GMT</pubDate>
       <description>
       
+        Developer cũng nên cần biết một chút về SEO
+      
       </description>
+      
+      <content:encoded><![CDATA[<h3 id="SEO-la-gi"><a href="#SEO-la-gi" class="headerlink" title="SEO là gì"></a>SEO là gì</h3><p>SEO viết tắt của Search Engine Optimize, đại khái là việc tối ưu hoá nội dung của web trên các công cụ tìm kiếm (ví dụ Google search).<br>Thế giới SEO thì khá là rộng lớn, nhưng tóm lại là có 2 loại để tối ưu chính đó là on-page SEO và off-page SEO.</p>
+<ul>
+<li>On-page SEO là các cách thực hiện trên chính trang web để tăng rank, bao gồm các việc như tối ưu html, cấu trúc nội dung, chất lượng nội dung..</li>
+<li>Off-page SEO là việc thực hiện các cách để xây dựng được backlink, thường được thực hiện sau on-page SEO và bởi đội ngũ Marketing.</li>
+</ul>
+<p>Đối với một web developer thì chúng ta chỉ cần quan tâm đến On-page SEO, và chúng ta nên quan tâm đến việc này vì những dòng code của bạn sẽ ảnh hưởng ít nhiều đến SEO đấy.<br>Trong những bài kế tiếp, mình sẽ lần lượt chỉ ra những thứ mà một web developer cần biết và lưu tâm.</p>
+<h3 id="Developer-can-biet-gi"><a href="#Developer-can-biet-gi" class="headerlink" title="Developer cần biết gì?"></a>Developer cần biết gì?</h3><p>Vậy với vai trò là một developer, chúng ta nên cần biết về những gì?</p>
+<ul>
+<li>Những thẻ HTML quan trọng</li>
+<li>Metadata, structured data</li>
+<li>Sitemap</li>
+<li>Phân trang</li>
+<li>HTTP Status code</li>
+<li>Best practice cho URL</li>
+<li>Một số tool cho webmaster</li>
+<li>..</li>
+</ul>
+<p>Theo dõi các bài viết tiếp theo về chủ đề này tại <a href="http://devnhanguoita.com/categories/SEO-Cho-Developer/">SEO cho developer</a> nhé !!</p>
+]]></content:encoded>
       
       <comments>https://devnhanguoita.com/posts/SEO-co-ban-cho-web-developer/#disqus_thread</comments>
     </item>
