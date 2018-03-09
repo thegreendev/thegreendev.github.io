@@ -8,8 +8,20 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>Giúp dev nhà mình trở thành dev con nhà người ta</description>
-    <pubDate>Fri, 29 Dec 2017 15:06:18 GMT</pubDate>
+    <pubDate>Fri, 09 Mar 2018 14:02:15 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>SEO cơ bản cho web developer</title>
+      <link>https://devnhanguoita.com/posts/SEO-co-ban-cho-web-developer/</link>
+      <guid>https://devnhanguoita.com/posts/SEO-co-ban-cho-web-developer/</guid>
+      <pubDate>Fri, 09 Mar 2018 14:02:15 GMT</pubDate>
+      <description>
+      
+      </description>
+      
+      <comments>https://devnhanguoita.com/posts/SEO-co-ban-cho-web-developer/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Câu hỏi phỏng vấn Dev các thể loại</title>
@@ -327,32 +339,6 @@
 ]]></content:encoded>
       
       <comments>https://devnhanguoita.com/posts/Xu-li-chuoi-co-ban-trong-Python/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Học CSS thông qua game</title>
-      <link>https://devnhanguoita.com/posts/Hoc-CSS-thong-qua-game/</link>
-      <guid>https://devnhanguoita.com/posts/Hoc-CSS-thong-qua-game/</guid>
-      <pubDate>Thu, 27 Jul 2017 14:44:11 GMT</pubDate>
-      <description>
-      
-        Học CSS hấp dẫn, thú vị hơn thông qua games. Tại sao không? Hãy thử các game sau xem bạn sẽ học được gì nhé.
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>Lười viết mở bài quá, thôi vào thân bài luôn nha. Dưới đây là danh sách một số nguồn mình tổng hợp được để học CSS một cách thú vị hơn:</p>
-<h2 id="1-Grid-Garden"><a href="#1-Grid-Garden" class="headerlink" title="1. Grid Garden"></a>1. Grid Garden</h2><p>Link: <a href="http://cssgridgarden.com/" target="_blank" rel="external">http://cssgridgarden.com/</a><br>Trang web này giới thiệu cho các bạn về Grid Layout. Hoàn thành 28 level của game, bạn sẽ học được nhiều thứ về Grid layout đấy.</p>
-<p><img src="/img/css-grid-garden.png" alt="Grid Garden"></p>
-<h2 id="2-Flexbox-Froggy"><a href="#2-Flexbox-Froggy" class="headerlink" title="2. Flexbox Froggy"></a>2. Flexbox Froggy</h2><p>Link: <a href="http://flexboxfroggy.com/" target="_blank" rel="external">http://flexboxfroggy.com/</a><br>Tương tự và của cùng tác giả của Grid Garden, Flexbox Froggy là một “tựa game” để bạn học về flexbox.<br>Xuyên suốt 24 level của game, bạn sẽ học được nhiều thuộc tính của flexbox như: <code>justify-content</code>, <code>flex-flow</code>, <code>align-items</code>, ..</p>
-<p><img src="/img/css-flexbox.png" alt="Flexbox Froggy"></p>
-<h2 id="3-CSS-Dinner"><a href="#3-CSS-Dinner" class="headerlink" title="3. CSS Dinner"></a>3. CSS Dinner</h2><p>Link: <a href="http://flukeout.github.io/" target="_blank" rel="external">http://flukeout.github.io/</a><br>Game này hơi khó nhằn hơn nhé, bạn sẽ được học về <code>selector</code> trong CSS như class, id, child,… với các level có độ khó tăng dần.</p>
-<p><img src="/img/css-dinner.png" alt="CSS Dinner"></p>
-<h2 id="4-Flexbox-Defense"><a href="#4-Flexbox-Defense" class="headerlink" title="4. Flexbox Defense"></a>4. Flexbox Defense</h2><p>Link: <a href="http://www.flexboxdefense.com/" target="_blank" rel="external">http://www.flexboxdefense.com/</a><br>Thêm một game nữa về <code>flexbox</code></p>
-<p><img src="/img/css-flexbox-defense.png" alt="Flexbox Defense"></p>
-<p>Chúc các bạn chơi vui vẻ :p</p>
-]]></content:encoded>
-      
-      <comments>https://devnhanguoita.com/posts/Hoc-CSS-thong-qua-game/#disqus_thread</comments>
     </item>
     
   </channel>
