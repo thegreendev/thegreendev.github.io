@@ -8,8 +8,134 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>Giúp dev nhà mình trở thành dev con nhà người ta</description>
-    <pubDate>Fri, 09 Mar 2018 15:45:04 GMT</pubDate>
+    <pubDate>Sat, 17 Mar 2018 14:44:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>SEO cho Developer: về URL</title>
+      <link>https://devnhanguoita.com/posts/SEO-cho-Developer-ve-URL/</link>
+      <guid>https://devnhanguoita.com/posts/SEO-cho-Developer-ve-URL/</guid>
+      <pubDate>Sat, 17 Mar 2018 04:11:11 GMT</pubDate>
+      <description>
+      
+        SEO cho developer: một số chú ý về URL
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Hello, bài tiếp theo này mình sẽ nói về một số chú ý về các url.<br>Xem thêm những bài viết SEO cơ bản cho Developer ở đây nhé <a href="https://devnhanguoita.com/categories/SEO-Cho-Developer/">SEO cho Developer</a></p>
+<p>Những kĩ thuật ở đây không có ý nghĩa là “bạn phải làm theo như thế này, nếu không Google sẽ không xếp hạng trang web của bạn tốt” mà chỉ là những best practices mà bạn nên làm theo để SEO được tốt hơn.</p>
+<h4 id="1-URL-cang-de-doc-cang-tot"><a href="#1-URL-cang-de-doc-cang-tot" class="headerlink" title="1. URL càng dễ đọc, càng tốt"></a>1. URL càng dễ đọc, càng tốt</h4><p>Một cái url mà con người dễ đọc thì cũng dễ đọc cho bot luôn 😀<br>Hãy xem ví dụ về 2 url sau, xem url nào sẽ dễ gây thiện cảm cho người dùng click vào hơn?</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">http://mydomain.com/phone/iphone-x-256gb</div><div class="line">http://mydomain.com/phone?ID=77&amp;kw=iphone+x+256gb</div></pre></td></tr></table></figure>
+<p>Mọi thành phần của url của bạn không cần phải hoàn hảo, đầy đủ như vậy, nhưng ít nhất thì nó cũng phải dễ đọc hiểu.</p>
+<h4 id="2-URL-nen-chua-tu-khoa"><a href="#2-URL-nen-chua-tu-khoa" class="headerlink" title="2. URL nên chứa từ khoá"></a>2. URL nên chứa từ khoá</h4><p>Sử dụng từ khoá mà bạn đang muốn SEO trong URL là một ý tưởng rất tốt.</p>
+<ul>
+<li><p>từ khoá trong url sẽ giúp chỉ ra cho người tìm kiếm thấy họ sẽ nhận được gì khi nhìn thấy nó, hoặc khi hover lên link<br>Ví dụ kết quả khi search từ khoá: <code>việc làm java lương cao</code> ở hình dưới<br><img src="/img/seo-url-keyword.png" alt="từ khoá trong url"></p>
+</li>
+<li><p>url của bạn sẽ được chia sẻ ở nhiều nơi, và khi người ta không để text thay thế cho link đó thì bản thân url nó sẽ được hiện lên cho người đọc.<br>ví dụ link này có anchor text nè <a href="https://devnhanguoita.com/posts/SEO-cho-Developer-cau-truc-HTML/">SEO cho developer</a> còn link này thì không: <a href="https://devnhanguoita.com/posts/SEO-cho-Developer-cau-truc-HTML/">https://devnhanguoita.com/posts/SEO-cho-Developer-cau-truc-HTML/</a> nhưng user sẽ đoán được nó là cái gì, thông qua url.</p>
+</li>
+</ul>
+<h4 id="3-Han-che-de-nhieu-tham-so-dong"><a href="#3-Han-che-de-nhieu-tham-so-dong" class="headerlink" title="3. Hạn chế để nhiều tham số động"></a>3. Hạn chế để nhiều tham số động</h4><p>Hãy xem thử một url như sau:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://www.example.com/product.aspx?ID=12345&amp;type=iphone&amp;color=red</div></pre></td></tr></table></figure></p>
+<p>Nếu có thể hãy tránh để tham số truyền vào url. Nếu có nhiều hơn 2 tham số thì chắc là bạn cần phải viết/cấu trúc lại hệ thống của mình rồi đó. </p>
+<h4 id="4-Ngan-hon-tot-hon"><a href="#4-Ngan-hon-tot-hon" class="headerlink" title="4. Ngắn hơn, tốt hơn"></a>4. Ngắn hơn, tốt hơn</h4><p>Ngắn hơn thì tốt hơn<br>Nếu url của bạn dài hơn 100 kí tự thì tốt nhất là bạn nên nghĩ cách để tổ chức lại nó.<br>Search Engine thật ra không quan tâm đến việc url ngắn hay dài. Vấn đề ở đây là User Experience và tính có thể sử dụng của nó. URL ngắn hơn thì dễ nhớ, viết, copy paste, share lên các mạng xã hội, vân vân và mây mây hơn.</p>
+<h4 id="5-URL-nen-khop-voi-title-cua-trang"><a href="#5-URL-nen-khop-voi-title-cua-trang" class="headerlink" title="5. URL nên khớp với title của trang"></a>5. URL nên khớp với title của trang</h4><p>Không phải là URL phải chính xác những gì trong title của trang.<br>Ví dụ trang bán Iphone X của <code>thế giới di động</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Title: iPhone X 256 GB - Viền siêu mỏng, trả góp 0% | Thegioididong.com</div><div class="line">URL tương ứng: https://www.thegioididong.com/dtdd/iphone-x-256gb</div></pre></td></tr></table></figure>
+<p>thì sẽ tốt hơn một url kiểu như:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://www.example.com/product.aspx?ID=12345&amp;type=iphone&amp;color=red</div></pre></td></tr></table></figure></p>
+<h4 id="6-Han-che-redirect"><a href="#6-Han-che-redirect" class="headerlink" title="6. Hạn chế redirect"></a>6. Hạn chế redirect</h4><p>Nếu bạn có url A mà khi user vào nó sẽ được redirect qua url B, và nếu url B này tiếp tục được redirect sang url C nào đó khác.. thì cũng ổn thôi.<br>Tuy nhiên nếu url của bạn có quá nhiều redirect, search engine có thể sẽ đánh dấu url đó là kém sang, à nhầm, “kém quan trọng”, và sẽ ảnh hưởng đến rank của url đó trong kết quả tìm kiếm.<br>Một vấn đề nữa là redirect quá nhiều chắc chắn sẽ ảnh hưởng đến performance của trang web của bạn.<br>Vì vậy, hãy hạn chế redirect ít nhất nếu có thể. </p>
+<h4 id="7-Cang-it-hem-cang-tot"><a href="#7-Cang-it-hem-cang-tot" class="headerlink" title="7. Càng ít hẻm càng tốt"></a>7. Càng ít hẻm càng tốt</h4><p>Hẻm là //// ấy :D<br>Thay vì:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://www.example.com/san-pham/dien-thoai/apple/iphone/iphonex/256gb-red</div></pre></td></tr></table></figure></p>
+<p>thì có thể:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://www.example.com/dien-thoai/iphone-x-256gb-red</div></pre></td></tr></table></figure></p>
+<h4 id="8-Can-than-hoa-thuong"><a href="#8-Can-than-hoa-thuong" class="headerlink" title="8. Cẩn thận hoa thường"></a>8. Cẩn thận hoa thường</h4><p>Để ý đến chữ viết hoa hay thường trong url. Bạn có thể gặp rắc rối nếu trang web của bạn chạy trên một số server Linux/UNIX, lúc này url như <code>yourdomain.com/IphoneX</code> có thể sẽ được đối xử là khác với url <code>yourdomain.com/iphonex</code><br>Đối với những trường hợp như thế này, những url bị không đúng hoa thường cần được redirect sang url đúng của nó.</p>
+<h4 id="9-Mot-so-luu-y-khac"><a href="#9-Mot-so-luu-y-khac" class="headerlink" title="9. Một số lưu ý khác"></a>9. Một số lưu ý khác</h4><ul>
+<li>đừng để lặp lại từ khoá quá nhiều trong một url, sẽ làm cho Search Engine dễ đánh dấu trang của bạn là spam hơn.<br>ví dụ: <code>http://www.example.com/dien-thoai/dien-thoai-thong-minh/dien-thoai-iphone-x</code></li>
+<li>phân cách các từ bằng dấu gạch ngang thì tốt hơn<br>ví dụ: <code>.../iphone-x-256gb</code> thì tốt hơn là dùng space sẽ bị render thành như thế này: <code>.../iphone%20x%20256gb</code></li>
+</ul>
+<hr>
+<p>tham khảo: <a href="https://moz.com/blog/15-seo-best-practices-for-structuring-urls" target="_blank" rel="external">https://moz.com/blog/15-seo-best-practices-for-structuring-urls</a></p>
+]]></content:encoded>
+      
+      <comments>https://devnhanguoita.com/posts/SEO-cho-Developer-ve-URL/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Những thứ miễn phí cho Developers</title>
+      <link>https://devnhanguoita.com/posts/Free-for-Dev/</link>
+      <guid>https://devnhanguoita.com/posts/Free-for-Dev/</guid>
+      <pubDate>Fri, 16 Mar 2018 16:19:04 GMT</pubDate>
+      <description>
+      
+        Tất tần tật những thứ free cho bạn!
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Hôm nay vô tình tìm thấy một nơi tổng hợp những thứ free cho dân dev nhà mình dùng, nên giới thiệu đây cho bạn nào chưa biết nhé.</p>
+<p><a href="https://github.com/ripienaar/free-for-dev" target="_blank" rel="external">Repository này</a> nhé.</p>
+<p>Đó là danh sách các phần mềm, dịch vụ miễn phí hoặc miễn phí một phần để dev nhà mình có thể dùng.</p>
+<p>Các mặt hàng bao gồm:</p>
+<ul>
+<li>quản lí source code</li>
+<li>các công cụ làm việc nhóm</li>
+<li>kiểm tra chất lượng code </li>
+<li>các công cụ CI/CD</li>
+<li>Hosting</li>
+<li>IDE và trình soạn thảo</li>
+<li>API</li>
+<li>Docker</li>
+<li>vân vân và mây mây</li>
+</ul>
+]]></content:encoded>
+      
+      <comments>https://devnhanguoita.com/posts/Free-for-Dev/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>SEO cho Developer: các thẻ HTML</title>
+      <link>https://devnhanguoita.com/posts/SEO-cho-Developer-cau-truc-HTML/</link>
+      <guid>https://devnhanguoita.com/posts/SEO-cho-Developer-cau-truc-HTML/</guid>
+      <pubDate>Sat, 10 Mar 2018 08:53:28 GMT</pubDate>
+      <description>
+      
+        SEO cho developer: một số chú ý về cấu trúc html
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Hello, đây là bài đầu tiên trong loạt bài <a href="https://devnhanguoita.com/categories/SEO-Cho-Developer/">SEO cho developer</a>.<br>Như đã nói thì có khá nhiều cách để tối ưu rank cho website của bạn, nhưng ở phạm vi bài này, chúng ta sẽ chỉ tìm hiểu về ảnh hưởng của các thẻ HTML trước thôi nhé.</p>
+<p>Let’s go!<br>À, trong bài viết này mình nói <code>Google</code> thay cho <code>search engine</code> nhé (vì nó là search engine phổ biến, và viết nó ngắn hơn =)))</p>
+<h4 id="1-Title-tag"><a href="#1-Title-tag" class="headerlink" title="1.Title tag"></a>1.Title tag</h4><p>Title là thẻ có sự ảnh hưởng quan trọng nhất. Nó mô tả chủ đề của trang đó, và sẽ được hiển thị trên Google search.</p>
+<p>Đây là title của trang sẽ hiển thị trong search, ví dụ từ khoá <code>sơn thùng ôm ti vi</code>:<br><img src="/img/seo-1-title-desc-1.png" alt="Ví dụ về title tag"></p>
+<p>Title thì phải để trong <code>&lt;head&gt;</code> rồi nha:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;head&gt;</div><div class="line">    &lt;title&gt; Đây là một tiêu đề | của Dev Nhà Người Ta &lt;/title&gt;</div><div class="line">&lt;/head&gt;</div></pre></td></tr></table></figure></p>
+<h5 id="dev-can-chu-y-gi"><a href="#dev-can-chu-y-gi" class="headerlink" title="dev cần chú ý gì?"></a>dev cần chú ý gì?</h5><ul>
+<li>chắc chắn rằng mỗi trang chỉ có một title</li>
+<li>không nên để các title của các trang giống nhau</li>
+<li>lưu ý đến số lượng kí tự của title</li>
+<li>đặt tên tiêu đề liên quan đến nội dung trang</li>
+</ul>
+<h4 id="2-Meta-Description"><a href="#2-Meta-Description" class="headerlink" title="2.Meta Description"></a>2.Meta Description</h4><p>Thẻ thứ 2, quan trọng không kém title là thẻ meta description (mô tả).<br>Hình dáng nó như vầy nè:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta name=&quot;description&quot; content=&quot;Nội dung bạn muốn mô tả trang sẽ nằm ở đây, và nó sẽ được hiển thị ở google search.&quot;/&gt;</div><div class="line">&lt;/head&gt;</div></pre></td></tr></table></figure></p>
+<p>Xem lại hình ở ví dụ trên để thấy phần description nó sẽ hiện ra trên trang kết quả google search như thế nào.</p>
+<h5 id="dev-can-chu-y-gi-1"><a href="#dev-can-chu-y-gi-1" class="headerlink" title="dev cần chú ý gì?"></a>dev cần chú ý gì?</h5><ul>
+<li>các trang khác nhau nên có nội dung mô tả khác nhau</li>
+<li>cũng lưu ý đến số lượng kí tự luôn nhé</li>
+</ul>
+<h4 id="3-The-H1"><a href="#3-The-H1" class="headerlink" title="3.Thẻ H1"></a>3.Thẻ H1</h4><p>Thẻ H1 là heading chính của 1 trang. Nó sẽ là cái câu mang tính mời gọi, làm người đọc thích thú muốn đọc hết nội dung của trang.</p>
+<p>Ví dụ: 1 trang <a href="https://itviec.com/it-jobs/software-engineer-ruby-on-rails-quoine-5145" target="_blank" rel="external">job</a> trên ITviec, thì cái title của Job đó là thẻ H1.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;h1&gt;</div><div class="line">    Software Engineer ( Ruby on Rails )</div><div class="line">&lt;/h1&gt;</div></pre></td></tr></table></figure></p>
+<h5 id="dev-can-chu-y-gi-2"><a href="#dev-can-chu-y-gi-2" class="headerlink" title="dev cần chú ý gì?"></a>dev cần chú ý gì?</h5><ul>
+<li>Mỗi trang chỉ nên có 1 thẻ h1</li>
+<li>bạn có thể copy nội dung ở title cho h1</li>
+</ul>
+<h4 id="4-Image-Alt-Tags"><a href="#4-Image-Alt-Tags" class="headerlink" title="4.Image Alt Tags"></a>4.Image Alt Tags</h4><p>Thẻ alt cho các hình ảnh, video là một thẻ khá quan trọng nữa. Nội dung trong thẻ alt của hình ảnh sẽ giúp cho search engine hiểu ảnh đó nói về cái gì, và sẽ giúp cho bạn có một thứ hạng cao hơn khi search bằng hình ảnh.<br>Ví dụ một hình sản phẩm trên Tiki, sẽ có thẻ alt như này:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;img</div><div class="line">   data-src=&quot;https://vcdn.tikicdn.com/ts/banner/a8/ab/e5/f8f84151a4d59d9038cc31f15099a6c8.jpg&quot;</div><div class="line">   src=&quot;https://vcdn.tikicdn.com/assets/img/empty-lazy.gif&quot;</div><div class="line">   alt=&quot;Sắm máy ảnh / Đi du hí&quot; class=&quot;lazy&quot;&gt;</div></pre></td></tr></table></figure></p>
+<p>Nếu bạn muốn mô tả một bức ảnh cho người khiếm thị thì bạn sẽ nói gì? Hãy mô tả nội dung cho thẻ alt của ảnh như cách vậy đó.</p>
+<h4 id="5-Nofollow-links"><a href="#5-Nofollow-links" class="headerlink" title="5.Nofollow links"></a>5.Nofollow links</h4><p><code>Nofollow</code> là một thuộc tính bạn gán trong link nếu muốn cho search engine biết “không theo các links này” hoặc “không theo link cụ thể này”. Khi đó search engine sẽ không tính link đó vào link juice (link juice là một thuật ngữ của SEO, đại khái như là một tập hợp các liên kết trỏ đến trang web, Google để đọc thêm chi tiết :p)</p>
+<p>Để sử dụng, gắn thêm <code>rel=nofollow</code> vào link như này:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"signin.php"</span> <span class="attr">rel</span>=<span class="string">"nofollow"</span>&gt;</span>Sign in<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>Bạn sẽ phải cần đến nó trong một số trường hợp như: những nội dung không đáng tin cậy (bình luận của người dùng, spam,..),.. bạn sẽ không muốn google đi theo các link đó và index nó</p>
+<h4 id="6-Canonical-tag"><a href="#6-Canonical-tag" class="headerlink" title="6.Canonical tag"></a>6.Canonical tag</h4><p>Canonical tag là một thẻ rất quan trọng.<br>Nó quan trọng nếu site của bạn có nhiều trang có nội dung tương tự nhau, thẻ này sẽ giúp cho Google hiểu là chỉ có trang được gắn thẻ mới là trang mà Google nên tập trung vào. Điều này sẽ làm giảm được lỗi duplicate content (nội dung trùng lặp).</p>
+<p>Sử dụng, gắn <code>rel=&quot;canonical&quot;</code> vào link<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"canonical"</span> <span class="attr">href</span>=<span class="string">"https://devnhanguoita.com"</span> /&gt;</span></div></pre></td></tr></table></figure></p>
+<hr>
+<h5 id="Tham-khao"><a href="#Tham-khao" class="headerlink" title="Tham khảo:"></a>Tham khảo:</h5><ol>
+<li><a href="https://blog.kissmetrics.com/website-source-code-seo/" target="_blank" rel="external">Website Source Code SEO</a></li>
+<li><a href="https://neilpatel.com/blog/html-tags-for-seo/" target="_blank" rel="external">HTML Tags for SEO</a></li>
+</ol>
+]]></content:encoded>
+      
+      <comments>https://devnhanguoita.com/posts/SEO-cho-Developer-cau-truc-HTML/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>SEO cơ bản cho web developer</title>
@@ -288,79 +414,6 @@
 ]]></content:encoded>
       
       <comments>https://devnhanguoita.com/posts/Programmer-Day/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Trở thành dev con nhà người ta</title>
-      <link>https://devnhanguoita.com/posts/Tro-thanh-dev-con-nha-nguoi-ta/</link>
-      <guid>https://devnhanguoita.com/posts/Tro-thanh-dev-con-nha-nguoi-ta/</guid>
-      <pubDate>Sat, 19 Aug 2017 03:22:01 GMT</pubDate>
-      <description>
-      
-        Một số điều rút ra được từ các dev con nhà người ta về việc làm thế nào để trở thành developer tốt hơn..
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>Một số điều rút ra được từ các ‘dev con nhà người ta’ để trở thành developer tốt hơn..</p>
-<h3 id="Doc-code-cua-nguoi-khac"><a href="#Doc-code-cua-nguoi-khac" class="headerlink" title="Đọc code của người khác"></a>Đọc code của người khác</h3><p>Đọc code của người khác và học hỏi từ họ. Các nơi lưu trữ code mã nguồn mở như Github là một nơi cực kì tốt cho bạn học code từ những developer khác. Bạn sẽ học được rất nhiều thứ đấy, từ cách tổ chức, cấu trúc thư mục đến cách làm việc của một công nghệ ABC nào đó, ..</p>
-<h3 id="Nho-ai-do-doc-code-cua-minh"><a href="#Nho-ai-do-doc-code-cua-minh" class="headerlink" title="Nhờ ai đó đọc code của mình"></a>Nhờ ai đó đọc code của mình</h3><p>Thường xuyên nhờ người khác review code cho mình, cũng như thường xuyên pair programming với đồng nghiệp sẽ giúp bạn khá nhiều đấy.<br>Những người có nhiều kinh nghiệm hơn sẽ giúp bạn thấy các vấn đề mà nếu chỉ làm một mình thì bạn sẽ khó mà nhận ra được. Có thể là cách để refactor đoạn code nào đó đẹp hơn, dễ hiểu hơn, hay đơn giản là đặt tên biến có ý nghĩa hơn.</p>
-<p><img src="/img/10_ways_pair.jpg" alt="Pair Programming"></p>
-<h3 id="Fix-bug-truoc-khi-viet-code-moi"><a href="#Fix-bug-truoc-khi-viet-code-moi" class="headerlink" title="Fix bug trước khi viết code mới"></a>Fix bug trước khi viết code mới</h3><p>Bạn phát hiện ra một bug nhưng nghĩ “thôi, mình fix nó sau vậy, làm những tính năng này trước đã”. Hoặc bạn thấy một test case bị lỗi, nhưng không tìm hiểu tại sao nó lại lỗi, bạn comment test case đó đi.<br>Hãy tạo thói quen fix bug, giải quyết các issue tồn đọng sớm cho mình trước khi bắt tay vào code những tính năng mới, đừng để “technical debt” nhé, trả không nổi đâu :D</p>
-<p><img src="/img/10_ways_bugs_comming.png" alt="Bugs comming"></p>
-<h3 id="Hoc-cong-nghe-moi"><a href="#Hoc-cong-nghe-moi" class="headerlink" title="Học công nghệ mới"></a>Học công nghệ mới</h3><p>Luôn luôn học, cập nhật các công nghệ mới khi nào có thể. Một công nghệ X đang thịnh hành bây giờ nhưng chắc gì 5 - 10 năm sau vẫn còn được ưa chuộng. Hãy thử học cái gì đó mới xem sao, nếu bạn đang làm iOS, sao không thử làm web bằng Ruby on Rails chẳng hạn :)</p>
-<h4 id="con-cap-nhat"><a href="#con-cap-nhat" class="headerlink" title="còn cập nhật"></a>còn cập nhật</h4>]]></content:encoded>
-      
-      <comments>https://devnhanguoita.com/posts/Tro-thanh-dev-con-nha-nguoi-ta/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Validate string trong python</title>
-      <link>https://devnhanguoita.com/posts/Validate-string-trong-python/</link>
-      <guid>https://devnhanguoita.com/posts/Validate-string-trong-python/</guid>
-      <pubDate>Sat, 12 Aug 2017 04:21:16 GMT</pubDate>
-      <description>
-      
-        Kiểm tra nhanh một chuỗi trong python có phải là chuỗi toàn số không hoặc là chuỗi toàn chữ không? Python có sẵn những phương thức này cho bạn...
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>Đôi lúc bạn muốn kiểm tra xem một chuỗi có phải là toàn là số hay không, hoặc một chuỗi toàn chữ viết hoa hay không. Hãy tham khảo một số hàm xây dựng sẵn trong python giúp validate chuỗi sau đây:</p>
-<h3 id="1-isalnum"><a href="#1-isalnum" class="headerlink" title="1. isalnum()"></a>1. isalnum()</h3><p>Hàm này kiểm tra các kí tự trong chuỗi có phải là chữ hoặc số hay không (alphanumeric) (a-z, A-Z và 0-9)</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt; <span class="keyword">print</span> <span class="string">'abc123'</span>.isalnum()</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'xyz123#'</span>.isalnum()</div><div class="line"><span class="keyword">False</span></div></pre></td></tr></table></figure>
-<h3 id="2-isalpha"><a href="#2-isalpha" class="headerlink" title="2. isalpha()"></a>2. isalpha()</h3><p>Kiểm tra các kí tự trong chuỗi có phải là chữ hay không (a-z và A-Z)<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'abcD'</span>.isalpha()</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'abcd1'</span>.isalpha()</div><div class="line"><span class="keyword">False</span></div></pre></td></tr></table></figure></p>
-<h3 id="3-isdigit"><a href="#3-isdigit" class="headerlink" title="3. isdigit()"></a>3. isdigit()</h3><p>Kiếm tra các kí tự trong chuỗi chỉ là số hay không (0-9)<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'1234'</span>.isdigit()</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'123@abc'</span>.isdigit()</div><div class="line"><span class="keyword">False</span></div></pre></td></tr></table></figure></p>
-<h3 id="4-islower"><a href="#4-islower" class="headerlink" title="4. islower()"></a>4. islower()</h3><p>Kiểm tra xem có phải tất cả các kí tự trong một chuỗi là viết thường hay không<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'abcd123#'</span>.islower()</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'Abcd123#'</span>.islower()</div><div class="line"><span class="keyword">False</span></div></pre></td></tr></table></figure></p>
-<h3 id="5-isupper"><a href="#5-isupper" class="headerlink" title="5. isupper()"></a>5. isupper()</h3><p>Ngược lại với <code>islower()</code>, phương thức này kiểm tra xem có phải tất cả các kí tự trong một chuỗi là viết hoa hay không.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'ABCD123#'</span>.isupper()</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> <span class="string">'Abcd123#'</span>.isupper()</div><div class="line"><span class="keyword">False</span></div></pre></td></tr></table></figure></p>
-<p>Happy coding!</p>
-]]></content:encoded>
-      
-      <comments>https://devnhanguoita.com/posts/Validate-string-trong-python/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Xử lí chuỗi cơ bản trong Python</title>
-      <link>https://devnhanguoita.com/posts/Xu-li-chuoi-co-ban-trong-Python/</link>
-      <guid>https://devnhanguoita.com/posts/Xu-li-chuoi-co-ban-trong-Python/</guid>
-      <pubDate>Tue, 08 Aug 2017 15:37:57 GMT</pubDate>
-      <description>
-      
-        Ghi chép về những phương thức xử lí chuỗi cơ bản trong Python như tìm chuỗi con, thay thế, lowercase..
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>Những ghi chép của một Dev đang tập tành học Python về các hàm xử lí chuỗi.</p>
-<p>Giả sử mình có chuỗi sau nhé:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sample = <span class="string">"Dev nha nguoi ta"</span></div></pre></td></tr></table></figure></p>
-<h3 id="1-Viet-thuong-lowercase"><a href="#1-Viet-thuong-lowercase" class="headerlink" title="1. Viết thường - lowercase"></a>1. Viết thường - lowercase</h3><p>Dùng hàm <code>lower()</code> để chuyển một chuỗi bất kì thành chuỗi viết thường<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample.lower()</div><div class="line"><span class="string">'dev nha nguoi ta'</span></div></pre></td></tr></table></figure></p>
-<h3 id="2-Viet-hoa-UPPERCASE"><a href="#2-Viet-hoa-UPPERCASE" class="headerlink" title="2. Viết hoa - UPPERCASE"></a>2. Viết hoa - UPPERCASE</h3><p>Ngược lại, cũng có hàm <code>upper()</code> để viết hoa chuỗi đó<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample.upper()</div><div class="line"><span class="string">'DEV NHA NGUOI TA'</span></div></pre></td></tr></table></figure></p>
-<h3 id="3-Viet-hoa-ki-tu-dau-tien-Capitalize"><a href="#3-Viet-hoa-ki-tu-dau-tien-Capitalize" class="headerlink" title="3. Viết hoa kí tự đầu tiên - Capitalize"></a>3. Viết hoa kí tự đầu tiên - Capitalize</h3><p><code>capitalize()</code> để viết hoa kí tự đầu tiên</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">"hello world"</span>.capitalize()</div><div class="line"><span class="string">'Hello world'</span></div></pre></td></tr></table></figure>
-<h3 id="4-Chuoi-con"><a href="#4-Chuoi-con" class="headerlink" title="4. Chuỗi con"></a>4. Chuỗi con</h3><p>Lấy chuỗi con ở các vị trí của chuỗi, theo một trong những cách sau:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample[<span class="number">4</span>:<span class="number">13</span>]</div><div class="line"><span class="string">'nha nguoi'</span></div><div class="line"></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample[<span class="number">4</span>:]</div><div class="line"><span class="string">'nha nguoi ta'</span></div><div class="line"></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample[:<span class="number">7</span>]</div><div class="line"><span class="string">'Dev nha'</span></div></pre></td></tr></table></figure></p>
-<h3 id="5-Tim-chuoi-con"><a href="#5-Tim-chuoi-con" class="headerlink" title="5. Tìm chuỗi con"></a>5. Tìm chuỗi con</h3><p>Sử dụng hàm <code>find()</code> để tìm xem một chuỗi con có thuộc một chuỗi hay không. Hàm này trả về kết quả là vị trí bắt đầu của chuỗi con đó, và trả về -1 nếu không tìm thấy.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample.find(<span class="string">'nguoi'</span>)</div><div class="line"><span class="number">8</span></div></pre></td></tr></table></figure></p>
-<p>Hàm <code>rfind()</code> tìm như <code>find()</code> nhưng theo chiều từ bên phải qua<br>Hãy so sánh:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample.rfind(<span class="string">'a'</span>)</div><div class="line"><span class="number">15</span></div><div class="line"></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample.find(<span class="string">'a'</span>)</div><div class="line"><span class="number">6</span></div></pre></td></tr></table></figure></p>
-<h3 id="6-Thay-the"><a href="#6-Thay-the" class="headerlink" title="6. Thay thế"></a>6. Thay thế</h3><p>Đơn giản với hàm <code>replace()</code><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>sample.replace(<span class="string">"nguoi ta"</span>, <span class="string">"minh"</span>)</div><div class="line">  <span class="string">'Dev nha minh'</span></div></pre></td></tr></table></figure></p>
-]]></content:encoded>
-      
-      <comments>https://devnhanguoita.com/posts/Xu-li-chuoi-co-ban-trong-Python/#disqus_thread</comments>
     </item>
     
   </channel>
